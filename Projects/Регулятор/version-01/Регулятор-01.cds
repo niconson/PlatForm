@@ -1,8 +1,8 @@
 [options]
 
-app_folder: "D:\Разработки\bin"
-version: 1.415
-file_version: 1.415
+app_folder: "D:\Разработки\ПлатФорм на русском\bin"
+version: 1.416
+file_version: 1.416
 project_name: "Регулятор-01.cds"
 library_folder: "c:\рабочая папка\freepcb_libraries"
 full_library_folder: "c:\рабочая папка\freepcb_libraries\lib_footprints"
@@ -17,7 +17,7 @@ partlist_size_y: "194"
 partlist_pos_x: "105"
 partlist_pos_y: "69"
 partlist_col_w: "960223292"
-netlist_file_path: "D:\Разработки\Freepcb2-portable\Projects\Регулятор\version-01\related_files\CDS_netlist\Регулятор-01.fpc"
+netlist_file_path: "D:\Разработки\ПлатФорм на русском\Projects\Регулятор\version-01\related_files\CDS_netlist\Регулятор-01.fpc"
 pcb_name: "Регулятор-01.fpc" 1
 netlist_format: 0
 page_mirror_mask: 0
@@ -26,11 +26,11 @@ default_node_width: -1100000
 autosave_interval: 60
 m_client_rect_left: 0
 m_client_rect_right: 1132
-m_client_rect_bottom: 592
+m_client_rect_bottom: 587
 m_client_rect_top: 0
-m_org_x: -89037
-m_org_y: -26286
-m_scale_factor: 244198
+m_org_x: -10191
+m_org_y: 10894
+m_scale_factor: 68152
 m_attr_size: 2200000 300000 2200000 300000 2200000 300000 2200000 300000 2200000 300000 2200000 300000
 m_user_scale: 1.0000000000
 units: MM
@@ -148,57 +148,57 @@ n_additional_layers: 4
 m_pdf_font_i: 1
 m_pdf_margin: 0.01
 pdf_checking: 0
-  layer_info: "dragging" 0 130 130 130 1
-  layer_info: "background" 1 100 100 100 1
-  layer_info: "visible grid" 2 97 97 97 1
-  layer_info: "highlight" 3 255 255 0 1
-  layer_info: "DRC error" 4 255 255 0 1
-  layer_info: "ownerless line" 5 255 0 0 1
-  layer_info: "part outline" 6 205 205 205 1
-  layer_info: "part name" 7 205 205 205 1
-  layer_info: "pin line" 8 255 255 128 1
-  layer_info: "pin name" 9 255 255 128 1
-  layer_info: "net polyline" 10 255 255 255 1
-  layer_info: "net name" 11 255 255 255 1
-  layer_info: "footprint" 12 128 255 255 1
-  layer_info: "part value" 13 255 128 192 1
-  layer_info: "description" 14 157 157 157 1
-  layer_info: "front layer 1" 15 255 255 255 1
-  layer_info: "front layer 2" 16 255 128 0 1
-  layer_info: "back layer 1" 17 0 0 0 1
-  layer_info: "back layer 2" 18 128 128 255 1
+  layer_info: "перемещение" 0 130 130 130 1
+  layer_info: "фон доски" 1 100 100 100 1
+  layer_info: "видимая сетка" 2 97 97 97 1
+  layer_info: "подсветка" 3 255 255 0 1
+  layer_info: "метки" 4 255 255 0 1
+  layer_info: "безхозный" 5 255 0 0 1
+  layer_info: "контур детали" 6 205 205 205 1
+  layer_info: "обозначения" 7 205 205 205 1
+  layer_info: "линни пинов" 8 255 255 128 1
+  layer_info: "имена пинов" 9 255 255 128 1
+  layer_info: "линни цепей" 10 255 255 255 1
+  layer_info: "имена цепей" 11 255 255 255 1
+  layer_info: "футпринты" 12 128 255 255 1
+  layer_info: "названия" 13 255 128 192 1
+  layer_info: "описания" 14 157 157 157 1
+  layer_info: "верхний 1" 15 255 255 255 1
+  layer_info: "верхний 2" 16 255 128 0 1
+  layer_info: "нижний 1" 17 0 0 0 1
+  layer_info: "нижний 2" 18 128 128 255 1
 
-  pdf_layer_info: "dragging" 0 255 255 255 0
-  pdf_layer_info: "background" 1 255 255 255 0
-  pdf_layer_info: "visible grid" 2 255 255 255 0
-  pdf_layer_info: "highlight" 3 255 255 0 1
-  pdf_layer_info: "DRC error" 4 0 0 0 1
-  pdf_layer_info: "ownerless line" 5 0 0 0 1
-  pdf_layer_info: "part outline" 6 0 0 0 1
-  pdf_layer_info: "part name" 7 0 0 166 1
-  pdf_layer_info: "pin line" 8 0 0 0 1
-  pdf_layer_info: "pin name" 9 0 0 0 1
-  pdf_layer_info: "net polyline" 10 43 85 85 1
-  pdf_layer_info: "net name" 11 0 0 0 1
-  pdf_layer_info: "footprint" 12 166 0 0 1
-  pdf_layer_info: "part value" 13 0 0 0 1
-  pdf_layer_info: "description" 14 0 0 0 1
-  pdf_layer_info: "front layer 1" 15 0 0 0 1
-  pdf_layer_info: "front layer 2" 16 133 133 133 1
-  pdf_layer_info: "back layer 1" 17 255 255 255 1
-  pdf_layer_info: "back layer 2" 18 197 197 197 1
-  pdf_layer_info: "back layer 3" 19 255 255 255 0
-  pdf_layer_info: "back layer 4" 20 255 255 255 0
-  pdf_layer_info: "back layer 5" 21 255 255 255 0
-  pdf_layer_info: "back layer 6" 22 255 255 255 0
-  pdf_layer_info: "back layer 7" 23 255 255 255 0
-  pdf_layer_info: "back layer 8" 24 255 255 255 0
-  pdf_layer_info: "back layer 9" 25 255 255 255 0
-  pdf_layer_info: "back layer 10" 26 255 255 255 0
-  pdf_layer_info: "back layer 11" 27 255 255 255 0
-  pdf_layer_info: "back layer 12" 28 255 255 255 0
-  pdf_layer_info: "back layer 13" 29 255 255 255 0
-  pdf_layer_info: "back layer 14" 30 255 255 255 0
+  pdf_layer_info: "перемещение" 0 255 255 255 0
+  pdf_layer_info: "фон доски" 1 255 255 255 0
+  pdf_layer_info: "видимая сетка" 2 255 255 255 0
+  pdf_layer_info: "подсветка" 3 255 255 0 1
+  pdf_layer_info: "метки" 4 0 0 0 1
+  pdf_layer_info: "безхозный" 5 0 0 0 1
+  pdf_layer_info: "контур детали" 6 0 0 0 1
+  pdf_layer_info: "обозначения" 7 0 0 166 1
+  pdf_layer_info: "линни пинов" 8 0 0 0 1
+  pdf_layer_info: "имена пинов" 9 0 0 0 1
+  pdf_layer_info: "линни цепей" 10 43 85 85 1
+  pdf_layer_info: "имена цепей" 11 0 0 0 1
+  pdf_layer_info: "футпринты" 12 166 0 0 1
+  pdf_layer_info: "названия" 13 0 0 0 1
+  pdf_layer_info: "описания" 14 0 0 0 1
+  pdf_layer_info: "верхний 1" 15 0 0 0 1
+  pdf_layer_info: "верхний 2" 16 133 133 133 1
+  pdf_layer_info: "нижний 1" 17 255 255 255 1
+  pdf_layer_info: "нижний 2" 18 197 197 197 1
+  pdf_layer_info: "нижний 3" 19 255 255 255 0
+  pdf_layer_info: "нижний 4" 20 255 255 255 0
+  pdf_layer_info: "нижний 5" 21 255 255 255 0
+  pdf_layer_info: "нижний 6" 22 255 255 255 0
+  pdf_layer_info: "нижний 7" 23 255 255 255 0
+  pdf_layer_info: "нижний 8" 24 255 255 255 0
+  pdf_layer_info: "нижний 9" 25 255 255 255 0
+  pdf_layer_info: "нижний 10" 26 255 255 255 0
+  pdf_layer_info: "нижний 11" 27 255 255 255 0
+  pdf_layer_info: "нижний 12" 28 255 255 255 0
+  pdf_layer_info: "нижний 13" 29 255 255 255 0
+  pdf_layer_info: "нижний 14" 30 255 255 255 0
   pdf_layer_info: "undefined" 31 255 255 255 0
 
 m_bom_colors: 0 0 0 155 155 155 0 0 0 166 166 166 255 255 111 0 0 255 255 193 193
@@ -250,7 +250,7 @@ part_end
 
 n_pins: 3
 rectangle: 7224600 21224601 19775400 38275401
-ref_des: "T1" 17399090 33100641 7 0 2200000 300000 -1 -1 2 1
+ref_des: "VT1" 17399000 33101000 7 0 2200001 300001 -1 -1 2 1
 footprint_name: "BT152" 17399090 29908641 12 0 2200000 300000 -1 -1 2 1
 part_value: "BT152-800R" 17399090 26716641 13 0 2200000 300000 -1 -1 2 1
 polyline: 2 0 6 500000 -1 -1 -1 0

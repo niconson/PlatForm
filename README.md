@@ -25,7 +25,7 @@
 
 Это процедуры, которые применяются одновременно ко всем 3D-объектам в текущем футпринте, чтобы вы могли вращать и поднимать готовую модель по оси Z. Глобальные процедуры не перемещают готовую модель по осям X и Y, так как программа автоматически вычисляет геометрический центр готовой модели, состоящей из одной или нескольких полилиний выдавливания, и помещает его на место центроида. Поэтому, где бы ни находились эти эскизы полилиний, объект все равно окажется в месте расположения центроида. Таким образом, вы всегда можете свободно перемещать начало координат в футпринте и это никак не повлияет на положение 3D-модели (положение 3D-модели можно изменить, переместив центроид).
 
-Now, to see what happened, you need to, in the mode when nothing is selected, press the right-click menu and select `Generate OpenSCAD data`. The program will create 3D `.scad` files in the project folder (\related_files\openscad) and open them through OpenSCAD (OpenSCAD must be installed independently, I recommend the 2024 developer version with the ability to switch to the `Manifold` library in the parameters in the `Functions` tab)
+Теперь, чтобы увидеть, что получилось, нужно в режиме, когда ничего не выделено, вызвать контекстное меню правой кнопки мыши и выбрать `Сгенерировать данные OpenSCAD`. Программа создаст 3D файлы `.scad` в папке проекта (\related_files\openscad) и откроет их через OpenSCAD (OpenSCAD необходимо установить самостоятельно, рекомендую версию разработчика 2024 (или более поздняя), в которой есть библиотека `Manifold`, работающая с объектами гораздо быстрее, чем предыдущая `CGAL`)
 
 ![PCB](https://github.com/Duxah/FreePCB-2/blob/master/pictures/scad_1.png)
 

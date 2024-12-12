@@ -32,5 +32,5 @@ This was a review of a single PCB part. Now, to view the entire printed circuit 
 [View previous versions on GitHub](https://github.com/Duxah/FreePCB-2)
 
 Contacts: 
-- [snapchat](https://www.snapchat.com/add/niconson.com)
-- [telegram](https://www.t.me/niconson) 
+- [Эл.почта](mailto:info@niconson.com)
+- [Телега](https://www.t.me/niconson) 

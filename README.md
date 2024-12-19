@@ -35,4 +35,9 @@
 
 Contacts: 
 - [Эл.почта](mailto:info@niconson.com)
-- [Телега](https://www.t.me/niconson) 
+- [Телега](https://www.t.me/niconson)
+
+История
+---
+1|2|3
+1|2|3

@@ -1,4 +1,3 @@
-Russian_language
 Index
 RefDes
 Package
@@ -15,6 +14,7 @@ Pins
 Holes
 Glued
 CompareNetlist
+Russian_language
 Ignore_case_in_the_filter
 Only_Latin_symbols
 Embed_R

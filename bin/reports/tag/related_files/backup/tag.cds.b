@@ -4,8 +4,8 @@ app_folder: "D:\Разработки\bin"
 version: 1.415
 file_version: 1.415
 project_name: "tag.cds"
-library_folder: "c:\freepcbdoc\freepcb-2\fp_lib"
-full_library_folder: "c:\freepcbdoc\freepcb-2\fp_lib\my_lib"
+library_folder: "d:\разработки\projects\micronix\lib"
+full_library_folder: "?\lib\footprints"
 CAM_folder: ""
 netlist_completed: "0"
 bom_options: "83886112"
@@ -28,14 +28,14 @@ m_client_rect_left: 0
 m_client_rect_right: 1132
 m_client_rect_bottom: 592
 m_client_rect_top: 0
-m_org_x: 18710
-m_org_y: -23429
-m_scale_factor: 147392
+m_org_x: -94673
+m_org_y: -15183
+m_scale_factor: 419876
 m_attr_size: 1000000 110000 1000000 110000 1000000 110000 1000000 110000 1000000 110000 1000000 110000
 m_user_scale: 1.0000000000
 units: MM
 
-m_sel_mask: -1
+m_sel_mask: -2
 m_visible_layers: 524283
 m_top_layer: 6
 m_grid_style: 0
@@ -595,7 +595,7 @@ description: ".n_pages" 137000000 15200012 14 360 1800000 120000 -1 -1 11 2
 polyline: 2 0 18 250000 -1 -1 -1 0
   corner: 1 53000000 17500000 0 0
   corner: 2 57000000 17500000 0 0
-description: "28.03.24|DD.MM.YY DATE" 53750000 18690000 14 360 1500000 120000 -1 -1 11 130
+description: "03.06.24|DD.MM.YY DATE" 53750000 18690000 14 360 1500000 120000 -1 -1 11 130
 
 polyline: 2 0 18 250000 -1 -1 -1 0
   corner: 1 27250000 17500000 0 0
@@ -657,9 +657,9 @@ polyline: 2 0 18 250000 -1 -1 -1 0
 description: "Дата" 54000000 22540000 14 360 1500000 120000 -1 -1 11 2
 
 polyline: 2 0 18 250000 -1 -1 -1 0
-  corner: 1 112000000 6500000 0 0
-  corner: 2 116000000 6500000 0 0
-description: "ООО МИКРОНИКС" 114750000 7540000 14 360 3000000 250000 -1 -1 11 2
+  corner: 1 117600000 6500000 0 0
+  corner: 2 121600000 6500000 0 0
+description: "Niconson ^'|LINK: https://niconson.com/freepcb2'|page_number: 1" 118950000 7540000 14 360 3000000 250000 -1 -1 11 2
 
 part_end
 

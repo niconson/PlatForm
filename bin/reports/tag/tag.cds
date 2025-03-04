@@ -1,11 +1,11 @@
 [options]
 
-app_folder: "D:\–азработки\bin"
-version: 1.415
-file_version: 1.415
+app_folder: "D:\Works\bin"
+version: 1.420
+file_version: 1.420
 project_name: "tag.cds"
-library_folder: "d:\разработки\projects\micronix\lib"
-full_library_folder: "?\lib\footprints"
+library_folder: "D:\Works\fp_lib"
+full_library_folder: "d:\works\fp_lib\lib"
 CAM_folder: ""
 netlist_completed: "0"
 bom_options: "83886112"
@@ -17,7 +17,7 @@ partlist_size_y: "391"
 partlist_pos_x: "1088"
 partlist_pos_y: "95"
 partlist_col_w: "960223292"
-netlist_file_path: "D:\–азработки\bin\reports\tag\related_files\CDS_netlist\GStop-1-R1.fpc"
+netlist_file_path: "D:\Works\bin\reports\tag\related_files\CDS_netlist\GStop-1-R1.fpc"
 pcb_name: "GStop-1-R1.fpc" 1
 netlist_format: 0
 page_mirror_mask: 0
@@ -26,11 +26,11 @@ default_node_width: -1100000
 autosave_interval: 60
 m_client_rect_left: 0
 m_client_rect_right: 1132
-m_client_rect_bottom: 592
+m_client_rect_bottom: 711
 m_client_rect_top: 0
-m_org_x: -94673
-m_org_y: -15183
-m_scale_factor: 419876
+m_org_x: 61910
+m_org_y: -8138
+m_scale_factor: 67812
 m_attr_size: 1000000 110000 1000000 110000 1000000 110000 1000000 110000 1000000 110000 1000000 110000
 m_user_scale: 1.0000000000
 units: MM
@@ -148,57 +148,57 @@ n_additional_layers: 4
 m_pdf_font_i: 22
 m_pdf_margin: 0.01
 pdf_checking: 10
-  layer_info: "dragging" 0 130 130 130 1
-  layer_info: "background" 1 178 178 178 1
-  layer_info: "visible grid" 2 22 22 22 0
-  layer_info: "highlight" 3 255 255 0 1
-  layer_info: "DRC error" 4 0 255 128 1
-  layer_info: "ownerless line" 5 255 0 0 1
-  layer_info: "part outline" 6 233 233 233 1
-  layer_info: "part name" 7 192 192 192 1
-  layer_info: "pin line" 8 0 255 128 1
-  layer_info: "pin name" 9 0 255 128 1
-  layer_info: "net polyline" 10 164 190 255 1
-  layer_info: "net name" 11 255 0 0 1
-  layer_info: "footprint" 12 255 132 132 1
-  layer_info: "part value" 13 255 255 255 1
-  layer_info: "description" 14 160 160 160 1
-  layer_info: "front layer 1" 15 255 255 255 1
-  layer_info: "front layer 2" 16 0 255 0 1
-  layer_info: "back layer 1" 17 128 128 255 1
-  layer_info: "back layer 2" 18 0 0 0 1
+  layer_info: "перемещение" 0 130 130 130 1
+  layer_info: "фон доски" 1 178 178 178 1
+  layer_info: "видима€ сетка" 2 22 22 22 0
+  layer_info: "подсветка" 3 255 255 0 1
+  layer_info: "метки" 4 0 255 128 1
+  layer_info: "безхозный" 5 255 0 0 1
+  layer_info: "контур детали" 6 233 233 233 1
+  layer_info: "обозначени€" 7 192 192 192 1
+  layer_info: "линни пинов" 8 0 255 128 1
+  layer_info: "имена пинов" 9 0 255 128 1
+  layer_info: "линни цепей" 10 164 190 255 1
+  layer_info: "имена цепей" 11 255 0 0 1
+  layer_info: "футпринты" 12 255 132 132 1
+  layer_info: "названи€" 13 255 255 255 1
+  layer_info: "описани€" 14 160 160 160 1
+  layer_info: "верхний 1" 15 255 255 255 1
+  layer_info: "верхний 2" 16 0 255 0 1
+  layer_info: "нижний 1" 17 128 128 255 1
+  layer_info: "нижний 2" 18 0 0 0 1
 
-  pdf_layer_info: "dragging" 0 255 255 255 0
-  pdf_layer_info: "background" 1 255 255 255 0
-  pdf_layer_info: "visible grid" 2 255 255 255 0
-  pdf_layer_info: "highlight" 3 255 255 255 0
-  pdf_layer_info: "DRC error" 4 0 0 0 1
-  pdf_layer_info: "ownerless line" 5 0 0 0 1
-  pdf_layer_info: "part outline" 6 79 79 79 1
-  pdf_layer_info: "part name" 7 0 0 166 1
-  pdf_layer_info: "pin line" 8 0 0 0 1
-  pdf_layer_info: "pin name" 9 0 0 0 1
-  pdf_layer_info: "net polyline" 10 0 0 64 1
-  pdf_layer_info: "net name" 11 0 0 0 1
-  pdf_layer_info: "footprint" 12 166 0 0 1
-  pdf_layer_info: "part value" 13 0 0 0 1
-  pdf_layer_info: "description" 14 0 0 0 1
-  pdf_layer_info: "front layer 1" 15 0 0 0 1
-  pdf_layer_info: "front layer 2" 16 155 155 155 1
-  pdf_layer_info: "back layer 1" 17 200 200 200 1
-  pdf_layer_info: "back layer 2" 18 252 252 252 0
-  pdf_layer_info: "back layer 3" 19 64 128 128 0
-  pdf_layer_info: "back layer 4" 20 64 128 128 1
-  pdf_layer_info: "back layer 5" 21 64 128 128 1
-  pdf_layer_info: "back layer 6" 22 64 128 128 1
-  pdf_layer_info: "back layer 7" 23 255 255 255 0
-  pdf_layer_info: "back layer 8" 24 255 255 255 0
-  pdf_layer_info: "back layer 9" 25 255 255 255 0
-  pdf_layer_info: "back layer 10" 26 255 255 255 0
-  pdf_layer_info: "back layer 11" 27 255 255 255 0
-  pdf_layer_info: "back layer 12" 28 255 255 255 0
-  pdf_layer_info: "back layer 13" 29 255 255 255 0
-  pdf_layer_info: "back layer 14" 30 255 255 255 0
+  pdf_layer_info: "перемещение" 0 255 255 255 0
+  pdf_layer_info: "фон доски" 1 255 255 255 0
+  pdf_layer_info: "видима€ сетка" 2 255 255 255 0
+  pdf_layer_info: "подсветка" 3 255 255 255 0
+  pdf_layer_info: "метки" 4 0 0 0 1
+  pdf_layer_info: "безхозный" 5 0 0 0 1
+  pdf_layer_info: "контур детали" 6 79 79 79 1
+  pdf_layer_info: "обозначени€" 7 0 0 166 1
+  pdf_layer_info: "линни пинов" 8 0 0 0 1
+  pdf_layer_info: "имена пинов" 9 0 0 0 1
+  pdf_layer_info: "линни цепей" 10 0 0 64 1
+  pdf_layer_info: "имена цепей" 11 0 0 0 1
+  pdf_layer_info: "футпринты" 12 166 0 0 1
+  pdf_layer_info: "названи€" 13 0 0 0 1
+  pdf_layer_info: "описани€" 14 0 0 0 1
+  pdf_layer_info: "верхний 1" 15 0 0 0 1
+  pdf_layer_info: "верхний 2" 16 155 155 155 1
+  pdf_layer_info: "нижний 1" 17 200 200 200 1
+  pdf_layer_info: "нижний 2" 18 252 252 252 0
+  pdf_layer_info: "нижний 3" 19 64 128 128 0
+  pdf_layer_info: "нижний 4" 20 64 128 128 1
+  pdf_layer_info: "нижний 5" 21 64 128 128 1
+  pdf_layer_info: "нижний 6" 22 64 128 128 1
+  pdf_layer_info: "нижний 7" 23 255 255 255 0
+  pdf_layer_info: "нижний 8" 24 255 255 255 0
+  pdf_layer_info: "нижний 9" 25 255 255 255 0
+  pdf_layer_info: "нижний 10" 26 255 255 255 0
+  pdf_layer_info: "нижний 11" 27 255 255 255 0
+  pdf_layer_info: "нижний 12" 28 255 255 255 0
+  pdf_layer_info: "нижний 13" 29 255 255 255 0
+  pdf_layer_info: "нижний 14" 30 255 255 255 0
   pdf_layer_info: "undefined" 31 255 255 255 0
 
 m_bom_colors: 0 0 0 0 255 0 77 77 77 166 166 166 255 255 111 0 0 255 255 193 193
@@ -206,7 +206,7 @@ m_bom_colors: 0 0 0 0 255 0 77 77 77 166 166 166 255 255 111 0 0 255 255 193 193
 [graphics]
 
 rename_page: "Page 1"
-bmp_src: "D:\–азработки\bin\reports\tag\related_files\pictures\00001.PIC"
+bmp_src: "D:\Works\bin\reports\tag\related_files\pictures\00001.PIC"
 n_pins: 0
 rectangle: -150400 -150400 148150400 210150400
 ref_des: "Frame2" 151999640 208749770 7 0 0 0 -1 -1 2 1
@@ -595,7 +595,7 @@ description: ".n_pages" 137000000 15200012 14 360 1800000 120000 -1 -1 11 2
 polyline: 2 0 18 250000 -1 -1 -1 0
   corner: 1 53000000 17500000 0 0
   corner: 2 57000000 17500000 0 0
-description: "03.06.24|DD.MM.YY DATE" 53750000 18690000 14 360 1500000 120000 -1 -1 11 130
+description: "28.02.25|DD.MM.YY DATE" 53750000 18690000 14 360 1500000 120000 -1 -1 11 130
 
 polyline: 2 0 18 250000 -1 -1 -1 0
   corner: 1 27250000 17500000 0 0
@@ -659,7 +659,7 @@ description: "ƒата" 54000000 22540000 14 360 1500000 120000 -1 -1 11 2
 polyline: 2 0 18 250000 -1 -1 -1 0
   corner: 1 117600000 6500000 0 0
   corner: 2 121600000 6500000 0 0
-description: "Niconson ^'|LINK: https://niconson.com/freepcb2'|page_number: 1" 118950000 7540000 14 360 3000000 250000 -1 -1 11 2
+description: "Niconson ^'|LINK: https://niconson.com'|page_number: 1" 118950000 7540000 14 360 3000001 120001 -1 -1 11 2
 
 part_end
 
@@ -824,7 +824,7 @@ polyline: 2 0 18 250000 -1 -1 -1 0 0
 description: "(col8 = Printable area index for part)" 150590000 145730000 18 0 1800000 120000 -1 -1 11 2
 
 add_new_page: "Page 2"
-bmp_src: "D:\–азработки\bin\reports\tag\related_files\pictures\00001.PIC"
+bmp_src: "D:\Works\bin\reports\tag\related_files\pictures\00001.PIC"
 n_pins: 0
 rectangle: -150400 -150400 148150400 210150400
 ref_des: "Frame1" 151999640 208749770 7 0 0 0 -1 -1 2 1

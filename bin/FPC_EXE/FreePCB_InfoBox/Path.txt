@@ -26,4 +26,6 @@ check_refs
 check_values
 check_pinname
 check_netpcb
+check_holes_diam
+check_vias
 end

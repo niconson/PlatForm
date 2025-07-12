@@ -1,4 +1,4 @@
-Units: MM
-mask_clearance: 50000
-shrink_paste_mask: 50000
-fill_clearance: 254000
+Units: MIL
+mask_clearance: 101600
+shrink_paste_mask: 0
+fill_clearance: 300000

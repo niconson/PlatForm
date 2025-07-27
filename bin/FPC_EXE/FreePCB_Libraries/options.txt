@@ -1,2 +1,2 @@
-Adr d:\works\projects\micronics\lib\footprints
+Adr D:\Works\fp_lib\lib
 Alpha

@@ -189,8 +189,8 @@ cam_drill_file: 1
 cam_units: 1
 cam_n_x: 6
 cam_n_y: 10
-cam_space_x: 1000000
-cam_space_y: 1000000
+cam_space_x: 5000000
+cam_space_y: 5000000
 
 report_options: 4123
 drc_check_unrouted: 1

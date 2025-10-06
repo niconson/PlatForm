@@ -1,17 +1,17 @@
 [options]
 
-app_folder: "D:\FreePCBDev\FreePCB-2\.\Debug"
+app_folder: "D:\FreePCBDev\Schematic Constructor\Debug"
 version: 2.427
 file_version: 2.427
 project_name: "Driver-01"
 library_folder: "d:\works\fp_lib"
 full_library_folder: "d:\works\fp_lib\lib"
-CAM_folder: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\CAM(Driver-01)(9-14-2025)"
+CAM_folder: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\CAM(Driver-01)(9-18-2025)"
 ses_file_path: ""
 netlist_completed: "0"
 part_search: ""
 png_settings: "800 0.05"
-netlist_file_path: "D:\–азработки\Projects\duxahtech\Led\version-01\related_files\CDS_netlist\Driver-01.fpc.net"
+netlist_file_path: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\related_files\CDS_netlist\Driver-01.fpc.net"
 SMT_connect_copper: "1"
 default_glue_width: "635000"
 dsn_flags: "3"
@@ -20,7 +20,7 @@ dsn_signals_poly: "0"
 autosave_interval: 60
 auto_ratline_disable: "1"
 auto_ratline_disable_min_pins: "100"
-netlist_import_flags: 19399
+netlist_import_flags: 19407
 m_client_rect_left: 110
 m_client_rect_right: 1487
 m_client_rect_bottom: 711
@@ -841,12 +841,6 @@ net: "SET" 2 1 0 0 0 0 1
     seg: 5 15 400000 0 0
     vtx: 6 -23000000 -7390334 15 0 0 0 0
 
-net: "GND_$G4" 0 0 0 0 0 0 1
-
-net: "OUT+_$G1" 0 0 0 0 0 0 1
-
-net: "OUT-_$G1" 0 0 0 0 0 0 1
-
 net: "GND" 9 8 4 0 0 0 1
   pin: 1 C4.1
   pin: 2 C1.1
@@ -899,7 +893,7 @@ net: "GND" 9 8 4 0 0 0 1
     vtx: 2 -13583860 -9740330 0 0 0 0 0
     seg: 2 15 400000 0 0
     vtx: 3 -11283860 -9740330 15 0 0 0 0
-  connect: 8 1 0 1 0 -1
+  connect: 8 1 0 1 0 0
     vtx: 1 -20000000 -7940334 15 0 0 0 0
     seg: 1 9 0 0 0
     vtx: 2 -20000000 -10240333 15 0 0 0 0
@@ -949,14 +943,6 @@ net: "GND" 9 8 4 0 0 0 1
     corner: 28 -6561013 -5498762 0 0
     corner: 29 -6825743 -5321876 0 1
 
-net: "OUT-_$G2" 0 0 0 0 0 0 1
-
-net: "OUT-_$G3" 0 0 0 0 0 0 1
-
-net: "SW_$G4" 0 0 0 0 0 0 1
-
-net: "SW_$G3" 0 0 0 0 0 0 1
-
 net: "NET00002" 3 2 0 0 0 0 1
   pin: 1 R1.1
   pin: 2 DC14.7
@@ -972,10 +958,6 @@ net: "NET00002" 3 2 0 0 0 0 1
     seg: 2 15 400000 0 0
     vtx: 3 -7000000 -8670334 15 0 0 0 0
 
-net: "SW_$G1" 0 0 0 0 0 0 1
-
-net: "SET_$G3" 0 0 0 0 0 0 1
-
 net: "NET00001" 2 1 0 0 0 0 1
   pin: 1 DC14.4
   pin: 2 C4.2
@@ -987,32 +969,6 @@ net: "NET00001" 2 1 0 0 0 0 1
     vtx: 3 -17397279 -9740333 0 0 0 0 0
     seg: 3 15 400000 0 0
     vtx: 4 -15883860 -9740330 15 0 0 0 0
-
-net: "SET_$G2" 0 0 0 0 0 0 1
-
-net: "+E_$G1" 0 0 0 0 0 0 1
-
-net: "GND_$G2" 0 0 0 0 0 0 1
-
-net: "SET_$G1" 0 0 0 0 0 0 1
-
-net: "OUT+_$G4" 0 0 0 0 0 0 1
-
-net: "NET00001_$G4" 0 0 0 0 0 0 1
-
-net: "NET00002_$G4" 0 0 0 0 0 0 1
-
-net: "+E_$G3" 0 0 0 0 0 0 1
-
-net: "NET00001_$G3" 0 0 0 0 0 0 1
-
-net: "NET00002_$G3" 0 0 0 0 0 0 1
-
-net: "NET00001_$G1" 0 0 0 0 0 0 1
-
-net: "NET00002_$G1" 0 0 0 0 0 0 1
-
-net: "+E_$G2" 0 0 0 0 0 0 1
 
 net: "OUT+" 4 2 2 0 0 0 1
   pin: 1 R1.2
@@ -1037,10 +993,6 @@ net: "OUT+" 4 2 2 0 0 0 1
     corner: 2 -7400340 -6220620 0 0
     corner: 3 -7400340 -2000400 0 0
     corner: 4 -1589350 -2000400 0 1
-
-net: "OUT+_$G2" 0 0 0 0 0 0 1
-
-net: "GND_$G1" 0 0 0 0 0 0 1
 
 net: "SW" 3 1 2 0 0 0 1
   pin: 1 L1.1

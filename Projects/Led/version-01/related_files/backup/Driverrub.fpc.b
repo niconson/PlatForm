@@ -1,6 +1,6 @@
 [options]
 
-app_folder: "D:\Works\bin"
+app_folder: "D:\FreePCBDev\Schematic Constructor\Debug"
 version: 2.427
 file_version: 2.427
 project_name: "Driver-01"
@@ -8,10 +8,10 @@ library_folder: "d:\works\fp_lib"
 full_library_folder: "d:\works\fp_lib\lib"
 CAM_folder: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\CAM(Driver-01)(9-18-2025)"
 ses_file_path: ""
-netlist_completed: "1"
+netlist_completed: "0"
 part_search: ""
 png_settings: "800 0.05"
-netlist_file_path: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\related_files\CDS_netlist\Driver-01.fpc.net"
+netlist_file_path: "D:\–азработки\Projects\duxahtech\Led\version-01\related_files\CDS_netlist\Driver-01.fpc.net"
 SMT_connect_copper: "1"
 default_glue_width: "635000"
 dsn_flags: "3"
@@ -20,7 +20,7 @@ dsn_signals_poly: "0"
 autosave_interval: 60
 auto_ratline_disable: "1"
 auto_ratline_disable_min_pins: "100"
-netlist_import_flags: 19407
+netlist_import_flags: 19399
 m_client_rect_left: 110
 m_client_rect_right: 1487
 m_client_rect_bottom: 711
@@ -218,8 +218,8 @@ n_width_menu: 4
 n_copper_layers: 2
   layer_info: "движение" 0 255 255 0 1 127 127 127 0
   layer_info: "фон доски" 1 239 239 239 1 255 255 255 0
-  layer_info: "подсветка" 2 255 255 0 1 255 255 0 1
-  layer_info: "линии сетки" 3 238 238 238 1 0 0 0 0
+  layer_info: "подсветка" 2 255 255 0 1 0 0 0 0
+  layer_info: "линии сетки" 3 255 255 255 1 255 255 0 1
   layer_info: "тестирование" 4 255 0 0 1 128 64 0 0
   layer_info: "контур платы" 5 0 115 60 1 0 185 120 1
   layer_info: "скрайбинг (V)" 6 255 0 128 1 127 127 127 0
@@ -411,35 +411,26 @@ package: "CD54"
     pin: "2" 0 3900000 0 0 ""
       top_pad: 3 4000000 1250000 1250000 0
 
-name: "Shield"
-author: "Ivex"
-package: "Shield"
+name: "CC0805"
+author: "i"
+package: "CC0805"
+description: "Capasitors"
   units: NM
-  sel_rect: -10114300 -2614300 10114300 2614300
-  ref_text: 1270000 2000000 -5000000 0 177800
-  value_text: 1270000 1950000 -6540000 0 177800
+  sel_rect: -1445260 -674370 1445260 674370
+  ref_text: 600000 -2500000 0 0 100000
+  value_text: 500000 -2500000 -1000000 0 50000
   centroid: 0 0 0 0
-  outline_polyline: 177800 -9000000 2500000 1 0 7
-    next_corner: -10000000 1500000 2
-    next_corner: -10000000 -1500000 0
-    next_corner: -9000000 -2500000 2
-    next_corner: 9000000 -2500000 0
-    next_corner: 10000000 -1500000 2
-    next_corner: 10000000 1500000 0
-    next_corner: 9000000 2500000 2
+  outline_polyline: 150000 1000000 500000 0 0 7
+    next_corner: -1000000 500000 0
+    next_corner: -1000000 -500000 0
+    next_corner: 1000000 -500000 0
     close_polyline: 0
-    openscad_data: "// hull()/*fill the space*/ //|// Global lift 0.000mm //|// Global rotation 0.000 //|// matrix: 1 1 1 0.000 0.000 0.000 //|// resolution $fn = 20 //|color( `[0.5,0.5,0.5]` )|{|    *corner1*, 0.0 ])|    {|        linear_extrude( 1.000, scale= 1.000, convexity=Convexity )|        {|            polygon([ *content* ]);|        }|    }|}|"
-  outline_polyline: 177800 -9000000 3500000 0 0 7
-    next_corner: -11000000 1500000 2
-    next_corner: -11000000 -1500000 0
-    next_corner: -9000000 -3500000 2
-    next_corner: 9000000 -3500000 0
-    next_corner: 11000000 -1500000 2
-    next_corner: 11000000 1500000 0
-    next_corner: 9000000 3500000 2
-    close_polyline: 0
-    openscad_data: "// Global rotation 0.000 //|// Global lift 0.000mm //|// matrix: 1 1 1 0.000 0.000 0.000 //|// resolution $fn = 20 //|color( `[0.5,0.5,0.5]` )|{|    translate([ 0.000,  0.000,  1.000 ])|    {|        *corner1*, 0.0 ])|        {|            linear_extrude( 1.000, scale= 1.000, convexity=Convexity )|            {|                polygon([ *content* ]);|            }|        }|    }|}|"
-  n_pins: 0
+    openscad_data: "// Global rotation 0.000 //|// Global lift 0.000mm //|// matrix: 1 1 1 0.000 0.000 0.000 //|// resolution $fn = 20 //|color( `Aqua` )|{|    *corner1*, 0.0 ])|    {|        linear_extrude( 1.000, scale= 1.000, convexity=Convexity )|        {|            polygon([ *content* ]);|        }|    }|}|"
+  n_pins: 2
+    pin: "1" 0 -920000 0 0 ""
+      top_pad: 4 1300000 500000 500000 0
+    pin: "2" 0 920000 0 0 ""
+      top_pad: 4 1300000 500000 500000 0
 
 name: "C0402"
 author: "Ivex"
@@ -472,26 +463,35 @@ package: "R0402"
     pin: "2" 0 1300000 0 0 ""
       top_pad: 3 800000 450000 450000 0
 
-name: "CC0805"
-author: "i"
-package: "CC0805"
-description: "Capasitors"
+name: "Shield"
+author: "Ivex"
+package: "Shield"
   units: NM
-  sel_rect: -1445260 -674370 1445260 674370
-  ref_text: 600000 -2500000 0 0 100000
-  value_text: 500000 -2500000 -1000000 0 50000
+  sel_rect: -10114300 -2614300 10114300 2614300
+  ref_text: 1270000 2000000 -5000000 0 177800
+  value_text: 1270000 1950000 -6540000 0 177800
   centroid: 0 0 0 0
-  outline_polyline: 150000 1000000 500000 0 0 7
-    next_corner: -1000000 500000 0
-    next_corner: -1000000 -500000 0
-    next_corner: 1000000 -500000 0
+  outline_polyline: 177800 -9000000 2500000 1 0 7
+    next_corner: -10000000 1500000 2
+    next_corner: -10000000 -1500000 0
+    next_corner: -9000000 -2500000 2
+    next_corner: 9000000 -2500000 0
+    next_corner: 10000000 -1500000 2
+    next_corner: 10000000 1500000 0
+    next_corner: 9000000 2500000 2
     close_polyline: 0
-    openscad_data: "// Global rotation 0.000 //|// Global lift 0.000mm //|// matrix: 1 1 1 0.000 0.000 0.000 //|// resolution $fn = 20 //|color( `Aqua` )|{|    *corner1*, 0.0 ])|    {|        linear_extrude( 1.000, scale= 1.000, convexity=Convexity )|        {|            polygon([ *content* ]);|        }|    }|}|"
-  n_pins: 2
-    pin: "1" 0 -920000 0 0 ""
-      top_pad: 4 1300000 500000 500000 0
-    pin: "2" 0 920000 0 0 ""
-      top_pad: 4 1300000 500000 500000 0
+    openscad_data: "// hull()/*fill the space*/ //|// Global lift 0.000mm //|// Global rotation 0.000 //|// matrix: 1 1 1 0.000 0.000 0.000 //|// resolution $fn = 20 //|color( `[0.5,0.5,0.5]` )|{|    *corner1*, 0.0 ])|    {|        linear_extrude( 1.000, scale= 1.000, convexity=Convexity )|        {|            polygon([ *content* ]);|        }|    }|}|"
+  outline_polyline: 177800 -9000000 3500000 0 0 7
+    next_corner: -11000000 1500000 2
+    next_corner: -11000000 -1500000 0
+    next_corner: -9000000 -3500000 2
+    next_corner: 9000000 -3500000 0
+    next_corner: 11000000 -1500000 2
+    next_corner: 11000000 1500000 0
+    next_corner: 9000000 3500000 2
+    close_polyline: 0
+    openscad_data: "// Global rotation 0.000 //|// Global lift 0.000mm //|// matrix: 1 1 1 0.000 0.000 0.000 //|// resolution $fn = 20 //|color( `[0.5,0.5,0.5]` )|{|    translate([ 0.000,  0.000,  1.000 ])|    {|        *corner1*, 0.0 ])|        {|            linear_extrude( 1.000, scale= 1.000, convexity=Convexity )|            {|                polygon([ *content* ]);|            }|        }|    }|}|"
+  n_pins: 0
 
 name: "SMTDIODE"
 author: "Ivex"
@@ -765,31 +765,6 @@ part: VIA2
 
 [nets]
 
-net: "OUT-" 3 2 0 0 0 0 1
-  pin: 1 DC14.6
-  pin: 2 KT3.1
-  pin: 3 R3.2
-  connect: 1 2 0 5 0 0
-    vtx: 1 -7199999 -10500000 15 0 0 0 0
-    seg: 1 15 400000 0 0
-    vtx: 2 -7200950 -9898530 0 0 0 0 0
-    seg: 2 15 400000 0 0
-    vtx: 3 -7593380 -9504830 0 0 0 0 0
-    seg: 3 15 400000 0 0
-    vtx: 4 -9475608 -9504651 0 0 0 0 0
-    seg: 4 15 400000 0 0
-    vtx: 5 -9889925 -9090334 0 0 0 0 0
-    seg: 5 15 400000 0 0
-    vtx: 6 -11283860 -9090330 15 0 0 0 0
-  connect: 2 2 1 3 0 0
-    vtx: 1 -7199999 -10500000 15 0 0 0 0
-    seg: 1 15 400000 0 0
-    vtx: 2 -5784900 -10500510 0 0 0 0 0
-    seg: 2 15 400000 0 0
-    vtx: 3 -5284520 -10000130 0 0 0 0 0
-    seg: 3 15 400000 0 0
-    vtx: 4 -3000000 -9999999 15 0 0 0 0
-
 net: "+E" 5 2 2 0 0 0 1
   pin: 1 C1.2
   pin: 2 L1.2
@@ -825,6 +800,31 @@ net: "+E" 5 2 2 0 0 0 1
     corner: 9 -24411460 -2000400 0 0
     corner: 10 -15284120 -2000400 0 1
 
+net: "OUT-" 3 2 0 0 0 0 1
+  pin: 1 DC14.6
+  pin: 2 KT3.1
+  pin: 3 R3.2
+  connect: 1 2 0 5 0 0
+    vtx: 1 -7199999 -10500000 15 0 0 0 0
+    seg: 1 15 400000 0 0
+    vtx: 2 -7200950 -9898530 0 0 0 0 0
+    seg: 2 15 400000 0 0
+    vtx: 3 -7593380 -9504830 0 0 0 0 0
+    seg: 3 15 400000 0 0
+    vtx: 4 -9475608 -9504651 0 0 0 0 0
+    seg: 4 15 400000 0 0
+    vtx: 5 -9889925 -9090334 0 0 0 0 0
+    seg: 5 15 400000 0 0
+    vtx: 6 -11283860 -9090330 15 0 0 0 0
+  connect: 2 2 1 3 0 0
+    vtx: 1 -7199999 -10500000 15 0 0 0 0
+    seg: 1 15 400000 0 0
+    vtx: 2 -5784900 -10500510 0 0 0 0 0
+    seg: 2 15 400000 0 0
+    vtx: 3 -5284520 -10000130 0 0 0 0 0
+    seg: 3 15 400000 0 0
+    vtx: 4 -3000000 -9999999 15 0 0 0 0
+
 net: "SET" 2 1 0 0 0 0 1
   pin: 1 KT1.1
   pin: 2 DC14.3
@@ -840,6 +840,12 @@ net: "SET" 2 1 0 0 0 0 1
     vtx: 5 -21640850 -7391550 0 0 0 0 0
     seg: 5 15 400000 0 0
     vtx: 6 -23000000 -7390334 15 0 0 0 0
+
+net: "GND_$G4" 0 0 0 0 0 0 1
+
+net: "OUT+_$G1" 0 0 0 0 0 0 1
+
+net: "OUT-_$G1" 0 0 0 0 0 0 1
 
 net: "GND" 9 8 4 0 0 0 1
   pin: 1 C4.1
@@ -943,6 +949,14 @@ net: "GND" 9 8 4 0 0 0 1
     corner: 28 -6561013 -5498762 0 0
     corner: 29 -6825743 -5321876 0 1
 
+net: "OUT-_$G2" 0 0 0 0 0 0 1
+
+net: "OUT-_$G3" 0 0 0 0 0 0 1
+
+net: "SW_$G4" 0 0 0 0 0 0 1
+
+net: "SW_$G3" 0 0 0 0 0 0 1
+
 net: "NET00002" 3 2 0 0 0 0 1
   pin: 1 R1.1
   pin: 2 DC14.7
@@ -958,6 +972,10 @@ net: "NET00002" 3 2 0 0 0 0 1
     seg: 2 15 400000 0 0
     vtx: 3 -7000000 -8670334 15 0 0 0 0
 
+net: "SW_$G1" 0 0 0 0 0 0 1
+
+net: "SET_$G3" 0 0 0 0 0 0 1
+
 net: "NET00001" 2 1 0 0 0 0 1
   pin: 1 DC14.4
   pin: 2 C4.2
@@ -969,6 +987,32 @@ net: "NET00001" 2 1 0 0 0 0 1
     vtx: 3 -17397279 -9740333 0 0 0 0 0
     seg: 3 15 400000 0 0
     vtx: 4 -15883860 -9740330 15 0 0 0 0
+
+net: "SET_$G2" 0 0 0 0 0 0 1
+
+net: "+E_$G1" 0 0 0 0 0 0 1
+
+net: "GND_$G2" 0 0 0 0 0 0 1
+
+net: "SET_$G1" 0 0 0 0 0 0 1
+
+net: "OUT+_$G4" 0 0 0 0 0 0 1
+
+net: "NET00001_$G4" 0 0 0 0 0 0 1
+
+net: "NET00002_$G4" 0 0 0 0 0 0 1
+
+net: "+E_$G3" 0 0 0 0 0 0 1
+
+net: "NET00001_$G3" 0 0 0 0 0 0 1
+
+net: "NET00002_$G3" 0 0 0 0 0 0 1
+
+net: "NET00001_$G1" 0 0 0 0 0 0 1
+
+net: "NET00002_$G1" 0 0 0 0 0 0 1
+
+net: "+E_$G2" 0 0 0 0 0 0 1
 
 net: "OUT+" 4 2 2 0 0 0 1
   pin: 1 R1.2
@@ -993,6 +1037,10 @@ net: "OUT+" 4 2 2 0 0 0 1
     corner: 2 -7400340 -6220620 0 0
     corner: 3 -7400340 -2000400 0 0
     corner: 4 -1589350 -2000400 0 1
+
+net: "OUT+_$G2" 0 0 0 0 0 0 1
+
+net: "GND_$G1" 0 0 0 0 0 0 1
 
 net: "SW" 3 1 2 0 0 0 1
   pin: 1 L1.1

@@ -1,17 +1,17 @@
 [options]
 
-app_folder: "D:\Works\bin"
+app_folder: "D:\FreePCBDev\Schematic Constructor\Debug"
 version: 2.427
 file_version: 2.427
-project_name: "Driver-01"
+project_name: "Driverrub"
 library_folder: "d:\works\fp_lib"
 full_library_folder: "d:\works\fp_lib\lib"
 CAM_folder: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\CAM(Driver-01)(9-18-2025)"
 ses_file_path: ""
-netlist_completed: "1"
+netlist_completed: "0"
 part_search: ""
 png_settings: "800 0.05"
-netlist_file_path: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\related_files\CDS_netlist\Driver-01.fpc.net"
+netlist_file_path: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\related_files\CDS_netlist\Driverrub.fpc.net"
 SMT_connect_copper: "1"
 default_glue_width: "635000"
 dsn_flags: "3"
@@ -218,8 +218,8 @@ n_width_menu: 4
 n_copper_layers: 2
   layer_info: "движение" 0 255 255 0 1 127 127 127 0
   layer_info: "фон доски" 1 239 239 239 1 255 255 255 0
-  layer_info: "подсветка" 2 255 255 0 1 255 255 0 1
-  layer_info: "линии сетки" 3 238 238 238 1 0 0 0 0
+  layer_info: "подсветка" 2 255 255 0 1 0 0 0 0
+  layer_info: "линии сетки" 3 255 255 255 1 255 255 0 1
   layer_info: "тестирование" 4 255 0 0 1 128 64 0 0
   layer_info: "контур платы" 5 0 115 60 1 0 185 120 1
   layer_info: "скрайбинг (V)" 6 255 0 128 1 127 127 127 0
@@ -943,7 +943,19 @@ net: "GND" 9 8 4 0 0 0 1
     corner: 28 -6561013 -5498762 0 0
     corner: 29 -6825743 -5321876 0 1
 
-net: "NET00002" 3 2 0 0 0 0 1
+net: "NET00002" 2 1 0 0 0 0 1
+  pin: 1 DC14.4
+  pin: 2 C4.2
+  connect: 1 1 0 3 0 0
+    vtx: 1 -18700000 -10240333 15 0 0 0 0
+    seg: 1 15 400000 0 0
+    vtx: 2 -17897279 -10240333 0 0 0 0 0
+    seg: 2 15 400000 0 0
+    vtx: 3 -17397279 -9740333 0 0 0 0 0
+    seg: 3 15 400000 0 0
+    vtx: 4 -15883860 -9740330 15 0 0 0 0
+
+net: "NET00001" 3 2 0 0 0 0 1
   pin: 1 R1.1
   pin: 2 DC14.7
   pin: 3 R2.2
@@ -957,18 +969,6 @@ net: "NET00002" 3 2 0 0 0 0 1
     vtx: 2 -8460000 -8670333 0 0 0 0 0
     seg: 2 15 400000 0 0
     vtx: 3 -7000000 -8670334 15 0 0 0 0
-
-net: "NET00001" 2 1 0 0 0 0 1
-  pin: 1 DC14.4
-  pin: 2 C4.2
-  connect: 1 1 0 3 0 0
-    vtx: 1 -18700000 -10240333 15 0 0 0 0
-    seg: 1 15 400000 0 0
-    vtx: 2 -17897279 -10240333 0 0 0 0 0
-    seg: 2 15 400000 0 0
-    vtx: 3 -17397279 -9740333 0 0 0 0 0
-    seg: 3 15 400000 0 0
-    vtx: 4 -15883860 -9740330 15 0 0 0 0
 
 net: "OUT+" 4 2 2 0 0 0 1
   pin: 1 R1.2

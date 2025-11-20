@@ -1,0 +1,15 @@
+//  This cube is designed to create projections of printed 
+//  circuit board(PCB) parts independently from each other 
+//  on both the bottom and top sides.This is done by subtracting 
+//  the parts on the opposite side from the original 3D model 
+//  using the different() function.To obtain a projection of the 
+//  top - side parts, subtract the bottom - side parts, and vice versa.
+
+originX_Package = -10.003;
+originY_Package = -10.003;
+max_height_Package = 22.545;
+module Draw_Package_CUBE(side, var)
+{
+    translate([var?0:originX_Package, var?0:originY_Package, side?0:-max_height])
+    cube(max_height_Package);
+}

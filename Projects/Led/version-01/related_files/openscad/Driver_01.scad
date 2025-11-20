@@ -1,62 +1,140 @@
+  /*-----------------------------------------------\
+  |  OpenSCAD code generator by Schemator&Platform |
+  |  repositories https://github.com/niconson      |
+  |  Niconson(R), All rights reserved              |
+  \-----------------------------------------------*/
 include <Driver_01.lib>
-Convexity = 3;
+include <Package.lib>
+Convexity = 2;
 board_h = 1.500;
 
-// Drawing control
-E = 1;
-enable_draw_board_outline = E;
-enable_draw_holes         = E;
-enable_draw_pads          = E;
-enable_draw_R0402         = E;
-enable_draw_Pad2x2        = E;
-enable_draw_CD54          = E;
-enable_draw_MSOP_8T       = E;
-enable_draw_SMTDIODE      = E;
-enable_draw_C0402         = E;
-enable_draw_CC0805        = E; 
-enable_draw_Package       = 0; // was added to the PCB  
-enable_draw_Shield        = 0; // was added to the PCB 
 
 
-// MODE
-MODE = 1;
-// 1 - 3D view
-// 2 - projection (top)
-// 3 - projection (right)
-// 4 - projection with mt.holes (right)
+//// Drawing mode
+MODE = 1;  // 1: full 3D view
+           // 2: projection of top copper
+           // 3: projection of bottom copper
+           // 4: projection of top packages
+           // 5: projection of bottom packages
+           // 6: lateral projection
+           // 7: frontal projection
+           // Set the origin in the pcb editor to the
+           // location where you want the cut to be:
+           // 8: custom lateral projection
+           // 9: custom frontal projection
+           // 10: custom combo projection.
 
-if( MODE == 1 )
-    OBJ();
-else if( MODE == 2 )
-    projection(true)
-    translate([0,0,-3.89])
-    OBJ();
-else if( MODE == 3 || MODE == 4 )
-    projection(MODE==3?false:true)
-    difference()
-    {
-        rotate([90,0,0])
-        OBJ();
-        translate([0,0,-30.5])
-        cube(50, center=true);
-        translate([0,0,30.5])
-        cube(50, center=true);
-    }
+dir = 0;   // view direction for mode 6-10
+pdist = 10; // distance between projections for mode 10
 
-module OBJ() difference()
+
+
+//// Drawing control
+E = true;
+drw_board_outline      = (MODE<4||MODE>5)?1:0;
+drw_copper             = MODE<4?1:0;
+drw_holes              = MODE<4?1:0;
+drw_pads               = MODE<4?1:0;
+drw_Driver_01_C0402    = E;
+drw_Driver_01_RTLECS   = E;
+drw_Driver_01_CD54     = E;
+drw_Driver_01_MSOP_8T  = E;
+drw_Driver_01_SMTDIODE = E;
+drw_Driver_01_CC0805   = E;
+
+
+
+//// Drawing module
+frozenCoordinates = 0; /* Wherever you move
+the PCB in the PCB editor, the position of the 3D
+model will remain the same. Make true if you want
+to use this option*/
+
+module Main (frozen, custom=true)
 {
-    union()
-    {
-        translate([0,0,-2])
-        Pcb_Driver_01 ();
-        rotate([180,0,0])
-        Draw_Package ();
-    }
-    //translate([0,12,-6.1])
-    //rotate([180,0,0])
-    //Draw_Shield ();
-    translate([0,-7.1,-14])
-    rotate([90,0,0])
-    Draw_Shield ();
-}  
-                 
+  Pcb_Driver_01 (frozen);
+  if(custom) translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, 0])
+  {
+    // user field
+    // add external objects here (optional)
+    // for example, uncomment the following:
+    /*
+    color("aqua", 0.5)
+    translate([0,0,0])
+    rotate([0,0,0])
+    cube(10);
+    */
+    
+    // any pcb in the project folder
+    // requires inclusion of <.lib> header:
+    render()
+    translate([12,5,-9.000])
+    Pcb_Package (1);
+    
+    // end of user field
+  }
+}
+
+
+
+//// Drawing
+if (MODE == 1)
+ Main (frozenCoordinates);
+else if (MODE == 2)
+ projection(true)
+  translate([0, 0, -0.010])
+   Main (frozenCoordinates, 0);
+else if (MODE == 3)
+ //mirror([1, 0, 0])
+  projection(true)
+   translate([0, 0, board_h + 0.010])
+    Main (frozenCoordinates, 0);
+else if (MODE == 4)
+ projection()difference(){
+  Main (frozenCoordinates, 0);
+  Draw_Driver_01_CUBE(0, frozenCoordinates);}
+else if (MODE == 5)
+ //mirror([1, 0, 0])
+  projection()difference(){
+   Main (frozenCoordinates, 0);
+   Draw_Driver_01_CUBE(1, frozenCoordinates);}
+else if (MODE == 6)
+ projection()
+  rotate([0, dir?-90:90, 0])
+   Main (frozenCoordinates, 0);
+else if (MODE == 7)
+ projection()
+  rotate([dir?90:-90, 0, 0])
+   Main (frozenCoordinates, 0);
+else if (MODE == 8)
+ projection(true)
+  translate([0, 0, frozenCoordinates?-originX_Driver_01:0])
+   rotate([0, dir?-90:90, 0])
+    Main(frozenCoordinates);
+else if (MODE == 9)
+ projection(true)
+  translate([0, 0, frozenCoordinates?-originY_Driver_01:0])
+   rotate([dir?90:-90, 0, 0])
+    Main(frozenCoordinates);
+else if (MODE == 10)
+{
+  translate([frozenCoordinates?-pdist:originX_Driver_01+originY_Driver_01-pdist, 0, 0])
+  rotate(90)
+  {
+    projection(true)
+     translate([0, 0, frozenCoordinates?(dir?originX_Driver_01:-originX_Driver_01):0])
+      rotate([0, dir?-90:90, 0])
+       Main(frozenCoordinates); 
+    projection()
+     rotate([0, dir?-90:90, 0])
+      Main(frozenCoordinates, 0); 
+  }
+  projection(true)
+   translate([0, 0, frozenCoordinates?(dir?originY_Driver_01:-originY_Driver_01):0])
+    rotate([dir?90:-90, 0, 0])
+     Main(frozenCoordinates); 
+  projection()
+   rotate([dir?90:-90, 0, 0])
+    Main(frozenCoordinates, 0); 
+}
+     

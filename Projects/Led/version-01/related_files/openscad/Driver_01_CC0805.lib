@@ -1,0 +1,59 @@
+//============================================
+// Code builder for OpenScad via Freepcb-2
+// Author: niconson.com (c) 2014-2025
+// Sites: https://niconson.com/freepcb2
+//        https://github.com/niconson
+//============================================
+
+
+// Polylines
+
+
+// Footprint
+module fp_Driver_01_CC0805 ()
+{
+    union()
+    {
+        // end of union
+    }
+    // end of module
+}
+
+
+// Footprint
+module FDriver_01_CC0805 ()
+{
+    difference()
+    {
+        union()
+        {
+            translate([ -0.000,  -0.000,  0.100 ])
+                fp_Driver_01_CC0805();
+
+            // pads
+            if( is_undef(drw_pads) ){} else if( drw_pads )
+            color( "Lavender" )
+            {
+                $fn=8;
+                translate([ -0.920, 0.000, -0.050 ])
+                  linear_extrude( 0.100 )
+                    polygon([[ 0.500, 0.650 ],
+                            [ -0.500, 0.650 ],
+                            [ -0.500, -0.650 ],
+                            [ 0.500, -0.650 ]]);
+                translate([ 0.920, 0.000, -0.050 ])
+                  linear_extrude( 0.100 )
+                    polygon([[ 0.500, 0.650 ],
+                            [ -0.500, 0.650 ],
+                            [ -0.500, -0.650 ],
+                            [ 0.500, -0.650 ]]);
+                // end of pins
+            }
+            // end of union
+        }
+        // end of difference
+    }
+    // end of module
+}
+
+

@@ -1,0 +1,15 @@
+//  This cube is designed to create projections of printed 
+//  circuit board(PCB) parts independently from each other 
+//  on both the bottom and top sides.This is done by subtracting 
+//  the parts on the opposite side from the original 3D model 
+//  using the different() function.To obtain a projection of the 
+//  top - side parts, subtract the bottom - side parts, and vice versa.
+
+originX_Driver_01 = -22.000;
+originY_Driver_01 = -15.250;
+max_height_Driver_01 = 44.000;
+module Draw_Driver_01_CUBE(side, var)
+{
+    translate([var?0:originX_Driver_01, var?0:originY_Driver_01, side?0:-max_height_Driver_01])
+    cube(max_height_Driver_01);
+}

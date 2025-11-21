@@ -25,9 +25,9 @@ m_client_rect_left: 110
 m_client_rect_right: 1487
 m_client_rect_bottom: 594
 m_client_rect_top: 0
-m_org_x: -8814
-m_org_y: -3648
-m_scale_factor: 18309
+m_org_x: 594
+m_org_y: 4282
+m_scale_factor: 34512
 part_line_visible: 1
 merge_shown: 1
 pdf_pin1: -0.700000
@@ -242,7 +242,7 @@ name: "Package"
 author: "Ivex"
 package: "Package"
   units: NM
-  sel_rect: 2147458247 2147458247 -2147458248 -2147458248
+  sel_rect: -18114300 -8614300 18114300 8614300
   ref_text: 1270000 1950000 -4000000 0 177800
   value_text: 1270000 1950000 -6540000 0 177800
   centroid: 0 0 0 0
@@ -330,7 +330,7 @@ package: "Package"
     next_corner: 15500000 -5500000 0
     close_polyline: 0
     openscad_data: "// Global lift 0.000mm //|// Global rotation 0.000 //|// matrix: 1 1 1 0.000 0.000 0.000 //|// resolution $fn = 20 //|color( `[0.5,0.5,0.5]` )|{|    translate([ 0.000,  8.000,  2.000 ])|    {|        *corner1*, 0.0 ])|        {|            rotate([ 90.000,  0.000,  0.000 ])|            {|                linear_extrude( 6.000, scale= 1.000, convexity=Convexity )|                {|                    polygon([ *content* ]);|                }|            }|        }|    }|}|"
-  outline_polyline: 177800 -18000000 8500000 0 0 4
+  outline_polyline: 177800 -18000000 8500000 1 0 4
     next_corner: -18000000 -8500000 0
     next_corner: 18000000 -8500000 0
     next_corner: 18000000 8500000 0
@@ -368,7 +368,7 @@ package: "Package"
 part: VIA1
   ref_text: 0 0 0 0 0 0
   shape: "Package"
-  pos: 0 0 0 180 0
+  pos: 24500000 15000000 0 180 0
 
 [nets]
 

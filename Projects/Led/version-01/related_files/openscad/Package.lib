@@ -45,7 +45,7 @@ module Draw_BO_Package (bAll=0)
 */
 module Draw_Package_Package ()
 {
-    translate([ 0.000, 0.000, 0.0 ])
+    translate([ 24.500, 15.000, 0.0 ])
       rotate([ 0.0, 0.0, -180.000 ])
         FPackage_Package();
 }

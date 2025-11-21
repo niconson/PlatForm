@@ -23,7 +23,7 @@ MODE = 1;  // 1: full 3D view
            // 9: custom frontal projection
            // 10: custom combo projection.
 
-dir = 0;   // view direction for mode 6 and 7
+dir = 0;   // view direction for 6...10 modes
 pdist = 0; // distance between projections for mode 10
 
 
@@ -38,16 +38,22 @@ drw_Package_Package = E;
 
 
 
-//// Drawing module
-frozenCoordinates = false; /* Wherever you move
+//// Drawing modules
+/*
+coordinates:*/frozen = false;/* Wherever you move
 the PCB in the PCB editor, the position of the 3D
 model will remain the same. Make true if you want
 to use this option*/
 
-module Main (frozen, custom=true)
+module Main (custom=true)
 {
-  Pcb_Package (frozen);
-  if(custom) translate([frozen?0:originX_Package, frozen?0:originY_Package, 0])
+  Pcb_Package(frozen);
+  if(custom) Custom();
+}
+
+module Custom ()
+{
+  translate([frozen?0:originX_Package, frozen?0:originY_Package, 0])
   {
     // user field
     // add external objects here (optional)
@@ -59,8 +65,9 @@ module Main (frozen, custom=true)
     cube(10);
     */
     /*
-    // any pcb in the project folder
-    // requires inclusion of <.lib> header:
+    // add  any  PCB  from  the  project  folder,
+    // any pcb in the project folder will require
+    // the <.lib> header (See top) to be included:
     render()
     translate([0,0,50.000])
     Pcb_Package (1);
@@ -72,62 +79,66 @@ module Main (frozen, custom=true)
 
 
 //// Drawing
+cube_scaleX = 1.0;// option for mode 4...5
+cube_scaleY = 1.0;// option for mode 4...5
+cube_scaleZ = 1.0;// option for mode 4...5
 if (MODE == 1)
- Main (frozenCoordinates);
+ Main();
 else if (MODE == 2)
  projection(true)
   translate([0, 0, -0.010])
-   Main (frozenCoordinates, 0);
+   Main(0);
 else if (MODE == 3)
  //mirror([1, 0, 0])
   projection(true)
    translate([0, 0, board_h + 0.010])
-    Main (frozenCoordinates, 0);
+    Main(0);
 else if (MODE == 4)
  projection()difference(){
-  Main (frozenCoordinates, 0);
-  Draw_Package_CUBE(0, frozenCoordinates);}
+  Main(0);
+  Draw_Package_CUBE(0, frozen);}
 else if (MODE == 5)
  //mirror([1, 0, 0])
   projection()difference(){
-   Main (frozenCoordinates, 0);
-   Draw_Package_CUBE(1, frozenCoordinates);}
+   Main(0);
+   Draw_Package_CUBE(1, frozen);}
 else if (MODE == 6)
  projection()
   rotate([0, dir?-90:90, 0])
-   Main (frozenCoordinates, 0);
+   Main(0);
 else if (MODE == 7)
  projection()
   rotate([dir?90:-90, 0, 0])
-   Main (frozenCoordinates, 0);
+   Main(0);
 else if (MODE == 8)
  projection(true)
-  translate([0, 0, frozenCoordinates?-originX_Package:0])
+  translate([0, 0, frozen?(dir?originX_Package:-originX_Package):0])
    rotate([0, dir?-90:90, 0])
-    Main(frozenCoordinates);
+    Main();
 else if (MODE == 9)
  projection(true)
-  translate([0, 0, frozenCoordinates?-originY_Package:0])
+  translate([0, 0, frozen?(dir?originY_Package:-originY_Package):0])
    rotate([dir?90:-90, 0, 0])
-    Main(frozenCoordinates);
+    Main();
 else if (MODE == 10)
 {
-  translate([frozenCoordinates?0:originX_Package+originY_Package-pdist, 0, 0])
+  translate([frozen?-pdist:originX_Package+originY_Package-pdist, 0, 0])
   rotate(90)
   {
     projection(true)
-     translate([0, 0, frozenCoordinates?-originX_Package:0])
-      rotate([0, dir ? -90 : 90, 0])
-       Main(frozenCoordinates); 
+     translate([0, 0, frozen?(dir?originX_Package:-originX_Package):0])
+      rotate([0, dir?-90:90, 0])
+       Custom(); 
     projection()
-     rotate([0, dir ? -90 : 90, 0])
-      Main(frozenCoordinates, 0); 
+     rotate([0, dir?-90:90, 0])
+      Main(0); 
   }
   projection(true)
-   translate([0, 0, frozenCoordinates?-originY_Package:0])
+   translate([0, 0, frozen?(dir?originY_Package:-originY_Package):0])
     rotate([dir?90:-90, 0, 0])
-     Main(frozenCoordinates); 
+     Custom(); 
   projection()
    rotate([dir?90:-90, 0, 0])
-    Main(frozenCoordinates, 0); 
+    Main(0); 
 }
+  

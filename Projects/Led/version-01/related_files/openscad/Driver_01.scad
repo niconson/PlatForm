@@ -24,8 +24,8 @@ MODE = 1;  // 1: full 3D view
            // 9: custom frontal projection
            // 10: custom combo projection.
 
-dir = 0;   // view direction for mode 6-10
-pdist = 10; // distance between projections for mode 10
+dir = 1;   // view direction for 6...10 modes
+pdist = 20; // distance between projections for mode 10
 
 
 
@@ -44,16 +44,22 @@ drw_Driver_01_CC0805   = E;
 
 
 
-//// Drawing module
-frozenCoordinates = 0; /* Wherever you move
+//// Drawing modules
+/*
+coordinates:*/frozen = 0;/* Wherever you move
 the PCB in the PCB editor, the position of the 3D
 model will remain the same. Make true if you want
 to use this option*/
 
-module Main (frozen, custom=true)
+module Main (custom=true)
 {
-  Pcb_Driver_01 (frozen);
-  if(custom) translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, 0])
+  Pcb_Driver_01(frozen);
+  if(custom) Custom();
+}
+
+module Custom ()
+{
+  translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, 0])
   {
     // user field
     // add external objects here (optional)
@@ -65,10 +71,11 @@ module Main (frozen, custom=true)
     cube(10);
     */
     
-    // any pcb in the project folder
-    // requires inclusion of <.lib> header:
+    // add  any  PCB  from  the  project  folder,
+    // any pcb in the project folder will require
+    // the <.lib> header (See top) to be included:
     render()
-    translate([12,5,-9.000])
+    translate([-6,-3.5,-9.000])
     Pcb_Package (1);
     
     // end of user field
@@ -78,63 +85,66 @@ module Main (frozen, custom=true)
 
 
 //// Drawing
+cube_scaleX = 1.0;// option for mode 4...5
+cube_scaleY = 1.0;// option for mode 4...5
+cube_scaleZ = 1.0;// option for mode 4...5
 if (MODE == 1)
- Main (frozenCoordinates);
+ Main();
 else if (MODE == 2)
  projection(true)
   translate([0, 0, -0.010])
-   Main (frozenCoordinates, 0);
+   Main(0);
 else if (MODE == 3)
  //mirror([1, 0, 0])
   projection(true)
    translate([0, 0, board_h + 0.010])
-    Main (frozenCoordinates, 0);
+    Main(0);
 else if (MODE == 4)
  projection()difference(){
-  Main (frozenCoordinates, 0);
-  Draw_Driver_01_CUBE(0, frozenCoordinates);}
+  Main(0);
+  Draw_Driver_01_CUBE(0, frozen);}
 else if (MODE == 5)
  //mirror([1, 0, 0])
   projection()difference(){
-   Main (frozenCoordinates, 0);
-   Draw_Driver_01_CUBE(1, frozenCoordinates);}
+   Main(0);
+   Draw_Driver_01_CUBE(1, frozen);}
 else if (MODE == 6)
  projection()
   rotate([0, dir?-90:90, 0])
-   Main (frozenCoordinates, 0);
+   Main(0);
 else if (MODE == 7)
  projection()
   rotate([dir?90:-90, 0, 0])
-   Main (frozenCoordinates, 0);
+   Main(0);
 else if (MODE == 8)
  projection(true)
-  translate([0, 0, frozenCoordinates?-originX_Driver_01:0])
+  translate([0, 0, frozen?(dir?originX_Driver_01:-originX_Driver_01):0])
    rotate([0, dir?-90:90, 0])
-    Main(frozenCoordinates);
+    Main();
 else if (MODE == 9)
  projection(true)
-  translate([0, 0, frozenCoordinates?-originY_Driver_01:0])
+  translate([0, 0, frozen?(dir?originY_Driver_01:-originY_Driver_01):0])
    rotate([dir?90:-90, 0, 0])
-    Main(frozenCoordinates);
+    Main();
 else if (MODE == 10)
 {
-  translate([frozenCoordinates?-pdist:originX_Driver_01+originY_Driver_01-pdist, 0, 0])
+  translate([frozen?-pdist:originX_Driver_01+originY_Driver_01-pdist, 0, 0])
   rotate(90)
   {
     projection(true)
-     translate([0, 0, frozenCoordinates?(dir?originX_Driver_01:-originX_Driver_01):0])
+     translate([0, 0, frozen?(dir?originX_Driver_01:-originX_Driver_01):0])
       rotate([0, dir?-90:90, 0])
-       Main(frozenCoordinates); 
+       Custom(); 
     projection()
      rotate([0, dir?-90:90, 0])
-      Main(frozenCoordinates, 0); 
+      Main(0); 
   }
   projection(true)
-   translate([0, 0, frozenCoordinates?(dir?originY_Driver_01:-originY_Driver_01):0])
+   translate([0, 0, frozen?(dir?originY_Driver_01:-originY_Driver_01):0])
     rotate([dir?90:-90, 0, 0])
-     Main(frozenCoordinates); 
+     Custom(); 
   projection()
    rotate([dir?90:-90, 0, 0])
-    Main(frozenCoordinates, 0); 
+    Main(0); 
 }
-     
+    

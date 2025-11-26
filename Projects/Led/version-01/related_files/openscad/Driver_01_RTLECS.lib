@@ -12,7 +12,7 @@
 // Footprint
 module fp_Driver_01_RTLECS ()
 {
-    union()
+    hull()/*fill the space*/
     {
         // end of union
     }

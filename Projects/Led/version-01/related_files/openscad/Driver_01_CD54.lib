@@ -6,6 +6,9 @@
 //============================================
 
 
+// include <Driver_01_CD54.lib>
+// include <Package.lib>
+
 // Polylines
 module Poly1_Driver_01_CD54 ()
 {
@@ -165,6 +168,18 @@ module FDriver_01_CD54 ()
                     linear_extrude( 0.100 )
                       circle( d=1.000 );
                 // end of pins
+            }
+            
+            translate([0,0,0]) // (automatic adjustment when moving the footprint origin)
+            scale([1,1,1])     // (automatic adjustment when changing the project units)
+            {
+                //-------------------
+                // add your code here, for example:
+                //color("Aqua")
+                //translate([0,0,0])
+                //rotate([0,0,0])
+                //import("knob.stl");
+                //-------------------
             }
             // end of union
         }

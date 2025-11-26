@@ -5,7 +5,6 @@ version: 2.427
 file_version: 2.427
 project_name: "Driver-01"
 library_folder: "d:\works\fp_lib"
-full_library_folder: "d:\works\fp_lib\lib"
 CAM_folder: "D:\Works\Projects\duxahtech\Led\version-01\CAM(Driver-01)(11-9-2025)"
 ses_file_path: ""
 netlist_completed: "1"
@@ -25,7 +24,7 @@ m_client_rect_left: 110
 m_client_rect_right: 1487
 m_client_rect_bottom: 593
 m_client_rect_top: 0
-m_org_x: -11530
+m_org_x: -11528
 m_org_y: -4624
 m_scale_factor: 21282
 part_line_visible: 1
@@ -263,6 +262,17 @@ package: "CD54"
   ref_text: 1270000 0 -4000000 0 177800
   value_text: 1270000 0 -6540000 0 177800
   centroid: 0 0 0 0
+  openscad_code: "translate([0,0,0]) // (automatic adjustment when moving the footprint origin)"
+  openscad_code: "scale([1,1,1])     // (automatic adjustment when changing the project units)"
+  openscad_code: "{"
+  openscad_code: "    //-------------------"
+  openscad_code: "    // add your code here, for example:"
+  openscad_code: "    //color(`Aqua`)"
+  openscad_code: "    //translate([0,0,0])"
+  openscad_code: "    //rotate([0,0,0])"
+  openscad_code: "    //import(`knob.stl`);"
+  openscad_code: "    //-------------------"
+  openscad_code: "}"
   openscad_hole: "translate([-1.950,0.000,0.000]) // (automatic adjustment when moving the footprint origin)"
   openscad_hole: "scale([1.000,1.000,1.000]) // (automatic adjustment when changing the project units)"
   openscad_hole: "{"
@@ -275,6 +285,8 @@ package: "CD54"
   openscad_hole: "    text(`22uH`,1);"
   openscad_hole: "    //-------------------"
   openscad_hole: "}"
+  openscad_module: "// include <Driver_01_CD54.lib>"
+  openscad_module: "// include <Package.lib>"
   outline_polyline: 177800 -3450000 -2300000 1 0 4
     next_corner: 3450000 -2300000 0
     next_corner: 3450000 2300000 0

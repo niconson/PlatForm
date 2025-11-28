@@ -78,7 +78,7 @@ module Poly14_Driver_01_SMTDIODE ()
     {
         minkowski()
         {
-            $fn = 20;
+            $fn = 10;
             translate([ -2.443, 6.500, 0.0 ])
             {
                 rotate([ 0.000,  90.000,  0.000 ])

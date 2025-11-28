@@ -42,7 +42,7 @@ module Poly2_Driver_01_C0402 ()
     {
         minkowski()
         {
-            $fn = 20;
+            $fn = 10;
             translate([ 0.000,  0.000,  0.200 ])
             {
                 translate([ -2.300, 2.900, 0.0 ])

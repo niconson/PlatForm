@@ -23,18 +23,19 @@ MODE = 1;  // 1: full 3D view
            // 8: custom lateral projection
            // 9: custom frontal projection
            // 10: custom combo projection
-           // 11: frontal 3D section
-           // 12: lateral 3D section
-           // 13: boolean difference.
+           // 11: frontal 3D section for Custom
+           // 12: lateral 3D section for Custom
+           // 13: top 3D section for Custom
+           // 14: boolean difference.
 
-dir = 0;   // view direction for 6...12 modes
-pdist = 0; // distance between projections for mode 10
+dir = 0;   // view direction for 6...13 modes
+pdist = 20;// distance between projections for mode 10
 
 
 
 //// Drawing control
 E = true;
-drw_board_outline      = (MODE!=4&&MODE!=5&&MODE!=13)?1:0;
+drw_board_outline      = (MODE!=4&&MODE!=5&&MODE!=14)?1:0;
 drw_copper             = (MODE<4||MODE>10)?1:0;
 drw_holes              = (MODE<4||MODE>10)?1:0;
 drw_pads               = (MODE<4||MODE>10)?1:0;
@@ -81,6 +82,7 @@ module Custom ()
     translate([-6,-3.5,-9.000])
     Pcb_Package (1);
     
+    
     // end of user field
   }
 }
@@ -88,20 +90,20 @@ module Custom ()
 
 
 //// Drawing
-cube_scaleX = 2.0;// option for 4,5,11,12 modes
-cube_scaleY = 1.0;// option for 4,5,11,12 modes
-cube_scaleZ = 1.0;// option for 4,5,11,12 modes
+cube_scaleX = 2.0;// (cube sizeX for 4,5,11,12,13 modes)
+cube_scaleY = 1.0;// (cube sizeY for 4,5,11,12,13 modes)
+cube_scaleZ = 1.0;// (cube sizeZ for 4,5,11,12,13 modes)
 if (MODE == 1)
  Main();
 else if (MODE == 2)
  projection(true)
   translate([0, 0, -0.010])
-   Main(0);
+   Main();
 else if (MODE == 3)
  //mirror([1, 0, 0])
   projection(true)
    translate([0, 0, board_h + 0.010])
-    Main(0);
+    Main();
 else if (MODE == 4)
  projection()difference(){
   Main(0);
@@ -153,30 +155,42 @@ else if (MODE == 10)
     Main(0);
   }
   projection(true)
-   translate([0, frozen?10.000-pdist:(10.000-pdist-originY_Driver_01), board_h/2])
+   translate([0, frozen?10.000-pdist:(10.000+pdist-originY_Driver_01), board_h/2])
     Main();
 }
 else if (MODE == 11)
 {
+ PcbFull = 0; // make 1 for full pcb view
  difference(){
-  Custom();
+  if(PcbFull) Custom();
+  else Main();
   color("white")
   translate([0, frozen?-originY_Driver_01:0, frozen?(dir?-max_height_Driver_01/2:max_height_Driver_01/2):0])
   rotate([dir?90:-90, 0, 0])
   Draw_Driver_01_CUBE(0, frozen);}
-  Main(0);
+  if(PcbFull) Main(0);
 }
 else if (MODE == 12)
 {
+ PcbFull = 0; // make 1 for full pcb view
  difference(){
-  Custom();
+  if(PcbFull) Custom();
+  else Main();
   color("white")
   translate([frozen?-originX_Driver_01:0, 0, frozen?(dir?max_height_Driver_01/2:-max_height_Driver_01/2):0])
   rotate([0, dir?90:-90, 0])
   Draw_Driver_01_CUBE(0, frozen);}
-  Main(0);
+  if(PcbFull) Main(0);
 }
 else if (MODE == 13)
+{
+ difference(){
+  Custom();
+  translate([0,0,0])
+  Draw_Driver_01_CUBE(dir?1:0, frozen);}
+ Main(0);
+}
+else if (MODE == 14)
  difference(){
   Custom();
   Main(0);}

@@ -15,25 +15,31 @@ MODE = 1;  // 1: full 3D view
            // 3: projection of bottom copper
            // 4: projection of top packages
            // 5: projection of bottom packages
-           // 6: lateral projection
-           // 7: frontal projection
+           // 6: lateral pcb projection
+           // 7: frontal pcb projection.
            // Set the origin in the pcb editor to the
            // location where you want the cut to be:
            // 8: custom lateral projection
            // 9: custom frontal projection
-           // 10: custom combo projection.
+           // 10: custom combo projection
+           // 11: frontal 3D section for Custom
+           // 12: lateral 3D section for Custom
+           // 13: top 3D section for Custom
+           // 14: boolean difference (makes
+           //     holes in the Custom objects
+           //     using 3d-models of pcb parts).
 
-dir = 0;   // view direction for 6...10 modes
-pdist = 0; // distance between projections for mode 10
+dir = 0;   // view direction for 6...13 modes
+pdist = 20;// distance between projections for mode 10
 
 
 
 //// Drawing control
 E = true;
-drw_board_outline   = (MODE<4||MODE>5)?1:0;
-drw_copper          = MODE<4?1:0;
-drw_holes           = MODE<4?1:0;
-drw_pads            = MODE<4?1:0;
+drw_board_outline   = (MODE!=4&&MODE!=5&&MODE!=14)?1:0;
+drw_copper          = (MODE<4||MODE>10)?1:0;
+drw_holes           = (MODE<4||MODE>10)?1:0;
+drw_pads            = (MODE<4||MODE>10)?1:0;
 drw_Package_Package = E;
 
 
@@ -68,9 +74,9 @@ module Custom ()
     // add  any  PCB  from  the  project  folder,
     // any pcb in the project folder will require
     // the <.lib> header (See top) to be included:
-    render()
+    render(Convexity)
     translate([0,0,50.000])
-    Pcb_Package (1);
+    Pcb_Package (true);
     */
     // end of user field
   }
@@ -79,20 +85,20 @@ module Custom ()
 
 
 //// Drawing
-cube_scaleX = 1.0;// option for mode 4...5
-cube_scaleY = 1.0;// option for mode 4...5
-cube_scaleZ = 1.0;// option for mode 4...5
+cube_scaleX = 1.0;// (cube sizeX for 4,5,11,12,13 modes)
+cube_scaleY = 1.0;// (cube sizeY for 4,5,11,12,13 modes)
+cube_scaleZ = 1.0;// (cube sizeZ for 4,5,11,12,13 modes)
 if (MODE == 1)
  Main();
 else if (MODE == 2)
  projection(true)
   translate([0, 0, -0.010])
-   Main(0);
+   Main();
 else if (MODE == 3)
  //mirror([1, 0, 0])
   projection(true)
    translate([0, 0, board_h + 0.010])
-    Main(0);
+    Main();
 else if (MODE == 4)
  projection()difference(){
   Main(0);
@@ -122,7 +128,7 @@ else if (MODE == 9)
     Main();
 else if (MODE == 10)
 {
-  translate([frozen?-pdist:originX_Package+originY_Package-pdist, 0, 0])
+  translate([frozen?-pdist:(originX_Package+originY_Package-pdist), 0, 0])
   rotate(90)
   {
     projection(true)
@@ -133,12 +139,53 @@ else if (MODE == 10)
      rotate([0, dir?-90:90, 0])
       Main(0); 
   }
+  render()// combines intersecting projections
+  {
   projection(true)
    translate([0, 0, frozen?(dir?originY_Package:-originY_Package):0])
     rotate([dir?90:-90, 0, 0])
      Custom(); 
   projection()
    rotate([dir?90:-90, 0, 0])
-    Main(0); 
+    Main(0);
+  }
+  projection(true)
+   translate([0, frozen?10.000-pdist:(10.000+pdist-originY_Package), board_h/2])
+    Main();
 }
-  
+else if (MODE == 11)
+{
+ PcbFull = 0; // make 1 for full pcb view
+ difference(){
+  if(PcbFull) Custom();
+  else Main();
+  color("white")
+  translate([0, frozen?-originY_Package:0, frozen?(dir?-max_height_Package/2:max_height_Package/2):0])
+  rotate([dir?90:-90, 0, 0])
+  Draw_Package_CUBE(0, frozen);}
+  if(PcbFull) Main(0);
+}
+else if (MODE == 12)
+{
+ PcbFull = 0; // make 1 for full pcb view
+ difference(){
+  if(PcbFull) Custom();
+  else Main();
+  color("white")
+  translate([frozen?-originX_Package:0, 0, frozen?(dir?max_height_Package/2:-max_height_Package/2):0])
+  rotate([0, dir?90:-90, 0])
+  Draw_Package_CUBE(0, frozen);}
+  if(PcbFull) Main(0);
+}
+else if (MODE == 13)
+{
+ difference(){
+  Custom();
+  translate([0,0,0])
+  Draw_Package_CUBE(dir?1:0, frozen);}
+ Main(0);
+}
+else if (MODE == 14)
+ difference(){
+  Custom();
+  Main(0);}

@@ -26,7 +26,9 @@ MODE = 1;  // 1: full 3D view
            // 11: frontal 3D section for Custom
            // 12: lateral 3D section for Custom
            // 13: top 3D section for Custom
-           // 14: boolean difference.
+           // 14: boolean difference (makes
+           //     holes in the Custom objects
+           //     using 3d-models of pcb parts).
 
 dir = 0;   // view direction for 6...13 modes
 pdist = 20;// distance between projections for mode 10
@@ -80,8 +82,7 @@ module Custom ()
     // the <.lib> header (See top) to be included:
     render(Convexity)
     translate([-6,-3.5,-9.000])
-    Pcb_Package (1);
-    
+    Pcb_Package (true);
     
     // end of user field
   }
@@ -90,7 +91,7 @@ module Custom ()
 
 
 //// Drawing
-cube_scaleX = 2.0;// (cube sizeX for 4,5,11,12,13 modes)
+cube_scaleX = 1.0;// (cube sizeX for 4,5,11,12,13 modes)
 cube_scaleY = 1.0;// (cube sizeY for 4,5,11,12,13 modes)
 cube_scaleZ = 1.0;// (cube sizeZ for 4,5,11,12,13 modes)
 if (MODE == 1)

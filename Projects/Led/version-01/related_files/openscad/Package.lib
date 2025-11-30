@@ -21,9 +21,9 @@ module Pcb_Package (frozen)
     else if( drw_Package_Package != 0 )
       Draw_Package_Package();
     if( is_undef(drw_board_outline) )
-      Draw_BO_Package(1);
+      Draw_BO_Package();
     else if( drw_board_outline != 0 )
-      Draw_BO_Package(0);
+      Draw_BO_Package();
   }
 }
 
@@ -33,7 +33,7 @@ module Pcb_Package (frozen)
   |   BOARD OUTLINE   |
   |___________________|
 */
-module Draw_BO_Package (bAll=0)
+module Draw_BO_Package ()
 {
 }
 

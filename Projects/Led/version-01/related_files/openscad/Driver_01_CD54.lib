@@ -1,9 +1,9 @@
 //============================================
-// Code builder for OpenScad via Freepcb-2
-// Author: niconson.com (c) 2014-2025
-// Sites: https://niconson.com/freepcb2
-//        https://github.com/niconson
+// Code builder for OpenScad
+// Site: https://github.com/niconson
 //============================================
+
+
 
 
 // include <Driver_01_CD54.lib>

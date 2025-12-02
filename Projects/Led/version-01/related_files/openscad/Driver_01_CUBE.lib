@@ -8,19 +8,26 @@
 originX_Driver_01 = -22.000;
 originY_Driver_01 = -15.250;
 max_height_Driver_01 = 44.000;
-module Draw_Driver_01_CUBE(side, var)
+module Draw_Driver_01_CUBE(side, frozen, space)
 {
   if (is_undef(cube_scaleX) || is_undef(cube_scaleY) || is_undef(cube_scaleZ))
   {
     translate([max_height_Driver_01/2, max_height_Driver_01/2, 0])
-    translate([var?0:originX_Driver_01, var?0:originY_Driver_01, side?max_height_Driver_01/2-board_h:-max_height_Driver_01/2])
+    translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, side?max_height_Driver_01/2-board_h:-max_height_Driver_01/2])
     cube(max_height_Driver_01, center=true); 
   }
   else
   {
     translate([max_height_Driver_01/2, max_height_Driver_01/2, 0])
-    translate([var?0:originX_Driver_01, var?0:originY_Driver_01, side?(max_height_Driver_01/2*cube_scaleZ)-board_h:(-max_height_Driver_01/2*cube_scaleZ) ])
+    translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, side?(max_height_Driver_01/2*cube_scaleZ)-board_h:(-max_height_Driver_01/2*cube_scaleZ) ])
     scale([cube_scaleX, cube_scaleY, cube_scaleZ])
     cube(max_height_Driver_01, center=true); 
+    if(space > 1)
+    {
+      push_direction = side ? -1 : 1;
+      spaceAxisForCube = space + (max_height_Driver_01 * cube_scaleZ);
+      translate([0, 0, push_direction * spaceAxisForCube])
+      Draw_Driver_01_CUBE(side, frozen, 0);
+    }
   }
 }

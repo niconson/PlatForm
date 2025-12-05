@@ -5,7 +5,7 @@
   \-----------------------------------------------*/
 include <Driver_01.lib>
 include <Package.lib>
-Convexity = 4;
+Convexity = 2;
 board_h = 1.500;
 
 
@@ -30,8 +30,8 @@ MODE = 1;  // 1: full 3D view
            //     holes in the Custom objects
            //     using 3d-models of pcb parts).
 
-dir = 0;   // view direction for 6...13 modes
-sector = 4;// double-sided section for modes 11, 12, 13
+dir = 0;   // view direction for 6...14 modes
+sector = 0;// double-sided section for modes 4,5,11...14
 pdist = 20;// distance between projections for mode 10
 
 
@@ -65,39 +65,78 @@ module Main (custom=true)
   if(custom) Custom();
 }
 
-module Custom ()
+module Custom (object=0)
 {
   translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, 0])
   {
-    // user field
+    // custom field
     // add external objects here (optional)
-    // for example, uncomment the following:
-    /*
-    color("aqua", 0.5)
-    translate([0,0,0])
-    rotate([0,0,0])
-    cube(10);
-    */
+    if (object == 1 || object == 0)
+    {
+      // add your object 1
+      // for example, uncomment the following:
+      /*
+      color("aqua", 0.5)
+      translate([0,0,0])
+      rotate([0,0,0])
+      cube(10);
+      */
+    }
+    if (object == 2 || object == 0)
+    {
+      // add your object 2, for example, another PCB
+      // from the project folder. For any PCB, you will
+      // need to include the <.lib> header file(see above):
+      
+      translate([-6,-3.5,-9.000])
+      Pcb_Package (true);
+      
+    }
+    if (object == 3 || object == 0)
+    {
+      // add your object 3
 
-    // add  any  PCB  from  the  project  folder,
-    // any pcb in the project folder will require
-    // the <.lib> header (See top) to be included:
-    
-    render(Convexity)
-    translate([-6,-3.5,-9.000])
-    Pcb_Package (true);
-    
+    }
+    if (object == 4 || object == 0)
+    {
+      // add your object 4
 
-    // end of user field
+    }
+    // object 5, etc.
+    // end of custom field
   }
 }
 
 
 
+//// 3d cube for boolean operations
+cube_scaleX = 2.0;// (cube sizeX for 4,5,11-14 modes)
+cube_scaleY = 1.0;// (cube sizeY for 4,5,11-14 modes)
+cube_scaleZ = 1.0;// (cube sizeZ for 4,5,11-14 modes)
+module CubeX (d=dir)
+{
+    color("white")
+    translate([0, frozen?-originY_Driver_01:0, frozen?(d?-max_height_Driver_01/2:max_height_Driver_01/2):0])
+    rotate([d?90:-90, 0, 0])
+    Draw_Driver_01_CUBE(0, frozen, sector);
+}
+module CubeY (d=dir)
+{
+    color("white")
+    translate([frozen?-originX_Driver_01:0, 0, frozen?(d?max_height_Driver_01/2:-max_height_Driver_01/2):0])
+    rotate([0, d?90:-90, 0])
+    Draw_Driver_01_CUBE(0, frozen, sector);
+}
+module CubeZ (d=dir)
+{
+    color("white")
+    translate([0,0,0])
+    Draw_Driver_01_CUBE(d?1:0, frozen, sector);
+}
+
+
+
 //// Drawing
-cube_scaleX = 2.0;// (cube sizeX for 4,5,11,12,13 modes)
-cube_scaleY = 1.0;// (cube sizeY for 4,5,11,12,13 modes)
-cube_scaleZ = 1.0;// (cube sizeZ for 4,5,11,12,13 modes)
 if (MODE == 1)
  Main();
 else if (MODE == 2)
@@ -112,12 +151,12 @@ else if (MODE == 3)
 else if (MODE == 4)
  projection()difference(){
   Main(0);
-  Draw_Driver_01_CUBE(0, frozen, 0);}
+  CubeZ(0);}
 else if (MODE == 5)
  //mirror([1, 0, 0])
   projection()difference(){
    Main(0);
-   Draw_Driver_01_CUBE(1, frozen, 0);}
+   CubeZ(1);}
 else if (MODE == 6)
  projection()
   rotate([0, dir?-90:90, 0])
@@ -142,21 +181,21 @@ else if (MODE == 10)
   rotate(90)
   {
     projection(true)
-     translate([0, 0, frozen?(dir?originX_Driver_01:-originX_Driver_01):0])
-      rotate([0, dir?-90:90, 0])
-       Custom(); 
+    translate([0, 0, frozen?(dir?originX_Driver_01:-originX_Driver_01):0])
+    rotate([0, dir?-90:90, 0])
+    Custom(); 
     projection()
-     rotate([0, dir?-90:90, 0])
-      Main(0); 
+    rotate([0, dir?-90:90, 0])
+    Main(0); 
   }
   render()// (combines intersecting projections)
   {
-  projection(true)
-   translate([0, 0, frozen?(dir?originY_Driver_01:-originY_Driver_01):0])
+    projection(true)
+    translate([0, 0, frozen?(dir?originY_Driver_01:-originY_Driver_01):0])
     rotate([dir?90:-90, 0, 0])
-     Custom(); 
-  projection()
-   rotate([dir?90:-90, 0, 0])
+    Custom(); 
+    projection()
+    rotate([dir?90:-90, 0, 0])
     Main(0);
   }
   projection(true)
@@ -169,13 +208,10 @@ else if (MODE == 11)
   //projection() rotate([-90,0,0])
   {
     if(PcbFull) Main(0);
-    difference(){
+    render(Convexity) difference(){
     if(PcbFull) Custom();
     else Main();
-    color("white")
-    translate([0, frozen?-originY_Driver_01:0, frozen?(dir?-max_height_Driver_01/2:max_height_Driver_01/2):0])
-    rotate([dir?90:-90, 0, 0])
-    Draw_Driver_01_CUBE(0, frozen, sector);}
+    CubeX();}
   }
 }
 else if (MODE == 12)
@@ -184,13 +220,10 @@ else if (MODE == 12)
   //projection() rotate([0,90,0])
   {
     if(PcbFull) Main(0);
-    difference(){
+    render(Convexity) difference(){
     if(PcbFull) Custom();
     else Main();
-    color("white")
-    translate([frozen?-originX_Driver_01:0, 0, frozen?(dir?max_height_Driver_01/2:-max_height_Driver_01/2):0])
-    rotate([0, dir?90:-90, 0])
-    Draw_Driver_01_CUBE(0, frozen, sector);}
+    CubeY();}
   }
 }
 else if (MODE == 13)
@@ -198,14 +231,22 @@ else if (MODE == 13)
   //projection()
   {
     Main(0);
-    difference(){
+    render(Convexity) difference(){
     Custom();
-    color("white")
-    translate([0,0,0])
-    Draw_Driver_01_CUBE(dir?1:0, frozen, sector);}
+    CubeZ();}
   }
 }
 else if (MODE == 14)
- difference(){
-  Custom();
-  Main(0);}
+{
+  //projection() rotate([0,0,0])
+  render(Convexity) difference()
+  {
+    Custom();
+    CubeX();
+    //CubeY();
+    //CubeZ();
+    Main(0);
+  }
+}
+
+

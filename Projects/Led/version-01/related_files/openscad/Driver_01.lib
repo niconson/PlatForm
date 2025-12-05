@@ -60,7 +60,7 @@ module Pcb_Driver_01 (frozen)
 */
 module Draw_BO_Driver_01 ()
 {
-    render( convexity=3 )
+    render( Convexity )
       translate([ 0.0, 0.0, -board_h/2.0 ])
         difference()
         {

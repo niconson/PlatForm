@@ -22,7 +22,7 @@ module Draw_Driver_01_CUBE(side, frozen, space)
     translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, side?(max_height_Driver_01/2*cube_scaleZ)-board_h:(-max_height_Driver_01/2*cube_scaleZ) ])
     scale([cube_scaleX, cube_scaleY, cube_scaleZ])
     cube(max_height_Driver_01, center=true); 
-    if(space > 1)
+    if(space > 0.01)
     {
       push_direction = side ? -1 : 1;
       spaceAxisForCube = space + (max_height_Driver_01 * cube_scaleZ);

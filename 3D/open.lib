@@ -1,0 +1,62 @@
+//============================================
+// Code builder for OpenScad
+// Site: https://github.com/niconson
+//============================================
+
+
+
+
+// Polylines
+module Poly0_open ()
+{
+    // Global rotation 0.000 //
+    // Global lift 0.000mm //
+    // matrix: 1 1 1 0.000 0.000 0.000 //
+    // resolution $fn = 20 //
+    color( [0.5,0.5,0.5] )
+    {
+        translate([ -0.250, 0.250, 0.0 ])
+        {
+            linear_extrude( 33.000, scale= 1.000, convexity=Convexity )
+            {
+                polygon([ [0.000, 0.000], 
+                          [0.000, -0.500], 
+                          [0.500, -0.500], 
+                          [0.500, 0.000] ]);
+            }
+        }
+    }
+    // end of module
+}
+
+
+// Footprint
+module fp_open ()
+{
+    union()
+    {
+        Poly0_open();
+        // end of union
+    }
+    // end of module
+}
+
+
+// Footprint
+module Fopen ()
+{
+    difference()
+    {
+        union()
+        {
+            translate([ -0.000,  -0.000,  0.100 ])
+                fp_open();
+
+            // end of union
+        }
+        // end of difference
+    }
+    // end of module
+}
+
+

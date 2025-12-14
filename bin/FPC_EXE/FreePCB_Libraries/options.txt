@@ -1,2 +1,2 @@
-Adr D:\Works\ѕлат‘орм на русском\fp_lib\lib
+Adr D:\Works\fp_lib\lib
 Alpha

@@ -5,10 +5,12 @@
   \-----------------------------------------------*/
 include <Driver_01.lib>
 include <Package.lib>
+
+// display parameter
 Convexity = 2;
+
+// pcb thickness
 board_h = 1.500;
-
-
 
 //// Drawing mode
 MODE = 1;  // 1: full 3D view
@@ -30,48 +32,74 @@ MODE = 1;  // 1: full 3D view
            //     holes in the Custom objects
            //     using 3d-models of pcb parts).
 
-dir = 0;   // view direction for 6...14 modes
-sector = 0;// double-sided section for modes 4,5,11...14
-pdist = 20;// distance between projections for mode 10
 
+// double-sided section for modes 4,5,11...14
+sector = 0;
 
+// distance between projections for mode 10
+pdist = 20;
 
+// use positive values to isolate a custom object
+// use negative values to disable a custom object
+object = 0;
+
+// view direction for modes 6...14
+dir= false;
+
+// enable PCB section for modes 11...12
+pcb_section = true;
+           
 //// Drawing control
 E = true;
 drw_board_outline      = (MODE!=4&&MODE!=5&&MODE!=14)?1:0;
 drw_copper             = (MODE<4||MODE>10)?1:0;
 drw_holes              = (MODE<4||MODE>10)?1:0;
 drw_pads               = (MODE<4||MODE>10)?1:0;
-drw_Driver_01_C0402    = E; // controls Draw_Driver_01_C0402();
-drw_Driver_01_RTLECS   = E; // controls Draw_Driver_01_RTLECS();
-drw_Driver_01_CD54     = E; // controls Draw_Driver_01_CD54();
-drw_Driver_01_MSOP_8T  = E; // controls Draw_Driver_01_MSOP_8T();
-drw_Driver_01_SMTDIODE = E; // controls Draw_Driver_01_SMTDIODE();
-drw_Driver_01_CC0805   = E; // controls Draw_Driver_01_CC0805();
+drw_Driver_01_C0402    = true; // controls Draw_Driver_01_C0402();
+drw_Driver_01_RTLECS   = true; // controls Draw_Driver_01_RTLECS();
+drw_Driver_01_CD54     = true; // controls Draw_Driver_01_CD54();
+drw_Driver_01_MSOP_8T  = true; // controls Draw_Driver_01_MSOP_8T();
+drw_Driver_01_SMTDIODE = true; // controls Draw_Driver_01_SMTDIODE();
+drw_Driver_01_CC0805   = true; // controls Draw_Driver_01_CC0805();
+
+//// 3d cube for boolean operations:
+
+// (cube sizeX for 4,5,11-14 modes)
+cube_scaleX = 2.0;
+
+// (cube sizeY for 4,5,11-14 modes)
+cube_scaleY = 1.0;
+
+// (cube sizeZ for 4,5,11-14 modes)
+cube_scaleZ = 1.0;
 
 
 
 //// Drawing modules
-/*
-coordinates:*/frozen = false;/* Wherever you move
+//// Frozen position
+frozen = false; /* coordinates: Wherever you move
 the PCB in the PCB editor, the position of the 3D
 model will remain the same. Make true if you want
-to use this option*/
+to use this option */
 
 module Main (custom=true)
 {
   // (this module cannot be modified by the user)
-  Pcb_Driver_01(frozen);
-  if(custom) Custom();
+  if(E) Pcb_Driver_01(frozen);
+  if(custom) Custom(object);
 }
 
-module Custom (object=0)
+//==================================================
+module Custom (obj=0)
 {
   translate([frozen?0:originX_Driver_01, frozen?0:originY_Driver_01, 0])
   {
     // custom field
     // add external objects here (optional)
-    if (object == 1 || object == 0)
+    hide = (obj<0?-obj:0);
+    item = (obj<0?0:obj);
+
+    if(hide == 1){} else if (item == 1 || item == 0)
     {
       // add your object 1
       // for example, uncomment the following:
@@ -82,22 +110,25 @@ module Custom (object=0)
       cube(10);
       */
     }
-    if (object == 2 || object == 0)
+    if(hide == 2){} else if (item == 2 || item == 0)
     {
       // add your object 2, for example, another PCB
       // from the project folder. For any PCB, you will
       // need to include the <.lib> header file(see above):
-      
+      /*
+      render(Convexity)
+      translate([0,0,50.000])
+      Pcb_Driver_01 (true);
+      */
       translate([-6,-3.5,-9.000])
-      Pcb_Package (true);
-      
+        Pcb_Package (true);
     }
-    if (object == 3 || object == 0)
+    if(hide == 3){} else if (item == 3 || item == 0)
     {
       // add your object 3
 
     }
-    if (object == 4 || object == 0)
+    if(hide == 4){} else if (item == 4 || item == 0)
     {
       // add your object 4
 
@@ -106,13 +137,8 @@ module Custom (object=0)
     // end of custom field
   }
 }
+//==================================================
 
-
-
-//// 3d cube for boolean operations
-cube_scaleX = 2.0;// (cube sizeX for 4,5,11-14 modes)
-cube_scaleY = 1.0;// (cube sizeY for 4,5,11-14 modes)
-cube_scaleZ = 1.0;// (cube sizeZ for 4,5,11-14 modes)
 module CubeX (d=dir)
 {
     color("white")
@@ -183,7 +209,7 @@ else if (MODE == 10)
     projection(true)
     translate([0, 0, frozen?(dir?originX_Driver_01:-originX_Driver_01):0])
     rotate([0, dir?-90:90, 0])
-    Custom(); 
+    Custom(object); 
     projection()
     rotate([0, dir?-90:90, 0])
     Main(0); 
@@ -193,7 +219,7 @@ else if (MODE == 10)
     projection(true)
     translate([0, 0, frozen?(dir?originY_Driver_01:-originY_Driver_01):0])
     rotate([dir?90:-90, 0, 0])
-    Custom(); 
+    Custom(object); 
     projection()
     rotate([dir?90:-90, 0, 0])
     Main(0);
@@ -204,24 +230,22 @@ else if (MODE == 10)
 }
 else if (MODE == 11)
 {
-  PcbFull = 0; // make 1 for full pcb view
   //projection() rotate([-90,0,0])
   {
-    if(PcbFull) Main(0);
+    if(!pcb_section) Main(0);
     render(Convexity) difference(){
-    if(PcbFull) Custom();
+    if(!pcb_section) Custom(object);
     else Main();
     CubeX();}
   }
 }
 else if (MODE == 12)
 {
-  PcbFull = 0; // make 1 for full pcb view
   //projection() rotate([0,90,0])
   {
-    if(PcbFull) Main(0);
+    if(!pcb_section) Main(0);
     render(Convexity) difference(){
-    if(PcbFull) Custom();
+    if(!pcb_section) Custom(object);
     else Main();
     CubeY();}
   }
@@ -232,17 +256,17 @@ else if (MODE == 13)
   {
     Main(0);
     render(Convexity) difference(){
-    Custom();
+    Custom(object);
     CubeZ();}
   }
 }
 else if (MODE == 14)
 {
-  //projection() rotate([0,0,0])
+  //projection() translate([0,0,0]) rotate([0,0,0])
   render(Convexity) difference()
   {
-    Custom();
-    CubeX();
+    Custom(object);
+    //CubeX();
     //CubeY();
     //CubeZ();
     Main(0);

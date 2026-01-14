@@ -1,35 +1,41 @@
 [options]
 
-version: 1.000
-file_version: 1.000
+app_folder: "D:\Works\bin"
+version: 1.427
+file_version: 1.427
 project_name: "Template.cds"
-library_folder: "C:\Users\Duxah\Desktop\Duxah\FreePcbDoc\Freeasy\fp_lib"
-full_library_folder: "C:\Users\Duxah\Desktop\Duxah\FreePcbDoc\Freeasy\fp_lib\lib"
-parent_folder: "C:\FreePcbDev\FreePCB-2-master\FreePcb-2\"
+library_folder: "c:\users\duxah\desktop\duxah\freepcbdoc\freeasy\fp_lib"
+full_library_folder: "c:\users\duxah\desktop\duxah\freepcbdoc\freeasy\fp_lib\lib"
 CAM_folder: "C:\Freeasy\Projects\Armkor2\cookies\print_layers"
 netlist_completed: "0"
+bom_options: "1075904672"
 page_number: "0"
 parent_index: "2"
-part_search: ""
-netlist_file_path: "C:\FreePcbDev\FreePCB-2-master\FreePcb-2\examples\related_files\CDS_netlist\Template.cds"
-netlist_page_mask: 1
+alignment: 0.70
+partlist_size_x: "534"
+partlist_size_y: "391"
+partlist_pos_x: "105"
+partlist_pos_y: "69"
+partlist_col_w: "960223292"
+netlist_file_path: ""
 netlist_format: 0
 page_mirror_mask: 0
 default_font: 2
 default_node_width: -1000000
 autosave_interval: 60
-m_client_rect_left: 110
-m_client_rect_right: 1898
-m_client_rect_bottom: 925
+m_client_rect_left: 0
+m_client_rect_right: 1131
+m_client_rect_bottom: 670
 m_client_rect_top: 0
-m_org_x: -287930
-m_org_y: -8207
-m_scale_factor: 249828
+m_org_x: 84572
+m_org_y: -9234
+m_scale_factor: 86952
 m_attr_size: 1200000 150000 1200000 150000 1200000 150000 1000000 150000 1200000 150000 1200000 150000
+m_user_scale: 1.0000000000
 units: MM
 
 m_sel_mask: -1
-m_visible_layers: -1
+m_visible_layers: 524287
 m_top_layer: 6
 m_grid_style: 0
 visible_grid_spacing: 5000000.000000
@@ -138,266 +144,356 @@ drc_pin_attr_to_poly: 254000
 
 default_polyline_width:0.2mm
 n_additional_layers: 4
-  layer_info: "dragging" 0 130 130 130 1
-  layer_info: "background" 1 83 83 83 1
-  layer_info: "visible grid" 2 192 192 192 1
-  layer_info: "highlight" 3 255 255 0 1
-  layer_info: "DRC error" 4 0 0 0 1
-  layer_info: "ownerless line" 5 255 0 0 1
-  layer_info: "part outline" 6 205 205 205 1
-  layer_info: "part name" 7 205 205 205 1
-  layer_info: "pin line" 8 255 255 128 1
-  layer_info: "pin name" 9 255 255 128 1
-  layer_info: "net polyline" 10 255 255 255 1
-  layer_info: "net name" 11 255 255 255 1
-  layer_info: "footprint" 12 128 255 255 1
-  layer_info: "part value" 13 255 128 192 1
-  layer_info: "description" 14 157 157 157 1
-  layer_info: "front layer 1" 15 0 255 0 1
-  layer_info: "front layer 2" 16 0 0 255 1
-  layer_info: "back layer 1" 17 141 199 141 1
-  layer_info: "back layer 2" 18 0 0 0 1
-
-m_pdf_font_i: 8
+m_pdf_font_i: 22
 m_pdf_margin: 0.01
-m_pdf_pages: 1
-  pdf_layer_info: "dragging" 0 255 255 255 0
-  pdf_layer_info: "background" 1 255 255 255 0
-  pdf_layer_info: "visible grid" 2 255 255 255 0
-  pdf_layer_info: "highlight" 3 255 255 0 1
-  pdf_layer_info: "DRC error" 4 0 0 0 1
-  pdf_layer_info: "ownerless line" 5 0 0 0 1
-  pdf_layer_info: "part outline" 6 128 64 64 1
-  pdf_layer_info: "part name" 7 0 0 0 1
-  pdf_layer_info: "pin line" 8 128 0 0 1
-  pdf_layer_info: "pin name" 9 0 0 0 1
-  pdf_layer_info: "net polyline" 10 0 0 160 1
-  pdf_layer_info: "net name" 11 0 0 0 1
-  pdf_layer_info: "footprint" 12 0 0 0 1
-  pdf_layer_info: "part value" 13 0 0 0 1
-  pdf_layer_info: "description" 14 0 0 0 1
-  pdf_layer_info: "front layer 1" 15 0 0 0 1
-  pdf_layer_info: "front layer 2" 16 0 0 0 1
-  pdf_layer_info: "back layer 1" 17 0 0 0 1
-  pdf_layer_info: "back layer 2" 18 197 197 197 1
-  pdf_layer_info: "back layer 3" 19 255 255 255 0
-  pdf_layer_info: "back layer 4" 20 255 255 255 0
-  pdf_layer_info: "back layer 5" 21 255 255 255 0
-  pdf_layer_info: "back layer 6" 22 255 255 255 0
-  pdf_layer_info: "back layer 7" 23 255 255 255 0
-  pdf_layer_info: "back layer 8" 24 255 255 255 0
-  pdf_layer_info: "back layer 9" 25 255 255 255 0
-  pdf_layer_info: "back layer 10" 26 255 255 255 0
-  pdf_layer_info: "back layer 11" 27 255 255 255 0
-  pdf_layer_info: "back layer 12" 28 255 255 255 0
-  pdf_layer_info: "back layer 13" 29 255 255 255 0
-  pdf_layer_info: "back layer 14" 30 255 255 255 0
+pdf_checking: 1614
+  layer_info: "перемещение" 0 130 130 130 1
+  layer_info: "фон доски" 1 178 178 178 1
+  layer_info: "видимая сетка" 2 22 22 22 1
+  layer_info: "подсветка" 3 255 255 0 1
+  layer_info: "метки (DRC)" 4 0 255 128 1
+  layer_info: "безхозный" 5 255 0 0 1
+  layer_info: "корпусный" 6 233 233 233 1
+  layer_info: "текст обозн." 7 192 192 192 1
+  layer_info: "линни пинов" 8 0 255 128 1
+  layer_info: "имена пинов" 9 0 255 128 1
+  layer_info: "линни цепей" 10 164 190 255 1
+  layer_info: "имена цепей" 11 255 0 0 1
+  layer_info: "футпринты" 12 255 132 132 1
+  layer_info: "названия" 13 255 255 255 1
+  layer_info: "описания" 14 136 255 136 1
+  layer_info: "фронтальный" 15 255 255 255 1
+  layer_info: "поверхностный" 16 0 255 0 1
+  layer_info: "невидимый" 17 0 0 0 1
+  layer_info: "фоновый" 18 128 128 255 1
+  layer_info: "контурный" 19 0 115 60 0
+  layer_info: "медный" 20 40 165 90 0
+  layer_info: "защитный" 21 196 196 196 0
+  layer_info: "фрезерный" 22 237 205 178 0
+  layer_info: "шёлковый" 23 253 251 252 0
+  layer_info: "чертёжный" 24 159 45 156 0
+  layer_info: "текстовый" 25 250 250 250 0
+  layer_info: "вёрсточный" 26 250 250 250 0
+  layer_info: "механический" 27 250 250 250 0
+  layer_info: "линейный" 28 250 250 250 0
+  layer_info: "резервный" 29 250 250 250 0
+  layer_info: "запасной" 30 250 250 250 0
+  layer_info: "undefined" 31 250 250 250 0
+
+  pdf_layer_info: "перемещение" 0 255 255 255 0
+  pdf_layer_info: "фон доски" 1 255 255 255 0
+  pdf_layer_info: "видимая сетка" 2 255 255 255 0
+  pdf_layer_info: "подсветка" 3 255 255 255 0
+  pdf_layer_info: "метки (DRC)" 4 0 0 0 1
+  pdf_layer_info: "безхозный" 5 0 0 0 1
+  pdf_layer_info: "корпусный" 6 79 79 79 1
+  pdf_layer_info: "текст обозн." 7 0 0 166 1
+  pdf_layer_info: "линни пинов" 8 0 0 0 1
+  pdf_layer_info: "имена пинов" 9 0 0 0 1
+  pdf_layer_info: "линни цепей" 10 0 0 64 1
+  pdf_layer_info: "имена цепей" 11 0 0 0 1
+  pdf_layer_info: "футпринты" 12 166 0 0 1
+  pdf_layer_info: "названия" 13 0 0 0 1
+  pdf_layer_info: "описания" 14 0 0 0 1
+  pdf_layer_info: "фронтальный" 15 0 255 128 1
+  pdf_layer_info: "поверхностный" 16 130 130 130 1
+  pdf_layer_info: "невидимый" 17 254 254 254 1
+  pdf_layer_info: "фоновый" 18 192 192 192 1
+  pdf_layer_info: "контурный" 19 0 255 128 1
+  pdf_layer_info: "медный" 20 0 221 111 1
+  pdf_layer_info: "защитный" 21 72 255 255 1
+  pdf_layer_info: "фрезерный" 22 251 251 251 1
+  pdf_layer_info: "шёлковый" 23 253 251 252 1
+  pdf_layer_info: "чертёжный" 24 10 3 10 0
+  pdf_layer_info: "текстовый" 25 8 8 8 0
+  pdf_layer_info: "вёрсточный" 26 250 250 250 0
+  pdf_layer_info: "механический" 27 250 250 250 0
+  pdf_layer_info: "линейный" 28 250 250 250 0
+  pdf_layer_info: "резервный" 29 250 250 250 0
+  pdf_layer_info: "запасной" 30 250 250 250 0
   pdf_layer_info: "undefined" 31 255 255 255 0
+
+m_bom_colors: 0 0 0 155 155 155 0 0 0 166 166 166 255 255 111 0 0 255 140 140 140
+
 [graphics]
 
 rename_page: "Page 1"
-bmp_src: "C:\FreePcbDev\FreePCB-2-master\FreePcb-2\examples\related_files\pictures\PIC00001"
-bmp_src: "C:\FreePcbDev\FreePCB-2-master\FreePcb-2\examples\related_files\pictures\PIC00002"
+bmp_src: "C:\Users\Admin\Downloads\PlatForm-main\Projects\Template\related_files\pictures\00001.PIC"
 n_pins: 0
-rectangle: -285200000 -200000 200000 200200000
-ref_des: "TMP2" 398780 200399650 7 0 0 0 -1 -1 2 1
-footprint_name: "RC0805" 750000 198000000 12 0 0 0 -1 -1 2 1
-outline: 4 0 15 400000 -1 -1 -1 0
-  corner: 1 -285000000 0 0 0
-  corner: 2 -285000000 200000000 0 0
-  corner: 3 0 200000000 0 0
-  corner: 4 0 0 0 0
+rectangle: -150400 -150400 210150400 148150400
+ref_des: "Frame1" 201440000 142840000 7 0 0 0 -1 -1 2 1217
+footprint_name: "PART" 201440000 142840000 12 0 0 0 -1 -1 11 1
+part_value: "A3" 201440000 141385001 13 0 0 0 -1 -1 2 129
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 6750000 124500000 0 0
+  corner: 2 6750000 86000000 0 0
 
-polyline: 3 0 15 400000 -1 -1 -1 0
-  corner: 1 -125250000 3000000 0 0
-  corner: 2 -125250000 34000000 0 0
-  corner: 3 0 34000000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 75000000 0 0
+  corner: 2 4000000 2500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -114000000 34000000 0 0
-  corner: 2 -114000000 0 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 6750000 75000000 0 0
+  corner: 2 6750000 2500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -98500000 34000000 0 0
-  corner: 2 -98500000 0 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 124500000 0 0
+  corner: 2 4000000 86000000 0 0
 
-polyline: 3 0 15 400000 -1 -1 -1 0
-  corner: 1 -90250000 34000000 0 0
-  corner: 2 -90250000 18750000 0 0
-  corner: 3 -90250000 0 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 124500000 0 0
+  corner: 2 10000000 124500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -81250000 34000000 0 0
-  corner: 2 -81250000 24750000 0 0
-description: "НКИП.000000.000СЭ" -71303990 27676060 14 0 3838150 400000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 86000000 0 0
+  corner: 2 10000000 86000000 0 0
+description: "Справ. №" 5880000 91750000 14 270 1000000 110000 -1 -1 11 257
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -125250000 31000000 0 0
-  corner: 2 -81250000 31000000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 75000000 0 0
+  corner: 2 10000000 75000000 0 0
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -81500000 24750000 0 0
-  corner: 2 -125250000 24750000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 57500000 0 0
+  corner: 2 10000000 57500000 0 0
+description: "Инв. № дубл" 5880000 61150000 14 270 1000000 110000 -1 -1 11 257
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -114000000 22000000 0 0
-  corner: 2 -125250000 22000000 0 0
-description: "изм" -124370336 19847348 14 0 1203051 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 45000000 0 0
+  corner: 2 10000000 45000000 0 0
+description: "Подп. и дата" 5880000 46350000 14 270 1000000 110000 -1 -1 11 257
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -90250000 18750000 0 0
-  corner: 2 -81250000 18750000 0 0
-description: "00.00.00|DD.MM.YY'(This is an automatic time update command)" -89370000 16500000 14 0 1151440 150000 -1 -1 3 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 32500000 0 0
+  corner: 2 10000000 32500000 0 0
+description: "Взам. инв. №" 5880000 34100000 14 270 1000000 110000 -1 -1 11 257
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -125250000 12750000 0 0
-  corner: 2 -81250000 12750000 0 0
-description: "Т.контр" -124251504 10404352 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 15000000 0 0
+  corner: 2 10000000 15000000 0 0
+description: "Подп. и дата" 5880000 19000000 14 270 1000000 110000 -1 -1 11 257
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -125250000 9250000 0 0
-  corner: 2 -81250000 9250000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 104680000 0 0
+  corner: 2 10000000 104680000 0 0
+description: "Перв. примен." 5880000 108930000 14 270 1000000 110000 -1 -1 11 257
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -125250000 3000000 0 0
-  corner: 2 -81250000 3000000 0 0
-description: "Agent2" -110767370 976870 14 0 1439300 150000 -1 -1 2 1
+outline: 4 0 15 250000 -1 -1 -1 0
+  corner: 1 10000000 2500000 0 0
+  corner: 2 10000000 145500000 0 0
+  corner: 3 207500000 145500000 0 0
+  corner: 4 207500000 2500000 0 0
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -81500000 28000000 0 0
-  corner: 2 -125250000 28000000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 4000000 2500000 0 0
+  corner: 2 10000000 2500000 0 0
+description: "Инв. № подл." 5880000 4400000 14 270 1000000 110000 -1 -1 11 257
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -125250000 6750000 0 0
-  corner: 2 -81250000 6750000 0 0
-description: "Н.контр" -124491384 4167339 14 0 1439298 150000 -1 -1 2 1
+polyline: 3 0 15 250000 -1 -1 -1 0
+  corner: 1 10000000 138250000 0 0
+  corner: 2 44000000 138250000 0 0
+  corner: 3 44000000 145500000 0 0
+description: "Template'|path: 0'|name: 1'|pcb_flag: 0'|extention: 0'|length: 99'|make_lower: 0'|command: PATH" 41630328 143499799 14 180 3000001 250001 -1 -1 11 1
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -125250000 15500000 0 0
-  corner: 2 -81250000 15500000 0 0
-description: "Проверил" -124491384 13522854 14 0 1103461 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 123500000 30000000 0 0
+  corner: 2 123500000 2500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -81250000 24750000 0 0
-  corner: 2 -250000 24750000 0 0
+polyline: 3 0 15 250000 -1 -1 -1 0
+  corner: 1 115000000 2500000 0 0
+  corner: 2 115000000 30000000 0 0
+  corner: 3 207500000 30000000 0 0
+description: "Template'|path: 0'|name: 1'|pcb_flag:0'|extention: 0'|length: 99'|make_lower: 0'|command: PATH" 160550000 25000000 14 0 3000000 250000 -1 -1 11 1
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -81250000 18750000 0 0
-  corner: 2 -81250000 24750000 0 0
-description: "[Общее название]" -74250000 21000000 14 0 2187370 300000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 118500000 30000000 0 0
+  corner: 2 118500000 17500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -34250000 9250000 0 0
-  corner: 2 -34250000 0 0 0
-description: "LLC [Название]" -29446350 3667340 14 0 2000000 200000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 135000000 30000000 0 0
+  corner: 2 135000000 2500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -34250000 21500000 0 0
-  corner: 2 -250000 21500000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 142500000 30000000 0 0
+  corner: 2 142500000 2500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -34250000 12750000 0 0
-  corner: 2 0 12750000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 147500000 30000000 0 0
+  corner: 2 147500000 2500000 0 0
+description: "Схема электрическая принципиальная" 149180000 12550001 14 0 2000001 120001 -1 -1 11 129
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -23750000 24750000 0 0
-  corner: 2 -23750000 21500000 0 0
-description: "Масса" -21820596 22182696 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 182500000 22500000 0 0
+  corner: 2 182500000 2500000 0 0
+description: "ООО Образовательные 'технологии" 185950000 7000000 14 0 2000001 120001 -1 -1 11 129
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -12500000 24750000 0 0
-  corner: 2 -12500000 21500000 0 0
-description: "Масштаб" -11745424 22326634 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 190000000 22500000 0 0
+  corner: 2 190000000 12750000 0 0
+description: "Масса" 192500000 20750000 14 0 1000000 110000 -1 -1 11 1
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -20500000 12500000 0 0
-  corner: 2 -20500000 9250000 0 0
-description: "Листов 1" -15583600 10188454 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 198500000 22500000 0 0
+  corner: 2 198500000 12750000 0 0
+description: "Масштаб" 200250000 20750000 14 0 1000000 110000 -1 -1 11 1
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -81250000 18750000 0 0
-  corner: 2 -81250000 15500000 0 0
-description: "[Название]" -70750000 15500000 14 0 3000000 300000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 182500000 12750000 0 0
+  corner: 2 207500000 12750000 0 0
+description: "Лист    1" 184950000 10905000 14 0 1000000 110000 -1 -1 11 1
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -81250000 15500000 0 0
-  corner: 2 -81250000 12750000 0 0
-description: "Схема электрическая принципиальная" -78953690 11327190 14 0 1200000 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 147500000 10000000 0 0
+  corner: 2 207500000 10000000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -81250000 12750000 0 0
-  corner: 2 -81250000 6750000 0 0
-description: "Файл печатной платы'       [Название].fpc" -74595300 6086420 14 0 1727170 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 192500000 12750000 0 0
+  corner: 2 192500000 10000000 0 0
+description: "Листов    1" 195700000 10905000 14 0 1000000 110000 -1 -1 11 1
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -81250000 6750000 0 0
-  corner: 2 -81250000 0 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 182500000 20000000 0 0
+  corner: 2 207500000 20000000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 0 9250000 0 0
-  corner: 2 -81250000 9250000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 147500000 22500000 0 0
+  corner: 2 207500000 22500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -34250000 9250000 0 0
-  corner: 2 -34250000 12750000 0 0
-description: "Лист 1" -30936232 10164466 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 115000000 17500000 0 0
+  corner: 2 147500000 17500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -34250000 12750000 0 0
-  corner: 2 -34250000 21500000 0 0
+polyline: 2 0 15 250000 -1 -1 -1 0
+  corner: 1 115000000 20000000 0 0
+  corner: 2 147500000 20000000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -34250000 21500000 0 0
-  corner: 2 -34250000 24750000 0 0
-description: "Лит" -31416012 22182696 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 15030000 0 0
+  corner: 2 147500000 15030000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -23750000 21000000 0 0
-  corner: 2 -23750000 12750000 0 0
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 12500000 0 0
+  corner: 2 147500000 12500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -90250000 18750000 0 0
-  corner: 2 -98500000 18750000 0 0
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 10000000 0 0
+  corner: 2 147500000 10000000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -98500000 18750000 0 0
-  corner: 2 -114000000 18750000 0 0
-description: "Agent1" -110817940 16329510 14 0 1439300 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 7500000 0 0
+  corner: 2 147500000 7500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -114000000 18750000 0 0
-  corner: 2 -125250000 18750000 0 0
-description: "Выполнил" -124513248 16401470 14 0 1103461 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 5000000 0 0
+  corner: 2 147500000 5000000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -98500000 22000000 0 0
-  corner: 2 -114000000 22000000 0 0
-description: "No докум" -111537592 19884756 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 22500000 0 0
+  corner: 2 147500000 22500000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -90250000 22000000 0 0
-  corner: 2 -98500000 22000000 0 0
-description: "Подп" -97384400 19687896 14 0 1439298 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 25000000 0 0
+  corner: 2 147500000 25000000 0 0
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -90250000 22000000 0 0
-  corner: 2 -81250000 22000000 0 0
-description: "Дата" -88268736 19783850 14 0 1151436 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 115000000 27500000 0 0
+  corner: 2 147500000 27500000 0 0
 
-polyline: 2 0 15 100000 -1 -1 -1 0
-  corner: 1 -120250000 34000000 0 0
-  corner: 2 -120250000 18750000 0 0
-description: "лист" -119551504 19858284 14 0 1203051 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 185000000 20000000 0 0
+  corner: 2 185000000 12750000 0 0
+description: "Лит." 184850000 20750000 14 0 1000000 110000 -1 -1 11 1
 
-polyline: 2 0 15 400000 -1 -1 -1 0
-  corner: 1 -125250000 3000000 0 0
-  corner: 2 -125250000 0 0 0
-description: "Утвердил" -124491384 1288721 14 0 1151436 150000 -1 -1 2 1
+polyline: 2 0 15 50000 -1 -1 -1 0
+  corner: 1 187500000 20000000 0 0
+  corner: 2 187500000 12750000 0 0
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 190250000 0 0 0
+  corner: 2 199000000 0 0 0
+description: "Формат А3" 191050000 750000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 160500000 0 0 0
+  corner: 2 169250000 0 0 0
+description: "Копировал" 161300000 725000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 115750000 15000000 0 0
+  corner: 2 122250000 15000000 0 0
+description: "Разраб." 116400000 15665000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 115750000 12500000 0 0
+  corner: 2 122250000 12500000 0 0
+description: "Пров." 116400000 13395000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 115750000 10000000 0 0
+  corner: 2 122250000 10000000 0 0
+description: "Т.контр" 116150000 10885000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 115750000 5000000 0 0
+  corner: 2 122250000 5000000 0 0
+description: "Н.контр" 116150000 5975000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 115750000 2500000 0 0
+  corner: 2 122250000 2500000 0 0
+description: "Утв." 116150000 3295000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 115500000 18000000 0 0
+  corner: 2 117750000 18000000 0 0
+description: "Изм." 115750000 18285000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 119250000 18000000 0 0
+  corner: 2 121500000 18000000 0 0
+description: "Лист" 119250000 18285000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 125750000 17600000 0 0
+  corner: 2 128000000 17600000 0 0
+description: "№ докум." 125750000 18285000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 136500000 18000000 0 0
+  corner: 2 138750000 18000000 0 0
+description: "Подп." 137070000 18285000 14 0 1000000 110000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 143500000 17800000 0 0
+  corner: 2 145749984 17800000 0 0
+description: "Дата" 143110000 18285000 14 0 1000000 110000 -1 -1 11 9
+
+outline: 4 0 17 250000 -1 -1 0 0
+  corner: 1 0 0 0 0
+  corner: 2 0 148000000 0 0
+  corner: 3 210000000 148000000 0 0
+  corner: 4 210000000 0 0 0
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 125250000 15000000 0 0
+  corner: 2 131750000 15000000 0 0
+description: "Никонов Л.А." 125650328 15664799 14 0 1000001 110001 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 143240000 15000000 0 0
+  corner: 2 146240000 15000000 0 0
+description: "13.01.26|DD.MM.YY DATE" 143240000 15665000 14 0 1000000 110000 -1 -1 11 129
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 186000000 24000000 0 0
+  corner: 2 189750000 24000000 0 0
+description: "Э3" 192350000 25000000 14 0 3000000 250000 -1 -1 11 1
+
+polyline: 2 0 17 250000 -1 -1 -1 0
+  corner: 1 149280000 17500000 0 0
+  corner: 2 153280000 17500000 0 0
+description: "Сервопривод" 155150000 17200000 14 0 3000001 250001 -1 -1 11 2
 
 part_end
-
-[merges]
-
-
 
 [end]

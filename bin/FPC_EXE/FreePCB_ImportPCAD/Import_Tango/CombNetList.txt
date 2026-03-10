@@ -1,3551 +1,3198 @@
 net: "Unconnected_Area."
-net: "NetD27_5"
-pin: 1 D27.5
-pin: 2 R501.2
-pin: 3 R502.2
-net: "CPU_Switch_Power_OT_PINN"
-pin: 1 R501.1
-pin: 2 XP112.21
-net: "VDD_CPU2"
-pin: 1 R3.1
-pin: 2 XP211.5
-net: "VDD_CPU1"
-pin: 1 R2.1
-pin: 2 XT3.24
-net: "VCC_L_5V"
-pin: 1 D91.1
-pin: 2 R292.1
-pin: 3 XP7.40
-pin: 4 XP7.39
-net: "VCC_L_0V"
-pin: 1 D86.5
-pin: 2 D87.5
-pin: 3 D88.5
-pin: 4 R241.1
-pin: 5 R242.1
-pin: 6 R243.1
-pin: 7 XP7.23
-pin: 8 XP7.24
-pin: 9 XP7.27
-pin: 10 XP7.28
-pin: 11 XP7.31
-pin: 12 XP7.32
-pin: 13 XP7.35
-pin: 14 XP7.36
-net: "VCC_H_5V"
-pin: 1 D90.1
-pin: 2 R291.1
-pin: 3 XP7.2
-pin: 4 XP7.1
-net: "VCC_H_0V"
-pin: 1 D83.5
-pin: 2 D84.5
-pin: 3 D85.5
-pin: 4 R238.1
-pin: 5 R239.1
-pin: 6 R240.1
-pin: 7 XP7.14
-pin: 8 XP7.13
-pin: 9 XP7.10
-pin: 10 XP7.9
-pin: 11 XP7.6
-pin: 12 XP7.5
-pin: 13 XP7.17
-pin: 14 XP7.18
-net: "Vcc_CPU2"
-pin: 1 XP211.6
-pin: 2 XP4.14
-pin: 3 XP4.13
-pin: 4 XP4.12
-pin: 5 XP4.11
-pin: 6 XT2.9
-net: "Vcc_CPU1"
-pin: 1 D32.8
-pin: 2 D32.3
-pin: 3 D36.2
-pin: 4 D43.14
-pin: 5 D44.2
-pin: 6 X11.2
-pin: 7 D37.2
-pin: 8 D34.23
-pin: 9 D35.23
-pin: 10 C27.2
-pin: 11 C81.plus
-pin: 12 D31.8
-pin: 13 D40.14
-pin: 14 D41.14
-pin: 15 D42.14
-pin: 16 C2.2
-pin: 17 C3.2
-pin: 18 C5.2
-pin: 19 C7.2
-pin: 20 C8.2
-pin: 21 C11.1
-pin: 22 C12.1
-pin: 23 C13.1
-pin: 24 C14.1
-pin: 25 C15.2
-pin: 26 XP111.6
-pin: 27 XP4.4
-pin: 28 XP4.3
-pin: 29 XP4.2
-pin: 30 XP4.1
-pin: 31 XT2.10
-net: "VCC_0V_Sig"
-pin: 1 X1.1
-pin: 2 XP11.50
-pin: 3 XP11.49
-pin: 4 XP12.50
-pin: 5 XP12.49
-pin: 6 XP13.50
-pin: 7 XP13.49
-pin: 8 XP14.50
-pin: 9 XP14.49
-pin: 10 XP15.49
-pin: 11 XP15.50
-pin: 12 XP16.49
-pin: 13 XP16.50
-pin: 14 XP18.49
-pin: 15 XP18.50
-pin: 16 XP19.49
-pin: 17 XP19.50
-net: "TX_UART_CPU2"
-pin: 1 XP111.41
-pin: 2 XP212.37
-pin: 3 XT3.14
-net: "TX_MAIN"
-pin: 1 D32.4
-pin: 2 XP112.40
-pin: 3 XT3.20
-net: "TX-"
-pin: 1 D32.7
-pin: 2 K22.1
-net: "TX+"
-pin: 1 D32.6
-pin: 2 K21.1
-net: "TC_Clk4"
-pin: 1 R206.1
-pin: 2 XP212.26
-net: "TC_Clk3"
-pin: 1 R204.1
-pin: 2 XP211.50
-net: "TC_Clk2"
-pin: 1 R202.1
-pin: 2 XP211.34
-net: "TC_Clk1"
-pin: 1 R200.1
-pin: 2 XP212.13
-net: "T_Udiag_CPU4"
-pin: 1 C45.1
-pin: 2 R366.2
-pin: 3 R393.2
-pin: 4 XP111.34
-net: "T_Udiag_CPU3"
-pin: 1 C44.1
-pin: 2 R364.2
-pin: 3 R392.2
-pin: 4 XP112.15
-net: "T_Udiag_CPU2"
-pin: 1 R391.2
-pin: 2 C43.1
-pin: 3 R362.2
-pin: 4 XP112.13
-net: "T_Udiag_CPU1"
-pin: 1 R390.2
-pin: 2 C42.1
-pin: 3 R360.2
-pin: 4 XP112.11
-net: "T_Udiag4"
-pin: 1 R327.1
-pin: 2 K167.1
-net: "T_Udiag3"
-pin: 1 R325.1
-pin: 2 K145.1
-net: "T_Udiag2"
-pin: 1 R323.1
-pin: 2 K123.1
-net: "T_Udiag1"
-pin: 1 R321.1
-pin: 2 K101.1
-net: "T_Tx4"
-pin: 1 D33.13
-pin: 2 R277.1
-pin: 3 XT2.17
-pin: 4 K164.1
-net: "T_Tx4_C"
-pin: 1 D33.12
-pin: 2 XP212.44
-net: "T_Tx3"
-pin: 1 D33.11
-pin: 2 R276.1
-pin: 3 XT2.15
-pin: 4 K142.1
-net: "T_Tx3_C"
-pin: 1 D33.10
-pin: 2 XP211.30
-net: "T_Tx2"
-pin: 1 D33.9
-pin: 2 R275.1
-pin: 3 XT2.13
-pin: 4 K120.1
-net: "T_Tx2_C"
-pin: 1 D33.8
-pin: 2 XP212.18
-net: "T_Tx1"
-pin: 1 D33.5
-pin: 2 R274.1
-pin: 3 XT2.11
-pin: 4 K98.1
-net: "T_Tx1_C"
-pin: 1 D33.6
-pin: 2 XP212.64
-net: "T_Reset_fr_MPP4"
-pin: 1 R426.1
-pin: 2 K170.1
-net: "T_Reset_fr_MPP3"
-pin: 1 R422.1
-pin: 2 K148.1
-net: "T_Reset_fr_MPP2"
-pin: 1 R418.1
-pin: 2 K126.1
-net: "T_Reset_fr_MPP1"
-pin: 1 R413.1
-pin: 2 K104.1
-net: "T_Reset_CPU_Crash2"
-pin: 1 R25.2
-pin: 2 XT2.21
-net: "T_Reset_CPU_Crash1"
-pin: 1 R14.2
-pin: 2 XT2.19
-net: "T_I_LED_fr_MPP"
-pin: 1 R423.1
-pin: 2 R462.1
-pin: 3 K105.1
-pin: 4 K127.1
-pin: 5 K149.1
-pin: 6 K171.1
-net: "T_Clk4"
-pin: 1 R206.2
-pin: 2 R207.1
-pin: 3 K169.1
-net: "T_Clk3"
-pin: 1 R204.2
-pin: 2 R205.1
-pin: 3 K147.1
-net: "T_Clk2"
-pin: 1 R202.2
-pin: 2 R203.1
-pin: 3 K125.1
-net: "T_Clk1"
-pin: 1 R200.2
-pin: 2 R201.1
-pin: 3 K103.1
-net: "T+30V4"
-pin: 1 D77.5
-pin: 2 K168.1
-net: "T+30V3"
-pin: 1 D76.5
-pin: 2 K146.1
-net: "T+30V2"
-pin: 1 D75.5
-pin: 2 K124.1
-net: "T+30V1"
-pin: 1 D74.5
-pin: 2 K102.1
-net: "T+15V4"
-pin: 1 D77.8
-pin: 2 K162.1
-net: "T+15V3"
-pin: 1 D76.8
-pin: 2 K140.1
-net: "T+15V2"
-pin: 1 D75.8
-pin: 2 K118.1
-net: "T+15V1"
-pin: 1 D74.8
-pin: 2 K96.1
-net: "T+3.3V4"
-pin: 1 D73.5
-pin: 2 K161.1
-net: "T+3.3V3"
-pin: 1 D72.5
-pin: 2 K139.1
-net: "T+3.3V2"
-pin: 1 D71.5
-pin: 2 K117.1
-net: "T+3.3V1"
-pin: 1 D70.5
-pin: 2 K95.1
-net: "T+1.8V4"
-pin: 1 D73.8
-pin: 2 K166.1
-net: "T+1.8V3"
-pin: 1 D72.8
-pin: 2 K144.1
-net: "T+1.8V2"
-pin: 1 D71.8
-pin: 2 K122.1
-net: "T+1.8V1"
-pin: 1 D70.8
-pin: 2 K100.1
-net: "SYNC_OPT_E"
-pin: 1 D92.5
-pin: 2 R210.1
-pin: 3 XT3.28
-net: "SYNC_OPT_C"
-pin: 1 D92.6
-pin: 2 XT3.26
-net: "Switch_Power_OT_PINN"
-pin: 1 D27.11
-pin: 2 XP6.3
-pin: 3 XP6.4
-net: "SPI_SCK_CPU2"
-pin: 1 XP111.1
-pin: 2 XP211.1
-net: "SPI_MOSI_CPU2"
-pin: 1 XP111.3
-pin: 2 XP211.3
-net: "SPI_MISO_CPU2"
-pin: 1 XP111.2
-pin: 2 XP211.2
-net: "SP_POLK_L_fr_CPU"
-pin: 1 R134.1
-pin: 2 XP111.48
-net: "SP_POLK_H_fr_CPU"
-pin: 1 R131.1
-pin: 2 XP111.47
-net: "SP_PHIK_fr_CPU"
-pin: 1 R128.1
-pin: 2 XP111.46
-net: "SP_L"
-pin: 1 D87.6
-pin: 2 XP7.29
-pin: 3 XP7.30
-net: "SP_H"
-pin: 1 D84.6
-pin: 2 XP7.8
-pin: 3 XP7.7
-net: "SP_fr_PI"
-pin: 1 D81.6
-pin: 2 XP5.8
-pin: 3 XP5.7
-net: "Sh_TrigOut_L9_16"
-pin: 1 R312.2
-pin: 2 XP7.33
-pin: 3 XP7.34
-net: "Sh_TrigOut_H9_16"
-pin: 1 R311.2
-pin: 2 XP7.12
-pin: 3 XP7.11
-net: "Sh_TrigOut_H08"
-pin: 1 D36.10
-pin: 2 XP19.21
-pin: 3 XP19.22
-net: "Sh_TrigOut_H07"
-pin: 1 D36.9
-pin: 2 XP16.21
-pin: 3 XP16.22
-net: "Sh_TrigOut_H06"
-pin: 1 D36.8
-pin: 2 XP14.22
-pin: 3 XP14.21
-net: "Sh_TrigOut_H05"
-pin: 1 D36.7
-pin: 2 XP12.22
-pin: 3 XP12.21
-net: "Sh_TrigOut_H04"
-pin: 1 D36.6
-pin: 2 XP18.21
-pin: 3 XP18.22
-net: "Sh_TrigOut_H03"
-pin: 1 D36.5
-pin: 2 XP15.21
-pin: 3 XP15.22
-net: "Sh_TrigOut_H02"
-pin: 1 D36.4
-pin: 2 XP13.22
-pin: 3 XP13.21
-net: "Sh_TrigOut_H01"
-pin: 1 D36.3
-pin: 2 XP11.22
-pin: 3 XP11.21
-net: "Sh_TrigOut_1_8_Ch1"
-pin: 1 R310.2
-pin: 2 XP5.16
-pin: 3 XP5.15
-net: "Sh_Trig_SP_PN_fr_CPU"
-pin: 1 D34.6
-pin: 2 D34.5
-pin: 3 XP112.34
-net: "Sh_Trig_SP_H02"
-pin: 1 D34.19
-pin: 2 XP12.26
-pin: 3 XP12.25
-pin: 4 XP14.26
-pin: 5 XP14.25
-pin: 6 XP16.25
-pin: 7 XP16.26
-pin: 8 XP19.25
-pin: 9 XP19.26
-net: "Sh_Trig_SP_H01"
-pin: 1 D34.20
-pin: 2 XP11.26
-pin: 3 XP11.25
-pin: 4 XP13.26
-pin: 5 XP13.25
-pin: 6 XP15.25
-pin: 7 XP15.26
-pin: 8 XP18.25
-pin: 9 XP18.26
-net: "Sh_Trig_CLK_PN_fr_CPU"
-pin: 1 D34.8
-pin: 2 D34.7
-pin: 3 XP112.6
-net: "Sh_Trig_CLK_H02"
-pin: 1 D34.17
-pin: 2 XP12.30
-pin: 3 XP12.29
-pin: 4 XP14.30
-pin: 5 XP14.29
-pin: 6 XP16.29
-pin: 7 XP16.30
-pin: 8 XP19.29
-pin: 9 XP19.30
-net: "Sh_Trig_CLK_H01"
-pin: 1 D34.18
-pin: 2 XP11.30
-pin: 3 XP11.29
-pin: 4 XP13.30
-pin: 5 XP13.29
-pin: 6 XP15.29
-pin: 7 XP15.30
-pin: 8 XP18.29
-pin: 9 XP18.30
-net: "S_SWDIO_2"
-pin: 1 XP211.13
-pin: 2 XT3.32
-net: "S_SWDIO_1"
-pin: 1 XP111.13
-pin: 2 XT3.2
-net: "S_SWCLK_2"
-pin: 1 XP211.15
-pin: 2 XT3.34
-net: "S_SWCLK_1"
-pin: 1 XP111.15
-pin: 2 XT3.4
-net: "S_NRST_2"
-pin: 1 XP211.14
-pin: 2 XT3.36
-net: "S_NRST_1"
-pin: 1 XP111.14
-pin: 2 XT3.6
-net: "RX_UART_CPU2"
-pin: 1 XP111.43
-pin: 2 XP212.35
-pin: 3 XT3.16
-net: "RX_MAIN"
-pin: 1 D31.1
-pin: 2 XP112.44
-pin: 3 XT3.18
-net: "RX-"
-pin: 1 D31.7
-pin: 2 R460.1
-pin: 3 K18.1
-net: "RX+"
-pin: 1 D31.6
-pin: 2 R460.2
-pin: 3 K17.1
-net: "Reset_Prt_POLK_L_fr_CPU"
-pin: 1 R135.1
-pin: 2 XP112.52
-net: "Reset_Prt_POLK_H_fr_CPU"
-pin: 1 R132.1
-pin: 2 XP111.62
-net: "Reset_Protect_PHIK_fr_CPU"
-pin: 1 R129.1
-pin: 2 XP111.50
-net: "Reset_Protect_fr_PI"
-pin: 1 D82.6
-pin: 2 XP5.12
-pin: 3 XP5.11
-net: "Reset_L"
-pin: 1 D88.6
-pin: 2 XP7.38
-pin: 3 XP7.37
-net: "Reset_H"
-pin: 1 D85.6
-pin: 2 XP7.16
-pin: 3 XP7.15
-net: "Reset_CPU_Crash_C2"
-pin: 1 D30.9
-pin: 2 R25.1
-pin: 3 XP212.4
-net: "Reset_CPU_Crash_C1"
-pin: 1 D30.1
-pin: 2 R14.1
-pin: 3 XP112.4
-net: "R2_Select_PINN"
-pin: 1 D9.4
-pin: 2 XP10.7
-pin: 3 XP10.8
-net: "R2_Select_F16"
-pin: 1 D19.7
-pin: 2 XP19.8
-pin: 3 XP19.7
-net: "R2_Select_F15"
-pin: 1 D19.11
-pin: 2 XP19.6
-pin: 3 XP19.5
-net: "R2_Select_F14"
-pin: 1 D19.4
-pin: 2 XP16.8
-pin: 3 XP16.7
-net: "R2_Select_F13"
-pin: 1 D19.14
-pin: 2 XP16.6
-pin: 3 XP16.5
-net: "R2_Select_F12"
-pin: 1 D18.7
-pin: 2 XP14.7
-pin: 3 XP14.8
-net: "R2_Select_F11"
-pin: 1 D18.11
-pin: 2 XP14.5
-pin: 3 XP14.6
-net: "R2_Select_F10"
-pin: 1 D18.4
-pin: 2 XP12.7
-pin: 3 XP12.8
-net: "R2_Select_F9"
-pin: 1 D18.14
-pin: 2 XP12.5
-pin: 3 XP12.6
-net: "R2_Select_F8"
-pin: 1 D17.7
-pin: 2 XP18.8
-pin: 3 XP18.7
-net: "R2_Select_F7"
-pin: 1 D17.11
-pin: 2 XP18.6
-pin: 3 XP18.5
-net: "R2_Select_F6"
-pin: 1 D17.4
-pin: 2 XP15.8
-pin: 3 XP15.7
-net: "R2_Select_F5"
-pin: 1 D17.14
-pin: 2 XP15.6
-pin: 3 XP15.5
-net: "R2_Select_F4"
-pin: 1 D16.7
-pin: 2 XP13.7
-pin: 3 XP13.8
-net: "R2_Select_F3"
-pin: 1 D16.11
-pin: 2 XP13.5
-pin: 3 XP13.6
-net: "R2_Select_F2"
-pin: 1 D16.4
-pin: 2 XP11.7
-pin: 3 XP11.8
-net: "R2_Select_F1"
-pin: 1 D16.14
-pin: 2 XP11.5
-pin: 3 XP11.6
-net: "R1_Select_PINN"
-pin: 1 D9.14
-pin: 2 XP10.3
-pin: 3 XP10.4
-net: "R1_Select_F16"
-pin: 1 D15.7
-pin: 2 XP19.4
-pin: 3 XP19.3
-net: "R1_Select_F15"
-pin: 1 D15.11
-pin: 2 XP19.2
-pin: 3 XP19.1
-net: "R1_Select_F14"
-pin: 1 D15.4
-pin: 2 XP16.4
-pin: 3 XP16.3
-net: "R1_Select_F13"
-pin: 1 D15.14
-pin: 2 XP16.2
-pin: 3 XP16.1
-net: "R1_Select_F12"
-pin: 1 D14.7
-pin: 2 XP14.3
-pin: 3 XP14.4
-net: "R1_Select_F11"
-pin: 1 D14.11
-pin: 2 XP14.1
-pin: 3 XP14.2
-net: "R1_Select_F10"
-pin: 1 D14.4
-pin: 2 XP12.3
-pin: 3 XP12.4
-net: "R1_Select_F9"
-pin: 1 D14.14
-pin: 2 XP12.1
-pin: 3 XP12.2
-net: "R1_Select_F8"
-pin: 1 D13.7
-pin: 2 XP18.4
-pin: 3 XP18.3
-net: "R1_Select_F7"
-pin: 1 D13.11
-pin: 2 XP18.2
-pin: 3 XP18.1
-net: "R1_Select_F6"
-pin: 1 D13.4
-pin: 2 XP15.4
-pin: 3 XP15.3
-net: "R1_Select_F5"
-pin: 1 D13.14
-pin: 2 XP15.2
-pin: 3 XP15.1
-net: "R1_Select_F4"
-pin: 1 D12.7
-pin: 2 XP13.3
-pin: 3 XP13.4
-net: "R1_Select_F3"
-pin: 1 D12.11
-pin: 2 XP13.1
-pin: 3 XP13.2
-net: "R1_Select_F2"
-pin: 1 D12.4
-pin: 2 XP11.3
-pin: 3 XP11.4
-net: "R1_Select_F1"
-pin: 1 D12.14
-pin: 2 XP11.1
-pin: 3 XP11.2
-net: "PW_GND_PINN"
-pin: 1 R414.1
-pin: 2 R417.1
-pin: 3 R454.1
-pin: 4 XP10.1
-pin: 5 XP10.2
-pin: 6 XT2.5
-net: "PN_to_CPU_Sh_TrigOut_08"
-pin: 1 D36.15
-pin: 2 XP112.60
-net: "PN_to_CPU_Sh_TrigOut_07"
-pin: 1 D36.16
-pin: 2 XP112.50
-net: "PN_to_CPU_Sh_TrigOut_06"
-pin: 1 D36.17
-pin: 2 XP112.57
-net: "PN_to_CPU_Sh_TrigOut_05"
-pin: 1 D36.18
-pin: 2 XP112.59
-net: "PN_to_CPU_Sh_TrigOut_04"
-pin: 1 D36.19
-pin: 2 XP112.62
-net: "PN_to_CPU_Sh_TrigOut_03"
-pin: 1 D36.20
-pin: 2 XP111.52
-net: "PN_to_CPU_Sh_TrigOut_02"
-pin: 1 D36.21
-pin: 2 XP111.51
-net: "PN_to_CPU_Sh_TrigOut_01"
-pin: 1 D36.22
-pin: 2 XP111.53
-net: "PINN_ADC_ON_IN"
-pin: 1 D10.14
-pin: 2 XP8.48
-pin: 3 XP8.47
-net: "OT_H"
-pin: 1 D80.5
-pin: 2 D81.5
-pin: 3 D82.5
-pin: 4 R235.1
-pin: 5 R236.1
-pin: 6 R237.1
-pin: 7 XP5.14
-pin: 8 XP5.13
-pin: 9 XP5.10
-pin: 10 XP5.9
-pin: 11 XP5.6
-pin: 12 XP5.5
-net: "OT_0V"
-pin: 1 R425.1
-pin: 2 X3.1
-pin: 3 XP6.20
-pin: 4 XP6.19
-pin: 5 XP6.7
-pin: 6 XP6.8
-pin: 7 XP6.11
-pin: 8 XP6.12
-pin: 9 XP9.9
-pin: 10 XP9.10
-net: "OR_Out_Ch208"
-pin: 1 D41.13
-pin: 2 XP19.46
-pin: 3 XP19.45
-net: "OR_Out_Ch207"
-pin: 1 D41.10
-pin: 2 XP16.46
-pin: 3 XP16.45
-net: "OR_Out_Ch206"
-pin: 1 D41.5
-pin: 2 XP14.45
-pin: 3 XP14.46
-net: "OR_Out_Ch205"
-pin: 1 D41.2
-pin: 2 XP12.45
-pin: 3 XP12.46
-net: "OR_Out_Ch204"
-pin: 1 D40.13
-pin: 2 XP18.46
-pin: 3 XP18.45
-net: "OR_Out_Ch203"
-pin: 1 D40.10
-pin: 2 XP15.46
-pin: 3 XP15.45
-net: "OR_Out_Ch202"
-pin: 1 D40.5
-pin: 2 XP13.45
-pin: 3 XP13.46
-net: "OR_Out_Ch201"
-pin: 1 D40.2
-pin: 2 XP11.45
-pin: 3 XP11.46
-net: "OR_Out_Ch108"
-pin: 1 D41.12
-pin: 2 XP19.42
-pin: 3 XP19.41
-net: "OR_Out_Ch107"
-pin: 1 D41.9
-pin: 2 XP16.42
-pin: 3 XP16.41
-net: "OR_Out_Ch106"
-pin: 1 D41.4
-pin: 2 XP14.41
-pin: 3 XP14.42
-net: "OR_Out_Ch105"
-pin: 1 D41.1
-pin: 2 XP12.41
-pin: 3 XP12.42
-net: "OR_Out_Ch104"
-pin: 1 D40.12
-pin: 2 XP18.42
-pin: 3 XP18.41
-net: "OR_Out_Ch103"
-pin: 1 D40.9
-pin: 2 XP15.42
-pin: 3 XP15.41
-net: "OR_Out_Ch102"
-pin: 1 D40.4
-pin: 2 XP13.41
-pin: 3 XP13.42
-net: "OR_Out_Ch101"
-pin: 1 D40.1
-pin: 2 XP11.41
-pin: 3 XP11.42
-net: "OR16ch_Out_4"
-pin: 1 D43.13
-pin: 2 D37.10
-net: "OR16ch_Out_3"
-pin: 1 D43.1
-pin: 2 D37.9
-net: "OR16ch_Out_2"
-pin: 1 D37.8
-pin: 2 D42.13
-net: "OR16ch_Out_1"
-pin: 1 D37.7
-pin: 2 D42.1
-net: "On_PW_from_CPU_ch16"
-pin: 1 D8.7
-pin: 2 XP5.49
-pin: 3 XP5.50
-net: "On_PW_from_CPU_ch15"
-pin: 1 D8.11
-pin: 2 XP5.48
-pin: 3 XP5.47
-net: "On_PW_from_CPU_ch14"
-pin: 1 D8.4
-pin: 2 XP5.46
-pin: 3 XP5.45
-net: "On_PW_from_CPU_ch13"
-pin: 1 D8.14
-pin: 2 XP5.44
-pin: 3 XP5.43
-net: "On_PW_from_CPU_ch12"
-pin: 1 D7.7
-pin: 2 XP5.42
-pin: 3 XP5.41
-net: "On_PW_from_CPU_ch11"
-pin: 1 D7.11
-pin: 2 XP5.40
-pin: 3 XP5.39
-net: "On_PW_from_CPU_ch10"
-pin: 1 D7.4
-pin: 2 XP5.38
-pin: 3 XP5.37
-net: "On_PW_from_CPU_ch9"
-pin: 1 D7.14
-pin: 2 XP5.35
-pin: 3 XP5.36
-net: "On_PW_from_CPU_ch8"
-pin: 1 D6.7
-pin: 2 XP5.33
-pin: 3 XP5.34
-net: "On_PW_from_CPU_ch7"
-pin: 1 D6.11
-pin: 2 XP5.31
-pin: 3 XP5.32
-net: "On_PW_from_CPU_ch6"
-pin: 1 D6.4
-pin: 2 XP5.29
-pin: 3 XP5.30
-net: "On_PW_from_CPU_ch5"
-pin: 1 D6.14
-pin: 2 XP5.27
-pin: 3 XP5.28
-net: "On_PW_from_CPU_ch4"
-pin: 1 D5.7
-pin: 2 XP5.25
-pin: 3 XP5.26
-net: "On_PW_from_CPU_ch3"
-pin: 1 D5.11
-pin: 2 XP5.23
-pin: 3 XP5.24
-net: "On_PW_from_CPU_ch2"
-pin: 1 D5.4
-pin: 2 XP5.21
-pin: 3 XP5.22
-net: "On_PW_from_CPU_ch1"
-pin: 1 D5.14
-pin: 2 XP5.19
-pin: 3 XP5.20
-net: "ON_MX_fr_CPU02"
-pin: 1 R147.1
-pin: 2 XP212.38
-net: "ON_MX_fr_CPU01"
-pin: 1 R146.1
-pin: 2 XP212.58
-net: "Off_CPU_Crash"
-pin: 1 D3.7
-pin: 2 D3.4
-pin: 3 XP6.13
-pin: 4 XP6.14
-pin: 5 XP8.44
-pin: 6 XP8.43
-net: "NetR3_2"
-pin: 1 R3.2
-pin: 2 XP212.1
-net: "NetR2_2"
-pin: 1 R2.2
-pin: 2 XP111.5
-net: "NetR1_2"
-pin: 1 R1.2
-pin: 2 XP112.1
-net: "NetD109_13"
-pin: 1 D109.13
-pin: 2 R405.1
-net: "NetD109_11"
-pin: 1 D109.11
-pin: 2 R349.2
-pin: 3 R383.2
-net: "NetD109_5"
-pin: 1 D109.5
-pin: 2 R347.2
-pin: 3 R381.2
-net: "NetD109_3"
-pin: 1 D109.3
-pin: 2 R404.1
-net: "NetD108_13"
-pin: 1 D108.13
-pin: 2 R403.1
-net: "NetD108_11"
-pin: 1 D108.11
-pin: 2 R345.2
-pin: 3 R379.2
-net: "NetD108_5"
-pin: 1 D108.5
-pin: 2 R343.2
-pin: 3 R377.2
-net: "NetD108_3"
-pin: 1 D108.3
-pin: 2 R402.1
-net: "NetD107_13"
-pin: 1 D107.13
-pin: 2 R401.1
-net: "NetD107_11"
-pin: 1 D107.11
-pin: 2 R341.2
-pin: 3 R435.2
-net: "NetD107_5"
-pin: 1 D107.5
-pin: 2 R339.2
-pin: 3 R433.2
-net: "NetD107_3"
-pin: 1 D107.3
-pin: 2 R400.1
-net: "NetD106_13"
-pin: 1 D106.13
-pin: 2 R399.1
-net: "NetD106_11"
-pin: 1 D106.11
-pin: 2 R337.2
-pin: 3 R431.2
-net: "NetD106_5"
-pin: 1 D106.5
-pin: 2 R335.2
-pin: 3 R429.2
-net: "NetD106_3"
-pin: 1 D106.3
-pin: 2 R398.1
-net: "NetD105_13"
-pin: 1 D105.13
-pin: 2 R397.1
-net: "NetD105_11"
-pin: 1 D105.11
-pin: 2 R375.2
-pin: 3 R426.2
-net: "NetD105_5"
-pin: 1 D105.5
-pin: 2 R373.2
-pin: 3 R422.2
-net: "NetD105_3"
-pin: 1 D105.3
-pin: 2 R396.1
-net: "NetD104_13"
-pin: 1 D104.13
-pin: 2 R395.1
-net: "NetD104_11"
-pin: 1 D104.11
-pin: 2 R371.2
-pin: 3 R418.2
-net: "NetD104_5"
-pin: 1 D104.5
-pin: 2 R369.2
-pin: 3 R413.2
-net: "NetD104_3"
-pin: 1 D104.3
-pin: 2 R394.1
-net: "NetD103_13"
-pin: 1 D103.13
-pin: 2 R157.1
-net: "NetD103_11"
-pin: 1 D103.11
-pin: 2 R333.2
-pin: 3 R427.2
-net: "NetD103_5"
-pin: 1 D103.5
-pin: 2 R331.2
-pin: 3 R423.2
-net: "NetD103_3"
-pin: 1 D103.3
-pin: 2 R156.1
-net: "NetD102_13"
-pin: 1 D102.13
-pin: 2 R155.1
-net: "NetD102_11"
-pin: 1 D102.11
-pin: 2 R329.2
-pin: 3 R419.2
-net: "NetD102_5"
-pin: 1 D102.5
-pin: 2 R414.2
-pin: 3 R415.2
-net: "NetD102_3"
-pin: 1 D102.3
-pin: 2 R154.1
-net: "NetD101_13"
-pin: 1 D101.13
-pin: 2 R393.1
-net: "NetD101_11"
-pin: 1 D101.11
-pin: 2 R327.2
-pin: 3 R367.2
-net: "NetD101_5"
-pin: 1 D101.5
-pin: 2 R325.2
-pin: 3 R365.2
-net: "NetD101_3"
-pin: 1 D101.3
-pin: 2 R392.1
-net: "NetD100_13"
-pin: 1 D100.13
-pin: 2 R391.1
-net: "NetD100_11"
-pin: 1 D100.11
-pin: 2 R323.2
-pin: 3 R363.2
-net: "NetD100_5"
-pin: 1 D100.5
-pin: 2 R321.2
-pin: 3 R361.2
-net: "NetD100_3"
-pin: 1 D100.3
-pin: 2 R390.1
-net: "NetD92_7"
-pin: 1 D92.7
-pin: 2 R210.2
-net: "NetD92_3"
-pin: 1 D92.3
-pin: 2 R280.2
-pin: 3 R300.1
-net: "NetD91_7"
-pin: 1 D91.7
-pin: 2 R246.2
-net: "NetD91_3"
-pin: 1 D91.3
-pin: 2 R292.2
-pin: 3 R312.1
-net: "NetD90_7"
-pin: 1 D90.7
-pin: 2 R245.2
-net: "NetD90_3"
-pin: 1 D90.3
-pin: 2 R291.2
-pin: 3 R311.1
-net: "NetD89_7"
-pin: 1 D89.7
-pin: 2 R244.2
-net: "NetD89_3"
-pin: 1 D89.3
-pin: 2 R290.2
-pin: 3 R310.1
-net: "NetD88_7"
-pin: 1 D88.7
-pin: 2 R243.2
-net: "NetD88_3"
-pin: 1 D88.3
-pin: 2 R289.2
-pin: 3 R309.1
-net: "NetD87_7"
-pin: 1 D87.7
-pin: 2 R242.2
-net: "NetD87_3"
-pin: 1 D87.3
-pin: 2 R288.2
-pin: 3 R308.1
-net: "NetD86_7"
-pin: 1 D86.7
-pin: 2 R241.2
-net: "NetD86_3"
-pin: 1 D86.3
-pin: 2 R287.2
-pin: 3 R307.1
-net: "NetD85_7"
-pin: 1 D85.7
-pin: 2 R240.2
-net: "NetD85_3"
-pin: 1 D85.3
-pin: 2 R286.2
-pin: 3 R306.1
-net: "NetD84_7"
-pin: 1 D84.7
-pin: 2 R239.2
-net: "NetD84_3"
-pin: 1 D84.3
-pin: 2 R285.2
-pin: 3 R305.1
-net: "NetD83_7"
-pin: 1 D83.7
-pin: 2 R238.2
-net: "NetD83_3"
-pin: 1 D83.3
-pin: 2 R284.2
-pin: 3 R304.1
-net: "NetD82_7"
-pin: 1 D82.7
-pin: 2 R237.2
-net: "NetD82_3"
-pin: 1 D82.3
-pin: 2 R283.2
-pin: 3 R303.1
-net: "NetD81_7"
-pin: 1 D81.7
-pin: 2 R236.2
-net: "NetD81_3"
-pin: 1 D81.3
-pin: 2 R282.2
-pin: 3 R302.1
-net: "NetD80_7"
-pin: 1 D80.7
-pin: 2 R235.2
-net: "NetD80_3"
-pin: 1 D80.3
-pin: 2 R281.2
-pin: 3 R301.1
-net: "NetD77_6"
-pin: 1 D77.7
-pin: 2 D77.6
-pin: 3 R349.1
-net: "NetD77_3"
-pin: 1 D77.3
-pin: 2 R197.1
-net: "NetD77_1"
-pin: 1 D77.1
-pin: 2 R196.1
-net: "NetD76_6"
-pin: 1 D76.7
-pin: 2 D76.6
-pin: 3 R347.1
-net: "NetD76_3"
-pin: 1 D76.3
-pin: 2 R195.1
-net: "NetD76_1"
-pin: 1 D76.1
-pin: 2 R194.1
-net: "NetD75_6"
-pin: 1 D75.7
-pin: 2 D75.6
-pin: 3 R345.1
-net: "NetD75_3"
-pin: 1 D75.3
-pin: 2 R193.1
-net: "NetD75_1"
-pin: 1 D75.1
-pin: 2 R192.1
-net: "NetD74_6"
-pin: 1 D74.7
-pin: 2 D74.6
-pin: 3 R343.1
-net: "NetD74_3"
-pin: 1 D74.3
-pin: 2 R191.1
-net: "NetD74_1"
-pin: 1 D74.1
-pin: 2 R190.1
-net: "NetD73_6"
-pin: 1 D73.7
-pin: 2 D73.6
-pin: 3 R341.1
-net: "NetD73_3"
-pin: 1 D73.3
-pin: 2 R189.1
-net: "NetD73_1"
-pin: 1 D73.1
-pin: 2 R188.1
-net: "NetD72_6"
-pin: 1 D72.7
-pin: 2 D72.6
-pin: 3 R339.1
-net: "NetD72_3"
-pin: 1 D72.3
-pin: 2 R187.1
-net: "NetD72_1"
-pin: 1 D72.1
-pin: 2 R186.1
-net: "NetD71_6"
-pin: 1 D71.7
-pin: 2 D71.6
-pin: 3 R337.1
-net: "NetD71_3"
-pin: 1 D71.3
-pin: 2 R185.1
-net: "NetD71_1"
-pin: 1 D71.1
-pin: 2 R184.1
-net: "NetD70_6"
-pin: 1 D70.7
-pin: 2 D70.6
-pin: 3 R335.1
-net: "NetD70_3"
-pin: 1 D70.3
-pin: 2 R183.1
-net: "NetD70_1"
-pin: 1 D70.1
-pin: 2 R182.1
-net: "NetD60_4"
-pin: 1 D60.4
-pin: 2 R181.2
-net: "NetD60_2"
-pin: 1 D60.2
-pin: 2 R180.2
-net: "NetD59_4"
-pin: 1 D59.4
-pin: 2 R179.2
-net: "NetD59_2"
-pin: 1 D59.2
-pin: 2 R178.2
-net: "NetD58_4"
-pin: 1 D58.4
-pin: 2 R177.2
-net: "NetD58_2"
-pin: 1 D58.2
-pin: 2 R176.2
-net: "NetD57_4"
-pin: 1 D57.4
-pin: 2 R175.2
-net: "NetD57_2"
-pin: 1 D57.2
-pin: 2 R174.2
-net: "NetD56_4"
-pin: 1 D56.4
-pin: 2 R173.2
-net: "NetD56_2"
-pin: 1 D56.2
-pin: 2 R172.2
-net: "NetD55_4"
-pin: 1 R171.2
-pin: 2 D55.4
-net: "NetD55_2"
-pin: 1 D55.2
-pin: 2 R170.2
-net: "NetD54_4"
-pin: 1 D54.4
-pin: 2 R169.2
-net: "NetD54_2"
-pin: 1 D54.2
-pin: 2 R168.2
-net: "NetD53_4"
-pin: 1 D53.4
-pin: 2 R167.2
-net: "NetD53_2"
-pin: 1 D53.2
-pin: 2 R166.2
-net: "NetD52_4"
-pin: 1 D52.4
-pin: 2 R165.2
-net: "NetD52_2"
-pin: 1 D52.2
-pin: 2 R164.2
-net: "NetD51_4"
-pin: 1 D51.4
-pin: 2 R163.2
-net: "NetD51_2"
-pin: 1 D51.2
-pin: 2 R162.2
-net: "NetD50_4"
-pin: 1 D50.4
-pin: 2 R161.2
-net: "NetD50_2"
-pin: 1 D50.2
-pin: 2 R160.2
-net: "NetD30_12"
-pin: 1 D30.12
-pin: 2 R19.1
-pin: 3 R22.1
-net: "NetD30_4"
-pin: 1 D30.4
-pin: 2 R11.1
-pin: 3 R8.1
-net: "NetD27_14"
-pin: 1 D77.2
-pin: 2 D27.14
-pin: 3 D70.2
-pin: 4 D71.2
-pin: 5 D72.2
-pin: 6 D73.2
-pin: 7 D74.2
-pin: 8 D75.2
-pin: 9 D76.2
-pin: 10 R145.1
-net: "NetD27_12"
-pin: 1 D27.12
-pin: 2 R147.2
-net: "NetD27_4"
-pin: 1 D77.4
-pin: 2 D27.4
-pin: 3 D70.4
-pin: 4 D71.4
-pin: 5 D72.4
-pin: 6 D73.4
-pin: 7 D74.4
-pin: 8 D75.4
-pin: 9 D76.4
-pin: 10 R148.2
-net: "NetD27_2"
-pin: 1 D27.2
-pin: 2 R146.2
-net: "NetD26_14"
-pin: 1 D26.14
-pin: 2 R305.2
-net: "NetD26_12"
-pin: 1 D26.12
-pin: 2 R132.2
-net: "NetD26_11"
-pin: 1 D26.11
-pin: 2 R307.2
-net: "NetD26_9"
-pin: 1 D26.9
-pin: 2 R134.2
-net: "NetD26_7"
-pin: 1 D26.7
-pin: 2 R308.2
-net: "NetD26_5"
-pin: 1 D26.5
-pin: 2 R133.2
-net: "NetD26_4"
-pin: 1 D26.4
-pin: 2 R306.2
-net: "NetD26_2"
-pin: 1 D26.2
-pin: 2 R131.2
-net: "NetD25_14"
-pin: 1 D25.14
-pin: 2 R301.2
-net: "NetD25_12"
-pin: 1 D25.12
-pin: 2 R128.2
-net: "NetD25_11"
-pin: 1 D25.11
-pin: 2 R303.2
-net: "NetD25_9"
-pin: 1 D25.9
-pin: 2 R130.2
-net: "NetD25_7"
-pin: 1 D25.7
-pin: 2 R304.2
-net: "NetD25_5"
-pin: 1 D25.5
-pin: 2 R129.2
-net: "NetD25_4"
-pin: 1 D25.4
-pin: 2 R302.2
-net: "NetD25_2"
-pin: 1 D25.2
-pin: 2 R127.2
-net: "NetD24_14"
-pin: 1 D24.14
-pin: 2 R180.1
-net: "NetD24_12"
-pin: 1 D24.12
-pin: 2 R126.2
-net: "NetD24_11"
-pin: 1 D24.11
-pin: 2 R309.2
-net: "NetD24_5"
-pin: 1 D24.5
-pin: 2 R135.2
-net: "NetD24_4"
-pin: 1 D24.4
-pin: 2 R181.1
-net: "NetD24_2"
-pin: 1 D24.2
-pin: 2 R125.2
-net: "NetD23_14"
-pin: 1 D23.14
-pin: 2 R176.1
-net: "NetD23_12"
-pin: 1 D23.12
-pin: 2 R119.2
-net: "NetD23_11"
-pin: 1 D23.11
-pin: 2 R178.1
-net: "NetD23_9"
-pin: 1 D23.9
-pin: 2 R123.2
-net: "NetD23_7"
-pin: 1 D23.7
-pin: 2 R179.1
-net: "NetD23_5"
-pin: 1 D23.5
-pin: 2 R122.2
-net: "NetD23_4"
-pin: 1 D23.4
-pin: 2 R177.1
-net: "NetD23_2"
-pin: 1 D23.2
-pin: 2 R118.2
-net: "NetD22_14"
-pin: 1 D22.14
-pin: 2 R172.1
-net: "NetD22_12"
-pin: 1 D22.12
-pin: 2 R111.2
-net: "NetD22_11"
-pin: 1 D22.11
-pin: 2 R174.1
-net: "NetD22_9"
-pin: 1 D22.9
-pin: 2 R115.2
-net: "NetD22_7"
-pin: 1 D22.7
-pin: 2 R175.1
-net: "NetD22_5"
-pin: 1 D22.5
-pin: 2 R114.2
-net: "NetD22_4"
-pin: 1 D22.4
-pin: 2 R173.1
-net: "NetD22_2"
-pin: 1 D22.2
-pin: 2 R110.2
-net: "NetD21_14"
-pin: 1 D21.14
-pin: 2 R168.1
-net: "NetD21_12"
-pin: 1 D21.12
-pin: 2 R103.2
-net: "NetD21_11"
-pin: 1 D21.11
-pin: 2 R170.1
-net: "NetD21_9"
-pin: 1 D21.9
-pin: 2 R107.2
-net: "NetD21_7"
-pin: 1 D21.7
-pin: 2 R171.1
-net: "NetD21_5"
-pin: 1 D21.5
-pin: 2 R106.2
-net: "NetD21_4"
-pin: 1 D21.4
-pin: 2 R169.1
-net: "NetD21_2"
-pin: 1 D21.2
-pin: 2 R102.2
-net: "NetD20_14"
-pin: 1 D20.14
-pin: 2 R164.1
-net: "NetD20_12"
-pin: 1 D20.12
-pin: 2 R95.2
-net: "NetD20_11"
-pin: 1 D20.11
-pin: 2 R166.1
-net: "NetD20_9"
-pin: 1 D20.9
-pin: 2 R99.2
-net: "NetD20_7"
-pin: 1 D20.7
-pin: 2 R167.1
-net: "NetD20_5"
-pin: 1 D20.5
-pin: 2 R98.2
-net: "NetD20_4"
-pin: 1 D20.4
-pin: 2 R165.1
-net: "NetD20_2"
-pin: 1 D20.2
-pin: 2 R94.2
-net: "NetD19_12"
-pin: 1 D19.12
-pin: 2 R120.2
-net: "NetD19_9"
-pin: 1 D19.9
-pin: 2 R124.2
-net: "NetD19_5"
-pin: 1 D19.5
-pin: 2 R121.2
-net: "NetD19_2"
-pin: 1 D19.2
-pin: 2 R117.2
-net: "NetD18_12"
-pin: 1 D18.12
-pin: 2 R112.2
-net: "NetD18_9"
-pin: 1 D18.9
-pin: 2 R116.2
-net: "NetD18_5"
-pin: 1 D18.5
-pin: 2 R113.2
-net: "NetD18_2"
-pin: 1 D18.2
-pin: 2 R109.2
-net: "NetD17_12"
-pin: 1 D17.12
-pin: 2 R104.2
-net: "NetD17_9"
-pin: 1 D17.9
-pin: 2 R108.2
-net: "NetD17_5"
-pin: 1 D17.5
-pin: 2 R105.2
-net: "NetD17_2"
-pin: 1 D17.2
-pin: 2 R101.2
-net: "NetD16_12"
-pin: 1 D16.12
-pin: 2 R96.2
-net: "NetD16_9"
-pin: 1 D16.9
-pin: 2 R100.2
-net: "NetD16_5"
-pin: 1 D16.5
-pin: 2 R97.2
-net: "NetD16_2"
-pin: 1 D16.2
-pin: 2 R93.2
-net: "NetD15_12"
-pin: 1 D15.12
-pin: 2 R78.2
-net: "NetD15_9"
-pin: 1 D15.9
-pin: 2 R84.2
-net: "NetD15_5"
-pin: 1 D15.5
-pin: 2 R81.2
-net: "NetD15_2"
-pin: 1 D15.2
-pin: 2 R75.2
-net: "NetD14_12"
-pin: 1 D14.12
-pin: 2 R66.2
-net: "NetD14_9"
-pin: 1 D14.9
-pin: 2 R72.2
-net: "NetD14_5"
-pin: 1 D14.5
-pin: 2 R69.2
-net: "NetD14_2"
-pin: 1 D14.2
-pin: 2 R63.2
-net: "NetD13_12"
-pin: 1 D13.12
-pin: 2 R54.2
-net: "NetD13_9"
-pin: 1 D13.9
-pin: 2 R60.2
-net: "NetD13_5"
-pin: 1 D13.5
-pin: 2 R57.2
-net: "NetD13_2"
-pin: 1 D13.2
-pin: 2 R51.2
-net: "NetD12_12"
-pin: 1 D12.12
-pin: 2 R37.2
-net: "NetD12_9"
-pin: 1 D12.9
-pin: 2 R43.2
-net: "NetD12_5"
-pin: 1 D12.5
-pin: 2 R40.2
-net: "NetD12_2"
-pin: 1 D12.2
-pin: 2 R34.2
-net: "NetD10_12"
-pin: 1 D10.12
-pin: 2 R140.2
-net: "NetD10_9"
-pin: 1 D10.9
-pin: 2 R144.2
-net: "NetD10_5"
-pin: 1 D10.5
-pin: 2 R141.2
-pin: 3 R142.2
-net: "NetD10_2"
-pin: 1 D10.2
-pin: 2 R92.2
-net: "NetD9_12"
-pin: 1 D9.12
-pin: 2 R87.2
-net: "NetD9_9"
-pin: 1 D9.9
-pin: 2 R90.2
-pin: 3 R91.2
-net: "NetD9_5"
-pin: 1 D9.5
-pin: 2 R88.2
-pin: 3 R89.2
-net: "NetD9_2"
-pin: 1 D9.2
-pin: 2 R86.2
-net: "NetD8_12"
-pin: 1 D8.12
-pin: 2 R77.2
-pin: 3 R79.2
-net: "NetD8_9"
-pin: 1 D8.9
-pin: 2 R85.2
-pin: 3 R83.2
-net: "NetD8_5"
-pin: 1 D8.5
-pin: 2 R80.2
-pin: 3 R82.2
-net: "NetD8_2"
-pin: 1 D8.2
-pin: 2 R76.2
-pin: 3 R74.2
-net: "NetD7_12"
-pin: 1 R65.2
-pin: 2 D7.12
-pin: 3 R67.2
-net: "NetD7_9"
-pin: 1 R71.2
-pin: 2 D7.9
-pin: 3 R73.2
-net: "NetD7_5"
-pin: 1 R68.2
-pin: 2 D7.5
-pin: 3 R70.2
-net: "NetD7_2"
-pin: 1 R62.2
-pin: 2 D7.2
-pin: 3 R64.2
-net: "NetD6_12"
-pin: 1 D6.12
-pin: 2 R53.2
-pin: 3 R55.2
-net: "NetD6_9"
-pin: 1 D6.9
-pin: 2 R59.2
-pin: 3 R61.2
-net: "NetD6_5"
-pin: 1 D6.5
-pin: 2 R58.2
-pin: 3 R56.2
-net: "NetD6_2"
-pin: 1 D6.2
-pin: 2 R52.2
-pin: 3 R50.2
-net: "NetD5_12"
-pin: 1 D5.12
-pin: 2 R36.2
-pin: 3 R38.2
-net: "NetD5_9"
-pin: 1 D5.9
-pin: 2 R42.2
-pin: 3 R44.2
-net: "NetD5_5"
-pin: 1 R39.2
-pin: 2 D5.5
-pin: 3 R41.2
-net: "NetD5_2"
-pin: 1 D5.2
-pin: 2 R33.2
-pin: 3 R35.2
-net: "NetD4_14"
-pin: 1 D4.14
-pin: 2 R160.1
-net: "NetD4_12"
-pin: 1 D4.12
-pin: 2 R29.2
-net: "NetD4_11"
-pin: 1 D4.11
-pin: 2 R162.1
-net: "NetD4_9"
-pin: 1 D4.9
-pin: 2 R32.2
-net: "NetD4_7"
-pin: 1 D4.7
-pin: 2 R163.1
-net: "NetD4_5"
-pin: 1 D4.5
-pin: 2 R31.2
-net: "NetD4_4"
-pin: 1 D4.4
-pin: 2 R161.1
-net: "NetD4_2"
-pin: 1 D4.2
-pin: 2 R28.2
-net: "NetD3_14"
-pin: 1 D3.14
-pin: 2 R300.2
-net: "NetD3_12"
-pin: 1 R11.2
-pin: 2 D3.12
-net: "NetD3_9"
-pin: 1 D3.9
-pin: 2 R22.2
-net: "NetD3_2"
-pin: 1 D3.2
-pin: 2 R30.2
-net: "NetD2_12"
-pin: 1 D2.12
-pin: 2 R21.2
-pin: 3 R18.1
-net: "NetD2_9"
-pin: 1 D2.9
-pin: 2 R24.2
-pin: 3 R27.2
-net: "NetD2_5"
-pin: 1 D2.5
-pin: 2 R23.2
-pin: 3 R26.2
-net: "NetD2_2"
-pin: 1 D2.2
-pin: 2 R17.1
-pin: 3 R20.2
-net: "NetD1_12"
-pin: 1 D1.12
-pin: 2 R5.2
-pin: 3 R7.2
-net: "NetD1_11"
-pin: 1 D1.11
-pin: 2 D1.14
-pin: 3 D33.1
-pin: 4 R150.1
-net: "NetD1_9"
-pin: 1 D1.9
-pin: 2 R10.2
-pin: 3 R13.2
-net: "NetD1_5"
-pin: 1 D1.5
-pin: 2 R9.2
-pin: 3 R12.2
-net: "NetD1_4"
-pin: 1 D1.7
-pin: 2 D1.4
-pin: 3 D33.3
-pin: 4 R151.1
-net: "NetD1_2"
-pin: 1 D1.2
-pin: 2 R4.2
-pin: 3 R6.2
-net: "NetC61_2"
-pin: 1 D109.12
-pin: 2 R348.2
-pin: 3 C61.2
-pin: 4 R382.1
-net: "NetC60_2"
-pin: 1 D109.4
-pin: 2 R346.2
-pin: 3 C60.2
-pin: 4 R380.1
-net: "NetC59_2"
-pin: 1 D108.12
-pin: 2 C59.2
-pin: 3 R344.2
-pin: 4 R378.1
-net: "NetC58_2"
-pin: 1 D108.4
-pin: 2 C58.2
-pin: 3 R342.2
-pin: 4 R376.1
-net: "NetC57_2"
-pin: 1 D107.12
-pin: 2 C57.2
-pin: 3 R340.2
-pin: 4 R434.1
-net: "NetC56_2"
-pin: 1 D107.4
-pin: 2 C56.2
-pin: 3 R338.2
-pin: 4 R432.1
-net: "NetC55_2"
-pin: 1 D106.12
-pin: 2 C55.2
-pin: 3 R336.2
-pin: 4 R430.1
-net: "NetC54_2"
-pin: 1 D106.4
-pin: 2 C54.2
-pin: 3 R334.2
-pin: 4 R428.1
-net: "NetC53_2"
-pin: 1 D103.12
-pin: 2 R425.2
-pin: 3 C53.2
-pin: 4 R332.1
-net: "NetC52_2"
-pin: 1 D105.12
-pin: 2 C52.2
-pin: 3 R374.1
-pin: 4 R424.2
-net: "NetC51_2"
-pin: 1 D103.4
-pin: 2 R421.2
-pin: 3 C51.2
-pin: 4 R330.1
-net: "NetC50_2"
-pin: 1 D105.4
-pin: 2 C50.2
-pin: 3 R372.1
-pin: 4 R420.2
-net: "NetC49_2"
-pin: 1 D102.12
-pin: 2 C49.2
-pin: 3 R328.1
-pin: 4 R417.2
-net: "NetC48_2"
-pin: 1 D104.12
-pin: 2 C48.2
-pin: 3 R370.1
-pin: 4 R416.2
-net: "NetC47_2"
-pin: 1 D102.4
-pin: 2 R411.2
-pin: 3 C47.2
-pin: 4 R412.1
-net: "NetC46_2"
-pin: 1 D104.4
-pin: 2 C46.2
-pin: 3 R368.1
-pin: 4 R410.2
-net: "NetC45_2"
-pin: 1 D101.12
-pin: 2 C45.2
-pin: 3 R326.2
-pin: 4 R366.1
-net: "NetC44_2"
-pin: 1 D101.4
-pin: 2 C44.2
-pin: 3 R324.2
-pin: 4 R364.1
-net: "NetC43_2"
-pin: 1 D100.12
-pin: 2 R322.2
-pin: 3 C43.2
-pin: 4 R362.1
-net: "NetC42_2"
-pin: 1 D100.4
-pin: 2 R320.2
-pin: 3 C42.2
-pin: 4 R360.1
-net: "NetC41_2"
-pin: 1 C71.2
-pin: 2 D30.7
-pin: 3 C41.2
-pin: 4 R209.1
-net: "NetC41_1"
-pin: 1 C71.1
-pin: 2 D30.6
-pin: 3 C41.1
-net: "NetC40_2"
-pin: 1 D30.15
-pin: 2 C40.2
-pin: 3 C70.2
-pin: 4 R208.1
-net: "NetC40_1"
-pin: 1 D30.14
-pin: 2 C40.1
-pin: 3 C70.1
-net: "NetC26_1"
-pin: 1 D44.1
-pin: 2 C26.1
-pin: 3 C80.plus
-pin: 4 X9.2
-net: "MX_ADC_CPU_LV4"
-pin: 1 C57.1
-pin: 2 R401.2
-pin: 3 R434.2
-pin: 4 XP112.37
-net: "MX_ADC_CPU_LV3"
-pin: 1 C56.1
-pin: 2 R400.2
-pin: 3 R432.2
-pin: 4 XP112.35
-net: "MX_ADC_CPU_LV2"
-pin: 1 C55.1
-pin: 2 R399.2
-pin: 3 R430.2
-pin: 4 XP111.30
-net: "MX_ADC_CPU_LV1"
-pin: 1 C54.1
-pin: 2 R398.2
-pin: 3 R428.2
-pin: 4 XP111.28
-net: "MX_ADC_CPU_HV4"
-pin: 1 R405.2
-pin: 2 C61.1
-pin: 3 R382.2
-pin: 4 XP111.37
-net: "MX_ADC_CPU_HV3"
-pin: 1 R404.2
-pin: 2 C60.1
-pin: 3 R380.2
-pin: 4 XP111.35
-net: "MX_ADC_CPU_HV2"
-pin: 1 C59.1
-pin: 2 R378.2
-pin: 3 R403.2
-pin: 4 XP111.36
-net: "MX_ADC_CPU_HV1"
-pin: 1 C58.1
-pin: 2 R376.2
-pin: 3 R402.2
-pin: 4 XP111.38
-net: "MSK124"
-pin: 1 R234.2
-pin: 2 R273.2
-pin: 3 K59.1
-net: "MSK123"
-pin: 1 R233.2
-pin: 2 R272.2
-pin: 3 K45.1
-net: "MSK122"
-pin: 1 R232.2
-pin: 2 R271.2
-pin: 3 K58.1
-net: "MSK121"
-pin: 1 R231.2
-pin: 2 R270.2
-pin: 3 K44.1
-net: "MSK120"
-pin: 1 R230.2
-pin: 2 R269.2
-pin: 3 K57.1
-net: "MSK119"
-pin: 1 R229.2
-pin: 2 R268.2
-pin: 3 K43.1
-net: "MSK118"
-pin: 1 R228.2
-pin: 2 R267.2
-pin: 3 K56.1
-net: "MSK117"
-pin: 1 R227.2
-pin: 2 R266.2
-pin: 3 K42.1
-net: "MSK116"
-pin: 1 R226.2
-pin: 2 R265.2
-pin: 3 K55.1
-net: "MSK115"
-pin: 1 R225.2
-pin: 2 R264.2
-pin: 3 K41.1
-net: "MSK114"
-pin: 1 R224.2
-pin: 2 R263.2
-pin: 3 K54.1
-net: "MSK113"
-pin: 1 R223.2
-pin: 2 R262.2
-pin: 3 K40.1
-net: "MSK112"
-pin: 1 R222.2
-pin: 2 R261.2
-pin: 3 K53.1
-net: "MSK111"
-pin: 1 R221.2
-pin: 2 R260.2
-pin: 3 K39.1
-net: "MSK110"
-pin: 1 R220.2
-pin: 2 R259.2
-pin: 3 K52.1
-net: "MSK109"
-pin: 1 R219.2
-pin: 2 R258.2
-pin: 3 K38.1
-net: "MSK108"
-pin: 1 R218.2
-pin: 2 R257.2
-pin: 3 K51.1
-net: "MSK107"
-pin: 1 R217.2
-pin: 2 R256.2
-pin: 3 K37.1
-net: "MSK106"
-pin: 1 R216.2
-pin: 2 R255.2
-pin: 3 K50.1
-net: "MSK105"
-pin: 1 R215.2
-pin: 2 R254.2
-pin: 3 K36.1
-net: "MSK104"
-pin: 1 R214.2
-pin: 2 R253.2
-pin: 3 K49.1
-net: "MSK103"
-pin: 1 R213.2
-pin: 2 R252.2
-pin: 3 K35.1
-net: "MSK102"
-pin: 1 R212.2
-pin: 2 R251.2
-pin: 3 K48.1
-net: "MSK101"
-pin: 1 R211.2
-pin: 2 R250.2
-pin: 3 K34.1
-net: "MSK2_4"
-pin: 1 R32.1
-pin: 2 XP111.25
-net: "MSK2_3"
-pin: 1 R31.1
-pin: 2 XP111.23
-net: "MSK2_2"
-pin: 1 R29.1
-pin: 2 XP112.2
-net: "MSK2_1"
-pin: 1 R28.1
-pin: 2 XP112.19
-net: "MMI_OUT_C"
-pin: 1 D33.4
-pin: 2 XP112.18
-net: "MMI_OUT_2"
-pin: 1 R10.1
-pin: 2 XT2.29
-pin: 3 K29.1
-net: "MMI_OUT_1"
-pin: 1 R5.1
-pin: 2 XT2.25
-pin: 3 K25.1
-net: "MMI_IN_C"
-pin: 1 D33.2
-pin: 2 XP112.64
-net: "MMI_IN_2"
-pin: 1 R9.1
-pin: 2 XT2.27
-pin: 3 K27.1
-net: "MMI_IN_1"
-pin: 1 R4.1
-pin: 2 XT2.23
-pin: 3 K23.1
-net: "MID_Cur_PINN_Out"
-pin: 1 R46.2
-pin: 2 XP112.5
-pin: 3 XP8.8
-pin: 4 XP8.7
-net: "Low_Cur_PINN_Out"
-pin: 1 R45.2
-pin: 2 XP112.30
-pin: 3 XP8.4
-pin: 4 XP8.3
-net: "LED2_fr_PI"
-pin: 1 R19.2
-pin: 2 XP9.11
-pin: 3 XP9.12
-net: "LED1_fr_PI"
-pin: 1 R8.2
-pin: 2 XP9.3
-pin: 3 XP9.4
-net: "Latch_Reg_IN_PINN"
-pin: 1 D10.11
-pin: 2 XP8.40
-pin: 3 XP8.39
-net: "KZ_Select_PINN"
-pin: 1 D9.11
-pin: 2 XP10.11
-pin: 3 XP10.12
-net: "High_Cur_PINN_Out"
-pin: 1 R47.2
-pin: 2 XP112.17
-pin: 3 XP8.12
-pin: 4 XP8.11
-net: "H_VoltOn_IN_PINN"
-pin: 1 D9.7
-pin: 2 XP10.15
-pin: 3 XP10.16
-net: "GND"
-pin: 1 D32.5
-pin: 2 D32.2
-pin: 3 D36.14
-pin: 4 D36.13
-pin: 5 D36.12
-pin: 6 D36.11
-pin: 7 D36.1
-pin: 8 D36.24
-pin: 9 D43.7
-pin: 10 D44.3
-pin: 11 D37.24
-pin: 12 D37.1
-pin: 13 D37.11
-pin: 14 D37.12
-pin: 15 D37.13
-pin: 16 D37.14
-pin: 17 D34.14
-pin: 18 D34.13
-pin: 19 D34.12
-pin: 20 D34.11
-pin: 21 D34.1
-pin: 22 D34.24
-pin: 23 D30.8
-pin: 24 D35.24
-pin: 25 D35.1
-pin: 26 D35.11
-pin: 27 D35.12
-pin: 28 D35.13
-pin: 29 D35.14
-pin: 30 C26.2
-pin: 31 C27.1
-pin: 32 C80.minus
-pin: 33 C81.minus
-pin: 34 D1.6
-pin: 35 D1.3
-pin: 36 D1.10
-pin: 37 D1.13
-pin: 38 D2.6
-pin: 39 D2.3
-pin: 40 D2.10
-pin: 41 D2.13
-pin: 42 D10.10
-pin: 43 D27.10
-pin: 44 D31.5
-pin: 45 D31.4
-pin: 46 D31.3
-pin: 47 D31.2
-pin: 48 D33.7
-pin: 49 D40.7
-pin: 50 D41.7
-pin: 51 D42.7
-pin: 52 D89.5
-pin: 53 D90.5
-pin: 54 D91.5
-pin: 55 R1.1
-pin: 56 R6.1
-pin: 57 R7.1
-pin: 58 R12.1
-pin: 59 R13.1
-pin: 60 R20.1
-pin: 61 R21.1
-pin: 62 R26.1
-pin: 63 R27.1
-pin: 64 R201.2
-pin: 65 R203.2
-pin: 66 R205.2
-pin: 67 R244.1
-pin: 68 R245.1
-pin: 69 R246.1
-pin: 70 R250.1
-pin: 71 R254.1
-pin: 72 R255.1
-pin: 73 R256.1
-pin: 74 R257.1
-pin: 75 R261.1
-pin: 76 R263.1
-pin: 77 R264.1
-pin: 78 R265.1
-pin: 79 R266.1
-pin: 80 R267.1
-pin: 81 R268.1
-pin: 82 R269.1
-pin: 83 R271.1
-pin: 84 R272.1
-pin: 85 R273.1
-pin: 86 X5.1
-pin: 87 R502.1
-pin: 88 C1.1
-pin: 89 C2.1
-pin: 90 C3.1
-pin: 91 C4.1
-pin: 92 C5.1
-pin: 93 C6.1
-pin: 94 C7.1
-pin: 95 C8.1
-pin: 96 C9.1
-pin: 97 C11.2
-pin: 98 C12.2
-pin: 99 C13.2
-pin: 100 C14.2
-pin: 101 C15.1
-pin: 102 C16.1
-pin: 103 C82.plus
-pin: 104 R142.1
-pin: 105 R207.2
-pin: 106 R251.1
-pin: 107 R252.1
-pin: 108 R253.1
-pin: 109 R258.1
-pin: 110 R259.1
-pin: 111 R260.1
-pin: 112 R262.1
-pin: 113 R270.1
-pin: 114 C28.1
-pin: 115 XP111.8
-pin: 116 XP111.19
-pin: 117 XP111.20
-pin: 118 XP111.22
-pin: 119 XP111.60
-pin: 120 XP111.49
-pin: 121 XP112.39
-pin: 122 XP112.9
-pin: 123 XP112.20
-pin: 124 XP112.63
-pin: 125 XP112.54
-pin: 126 XP211.49
-pin: 127 XP211.60
-pin: 128 XP211.22
-pin: 129 XP211.20
-pin: 130 XP211.19
-pin: 131 XP211.8
-pin: 132 XP212.39
-pin: 133 XP212.9
-pin: 134 XP212.20
-pin: 135 XP212.63
-pin: 136 XP212.54
-pin: 137 XP4.10
-pin: 138 XP4.9
-pin: 139 XP4.8
-pin: 140 XP4.7
-pin: 141 XP4.6
-pin: 142 XP4.5
-pin: 143 XT3.31
-pin: 144 XT3.23
-pin: 145 XT3.1
-pin: 146 XT3.3
-pin: 147 XT3.5
-pin: 148 XT3.33
-pin: 149 XT3.35
-pin: 150 K19.1
-pin: 151 K20.1
-pin: 152 K24.1
-pin: 153 K26.1
-pin: 154 K28.1
-pin: 155 K30.1
-pin: 156 K32.1
-pin: 157 K93.1
-pin: 158 K94.1
-pin: 159 K115.1
-pin: 160 K116.1
-pin: 161 K137.1
-pin: 162 K138.1
-pin: 163 K159.1
-pin: 164 K160.1
-net: "GND_Sig"
-pin: 1 X8.2
-pin: 2 XP11.36
-pin: 3 XP11.35
-pin: 4 XP11.32
-pin: 5 XP11.31
-pin: 6 XP11.28
-pin: 7 XP11.27
-pin: 8 XP11.24
-pin: 9 XP11.23
-pin: 10 XP11.39
-pin: 11 XP11.40
-pin: 12 XP11.20
-pin: 13 XP11.19
-pin: 14 XP11.11
-pin: 15 XP11.12
-pin: 16 XP11.43
-pin: 17 XP11.44
-pin: 18 XP11.47
-pin: 19 XP11.48
-pin: 20 XP12.36
-pin: 21 XP12.35
-pin: 22 XP12.32
-pin: 23 XP12.31
-pin: 24 XP12.28
-pin: 25 XP12.27
-pin: 26 XP12.24
-pin: 27 XP12.23
-pin: 28 XP12.39
-pin: 29 XP12.40
-pin: 30 XP12.20
-pin: 31 XP12.19
-pin: 32 XP12.11
-pin: 33 XP12.12
-pin: 34 XP12.43
-pin: 35 XP12.44
-pin: 36 XP12.47
-pin: 37 XP12.48
-pin: 38 XP13.36
-pin: 39 XP13.35
-pin: 40 XP13.32
-pin: 41 XP13.31
-pin: 42 XP13.28
-pin: 43 XP13.27
-pin: 44 XP13.24
-pin: 45 XP13.23
-pin: 46 XP13.39
-pin: 47 XP13.40
-pin: 48 XP13.20
-pin: 49 XP13.19
-pin: 50 XP13.11
-pin: 51 XP13.12
-pin: 52 XP13.43
-pin: 53 XP13.44
-pin: 54 XP13.47
-pin: 55 XP13.48
-pin: 56 XP14.36
-pin: 57 XP14.35
-pin: 58 XP14.32
-pin: 59 XP14.31
-pin: 60 XP14.28
-pin: 61 XP14.27
-pin: 62 XP14.24
-pin: 63 XP14.23
-pin: 64 XP14.39
-pin: 65 XP14.40
-pin: 66 XP14.20
-pin: 67 XP14.19
-pin: 68 XP14.11
-pin: 69 XP14.12
-pin: 70 XP14.43
-pin: 71 XP14.44
-pin: 72 XP14.47
-pin: 73 XP14.48
-pin: 74 XP15.48
-pin: 75 XP15.47
-pin: 76 XP15.44
-pin: 77 XP15.43
-pin: 78 XP15.12
-pin: 79 XP15.11
-pin: 80 XP15.19
-pin: 81 XP15.20
-pin: 82 XP15.40
-pin: 83 XP15.39
-pin: 84 XP15.23
-pin: 85 XP15.24
-pin: 86 XP15.27
-pin: 87 XP15.28
-pin: 88 XP15.31
-pin: 89 XP15.32
-pin: 90 XP15.35
-pin: 91 XP15.36
-pin: 92 XP16.48
-pin: 93 XP16.47
-pin: 94 XP16.44
-pin: 95 XP16.43
-pin: 96 XP16.12
-pin: 97 XP16.11
-pin: 98 XP16.19
-pin: 99 XP16.20
-pin: 100 XP16.40
-pin: 101 XP16.39
-pin: 102 XP16.23
-pin: 103 XP16.24
-pin: 104 XP16.27
-pin: 105 XP16.28
-pin: 106 XP16.31
-pin: 107 XP16.32
-pin: 108 XP16.35
-pin: 109 XP16.36
-pin: 110 XP18.48
-pin: 111 XP18.47
-pin: 112 XP18.44
-pin: 113 XP18.43
-pin: 114 XP18.12
-pin: 115 XP18.11
-pin: 116 XP18.19
-pin: 117 XP18.20
-pin: 118 XP18.40
-pin: 119 XP18.39
-pin: 120 XP18.23
-pin: 121 XP18.24
-pin: 122 XP18.27
-pin: 123 XP18.28
-pin: 124 XP18.31
-pin: 125 XP18.32
-pin: 126 XP18.35
-pin: 127 XP18.36
-pin: 128 XP19.48
-pin: 129 XP19.47
-pin: 130 XP19.44
-pin: 131 XP19.43
-pin: 132 XP19.12
-pin: 133 XP19.11
-pin: 134 XP19.19
-pin: 135 XP19.20
-pin: 136 XP19.40
-pin: 137 XP19.39
-pin: 138 XP19.23
-pin: 139 XP19.24
-pin: 140 XP19.27
-pin: 141 XP19.28
-pin: 142 XP19.31
-pin: 143 XP19.32
-pin: 144 XP19.35
-pin: 145 XP19.36
-net: "GND_Sig_0V"
-pin: 1 X6.2
-pin: 2 XP8.46
-pin: 3 XP8.45
-pin: 4 XP8.42
-pin: 5 XP8.41
-pin: 6 XP8.14
-pin: 7 XP8.13
-pin: 8 XP8.10
-pin: 9 XP8.9
-pin: 10 XP8.6
-pin: 11 XP8.5
-pin: 12 XP8.2
-pin: 13 XP8.1
-pin: 14 XP8.17
-pin: 15 XP8.18
-pin: 16 XP8.38
-pin: 17 XP8.37
-pin: 18 XP8.21
-pin: 19 XP8.22
-pin: 20 XP8.25
-pin: 21 XP8.26
-pin: 22 XP8.29
-pin: 23 XP8.30
-pin: 24 XP8.33
-pin: 25 XP8.34
-pin: 26 XP10.5
-pin: 27 XP10.6
-pin: 28 XP10.9
-pin: 29 XP10.10
-pin: 30 XP10.13
-pin: 31 XP10.14
-net: "GND_PP_MPP4"
-pin: 1 R326.1
-pin: 2 R348.1
-pin: 3 R453.1
-pin: 4 XT2.4
-pin: 5 K165.1
-net: "GND_PP_MPP3"
-pin: 1 R324.1
-pin: 2 R346.1
-pin: 3 R452.1
-pin: 4 XT2.3
-pin: 5 K143.1
-net: "GND_PP_MPP2"
-pin: 1 R322.1
-pin: 2 R344.1
-pin: 3 R451.1
-pin: 4 XT2.2
-pin: 5 K121.1
-net: "GND_PP_MPP1"
-pin: 1 R320.1
-pin: 2 R342.1
-pin: 3 R450.1
-pin: 4 XT2.1
-pin: 5 K99.1
-net: "GND_OPTO"
-pin: 1 D26.13
-pin: 2 D26.10
-pin: 3 D26.3
-pin: 4 D26.6
-pin: 5 D3.6
-pin: 6 D3.3
-pin: 7 D3.13
-pin: 8 D4.6
-pin: 9 D4.3
-pin: 10 D4.10
-pin: 11 D4.13
-pin: 12 D6.6
-pin: 13 D6.3
-pin: 14 D6.10
-pin: 15 D6.13
-pin: 16 D8.6
-pin: 17 D8.3
-pin: 18 D8.10
-pin: 19 D8.13
-pin: 20 D9.6
-pin: 21 D9.3
-pin: 22 D9.10
-pin: 23 D9.13
-pin: 24 D10.6
-pin: 25 D10.3
-pin: 26 D10.13
-pin: 27 D12.6
-pin: 28 D12.3
-pin: 29 D12.10
-pin: 30 D12.13
-pin: 31 D13.6
-pin: 32 D13.3
-pin: 33 D13.10
-pin: 34 D13.13
-pin: 35 D14.6
-pin: 36 D14.3
-pin: 37 D14.10
-pin: 38 D14.13
-pin: 39 D15.13
-pin: 40 D15.10
-pin: 41 D15.3
-pin: 42 D15.6
-pin: 43 D16.6
-pin: 44 D16.3
-pin: 45 D16.10
-pin: 46 D16.13
-pin: 47 D17.6
-pin: 48 D17.3
-pin: 49 D17.10
-pin: 50 D17.13
-pin: 51 D18.6
-pin: 52 D18.3
-pin: 53 D18.10
-pin: 54 D18.13
-pin: 55 D19.6
-pin: 56 D19.3
-pin: 57 D19.10
-pin: 58 D19.13
-pin: 59 D20.6
-pin: 60 D20.3
-pin: 61 D20.10
-pin: 62 D20.13
-pin: 63 D21.6
-pin: 64 D21.3
-pin: 65 D21.10
-pin: 66 D21.13
-pin: 67 D22.6
-pin: 68 D22.3
-pin: 69 D22.10
-pin: 70 D22.13
-pin: 71 D23.6
-pin: 72 D23.3
-pin: 73 D23.10
-pin: 74 D23.13
-pin: 75 D24.3
-pin: 76 D24.10
-pin: 77 D24.13
-pin: 78 D25.6
-pin: 79 D25.3
-pin: 80 D25.10
-pin: 81 D25.13
-pin: 82 D27.3
-pin: 83 D27.13
-pin: 84 R52.1
-pin: 85 R58.1
-pin: 86 R76.1
-pin: 87 R85.1
-pin: 88 R89.1
-pin: 89 R91.1
-pin: 90 X7.1
-pin: 91 D7.13
-pin: 92 D7.10
-pin: 93 D7.3
-pin: 94 D7.6
-pin: 95 D5.13
-pin: 96 D5.10
-pin: 97 D5.3
-pin: 98 D5.6
-pin: 99 R35.1
-pin: 100 R38.1
-pin: 101 R41.1
-pin: 102 R44.1
-pin: 103 R55.1
-pin: 104 R61.1
-pin: 105 R64.1
-pin: 106 R67.1
-pin: 107 R70.1
-pin: 108 R73.1
-pin: 109 R79.1
-pin: 110 R82.1
-pin: 111 XP4.42
-pin: 112 XP4.41
-pin: 113 XP4.40
-pin: 114 XP4.39
-pin: 115 XP4.38
-pin: 116 XP4.37
-pin: 117 XP4.27
-pin: 118 XP4.28
-pin: 119 XP4.29
-pin: 120 XP4.30
-pin: 121 XP4.31
-pin: 122 XP4.32
-pin: 123 XP4.33
-pin: 124 XP4.34
-pin: 125 XP4.35
-pin: 126 XP4.36
-net: "GND_MPP"
-pin: 1 R334.1
-pin: 2 R336.1
-pin: 3 R338.1
-pin: 4 R340.1
-pin: 5 R410.1
-pin: 6 R416.1
-pin: 7 R420.1
-pin: 8 R421.1
-pin: 9 R424.1
-pin: 10 R462.2
-pin: 11 X2.2
-pin: 12 XT2.6
-pin: 13 K97.1
-pin: 14 K119.1
-pin: 15 K141.1
-pin: 16 K163.1
-net: "GND_ALL"
-pin: 1 R450.2
-pin: 2 X1.2
-pin: 3 X2.1
-pin: 4 X3.2
-pin: 5 X4.1
-pin: 6 X5.2
-pin: 7 X6.1
-pin: 8 X7.2
-pin: 9 X8.1
-pin: 10 R451.2
-pin: 11 R452.2
-pin: 12 R453.2
-pin: 13 R454.2
-pin: 14 XT2.34
-pin: 15 XT2.16
-pin: 16 XT2.14
-pin: 17 XT2.12
-pin: 18 XT2.18
-pin: 19 XT2.20
-pin: 20 XT2.22
-pin: 21 XT2.24
-pin: 22 XT2.26
-pin: 23 XT2.28
-pin: 24 XT2.30
-pin: 25 XT2.32
-pin: 26 XT3.19
-pin: 27 XT3.17
-pin: 28 XT3.9
-pin: 29 XT3.11
-pin: 30 XT3.13
-pin: 31 XT3.15
-net: "DC_OUT_2C"
-pin: 1 R24.1
-pin: 2 XP112.26
-net: "DC_OUT_1C"
-pin: 1 R23.1
-pin: 2 XP112.29
-net: "DC_IN_2C"
-pin: 1 D2.4
-pin: 2 R153.1
-pin: 3 XP112.28
-net: "DC_IN_1C"
-pin: 1 D2.14
-pin: 2 R152.1
-pin: 3 XP112.27
-net: "DC_2"
-pin: 1 D2.7
-pin: 2 R16.1
-pin: 3 R18.2
-pin: 4 XT2.33
-pin: 5 K33.1
-net: "DC_1"
-pin: 1 D2.11
-pin: 2 R15.1
-pin: 3 R17.2
-pin: 4 XT2.31
-pin: 5 K31.1
-net: "DATA_ShReg_IN_PINN"
-pin: 1 D34.16
-pin: 2 XP8.31
-pin: 3 XP8.32
-net: "DATA_R_On_Sh_Trig_08"
-pin: 1 D35.15
-pin: 2 XP19.10
-pin: 3 XP19.9
-net: "DATA_R_On_Sh_Trig_07"
-pin: 1 D35.16
-pin: 2 XP16.10
-pin: 3 XP16.9
-net: "DATA_R_On_Sh_Trig_06"
-pin: 1 D35.17
-pin: 2 XP14.9
-pin: 3 XP14.10
-net: "DATA_R_On_Sh_Trig_05"
-pin: 1 D35.18
-pin: 2 XP12.9
-pin: 3 XP12.10
-net: "DATA_R_On_Sh_Trig_04"
-pin: 1 D35.19
-pin: 2 XP18.10
-pin: 3 XP18.9
-net: "DATA_R_On_Sh_Trig_03"
-pin: 1 D35.20
-pin: 2 XP15.10
-pin: 3 XP15.9
-net: "DATA_R_On_Sh_Trig_02"
-pin: 1 D35.21
-pin: 2 XP13.9
-pin: 3 XP13.10
-net: "DATA_R_On_Sh_Trig_01"
-pin: 1 D35.22
-pin: 2 XP11.9
-pin: 3 XP11.10
-net: "DAC_IN_PINN"
-pin: 1 R154.2
-pin: 2 C47.1
-pin: 3 R412.2
-pin: 4 XP8.19
-pin: 5 XP8.20
-net: "DAC_CPU_to_PINN"
-pin: 1 R411.1
-pin: 2 XP111.32
-net: "CPU_RELAY2"
-pin: 1 XP211.11
-pin: 2 XP9.5
-pin: 3 XP9.6
-net: "CPU_RELAY1"
-pin: 1 XP211.9
-pin: 2 XP9.7
-pin: 3 XP9.8
-net: "CPU_R2_Select_PINN"
-pin: 1 R87.1
-pin: 2 XP111.17
-net: "CPU_R2_Select_F16"
-pin: 1 R124.1
-pin: 2 XP211.64
-net: "CPU_R2_Select_F15"
-pin: 1 R121.1
-pin: 2 XP212.61
-net: "CPU_R2_Select_F14"
-pin: 1 R120.1
-pin: 2 XP211.68
-net: "CPU_R2_Select_F13"
-pin: 1 R117.1
-pin: 2 XP211.65
-net: "CPU_R2_Select_F12"
-pin: 1 R116.1
-pin: 2 XP211.70
-net: "CPU_R2_Select_F11"
-pin: 1 R113.1
-pin: 2 XP211.66
-net: "CPU_R2_Select_F10"
+net: "NetD1_48"
+pin: 0 XP17.2
+pin: 1 R644.1
+pin: 2 D1.48
+net: "NetD1_47"
+pin: 0 XP16.2
+pin: 1 D1.47
+pin: 2 R643.1
+net: "RST_blk"
+pin: 0 D7.10
 pin: 1 R112.1
-pin: 2 XP211.63
-net: "CPU_R2_Select_F9"
-pin: 1 R109.1
-pin: 2 XP212.66
-net: "CPU_R2_Select_F8"
-pin: 1 R108.1
-pin: 2 XP212.67
-net: "CPU_R2_Select_F7"
-pin: 1 R105.1
-pin: 2 XP212.70
-net: "CPU_R2_Select_F6"
-pin: 1 R104.1
-pin: 2 XP212.68
-net: "CPU_R2_Select_F5"
-pin: 1 R101.1
-pin: 2 XP212.69
-net: "CPU_R2_Select_F4"
-pin: 1 R100.1
-pin: 2 XP211.44
-net: "CPU_R2_Select_F3"
-pin: 1 R97.1
-pin: 2 XP211.42
-net: "CPU_R2_Select_F2"
-pin: 1 R96.1
-pin: 2 XP211.58
-net: "CPU_R2_Select_F1"
-pin: 1 R93.1
-pin: 2 XP211.59
-net: "CPU_R1_Select_PINN"
-pin: 1 R86.1
-pin: 2 XP112.33
-net: "CPU_R1_Select_F16"
-pin: 1 R84.1
-pin: 2 XP212.48
-net: "CPU_R1_Select_F15"
-pin: 1 R81.1
-pin: 2 XP212.46
-net: "CPU_R1_Select_F14"
-pin: 1 R78.1
-pin: 2 XP212.41
-net: "CPU_R1_Select_F13"
-pin: 1 R75.1
-pin: 2 XP212.43
-net: "CPU_R1_Select_F12"
-pin: 1 R72.1
-pin: 2 XP212.45
-net: "CPU_R1_Select_F11"
-pin: 1 R69.1
-pin: 2 XP212.65
-net: "CPU_R1_Select_F10"
-pin: 1 R66.1
-pin: 2 XP211.69
-net: "CPU_R1_Select_F9"
-pin: 1 R63.1
-pin: 2 XP212.10
-net: "CPU_R1_Select_F8"
-pin: 1 R60.1
-pin: 2 XP211.45
-net: "CPU_R1_Select_F7"
-pin: 1 R57.1
-pin: 2 XP211.43
-net: "CPU_R1_Select_F6"
-pin: 1 R54.1
-pin: 2 XP211.41
-net: "CPU_R1_Select_F5"
-pin: 1 R51.1
-pin: 2 XP211.39
-net: "CPU_R1_Select_F4"
-pin: 1 R43.1
-pin: 2 XP211.40
-net: "CPU_R1_Select_F3"
-pin: 1 R40.1
-pin: 2 XP211.4
-net: "CPU_R1_Select_F2"
-pin: 1 R37.1
-pin: 2 XP211.55
-net: "CPU_R1_Select_F1"
-pin: 1 R34.1
-pin: 2 XP211.57
-net: "CPU_PINN_ADC_ON_IN"
-pin: 1 R92.1
-pin: 2 XP112.16
-net: "CPU_On_PW_from_CPU_ch16"
-pin: 1 R83.1
-pin: 2 XP111.64
-net: "CPU_On_PW_from_CPU_ch15"
-pin: 1 R80.1
-pin: 2 XP112.61
-net: "CPU_On_PW_from_CPU_ch14"
-pin: 1 R77.1
-pin: 2 XP111.68
-net: "CPU_On_PW_from_CPU_ch13"
-pin: 1 R74.1
-pin: 2 XP111.65
-net: "CPU_On_PW_from_CPU_ch12"
-pin: 1 R71.1
-pin: 2 XP111.70
-net: "CPU_On_PW_from_CPU_ch11"
-pin: 1 R68.1
-pin: 2 XP111.66
-net: "CPU_On_PW_from_CPU_ch10"
-pin: 1 R65.1
-pin: 2 XP111.63
-net: "CPU_On_PW_from_CPU_ch9"
-pin: 1 R62.1
-pin: 2 XP112.66
-net: "CPU_On_PW_from_CPU_ch8"
-pin: 1 R59.1
-pin: 2 XP112.67
-net: "CPU_On_PW_from_CPU_ch7"
-pin: 1 R56.1
-pin: 2 XP112.70
-net: "CPU_On_PW_from_CPU_ch6"
-pin: 1 R53.1
-pin: 2 XP112.68
-net: "CPU_On_PW_from_CPU_ch5"
-pin: 1 R50.1
-pin: 2 XP112.69
-net: "CPU_On_PW_from_CPU_ch4"
-pin: 1 R42.1
-pin: 2 XP111.44
-net: "CPU_On_PW_from_CPU_ch3"
-pin: 1 R39.1
-pin: 2 XP111.42
-net: "CPU_On_PW_from_CPU_ch2"
-pin: 1 R36.1
-pin: 2 XP111.58
-net: "CPU_On_PW_from_CPU_ch1"
-pin: 1 R33.1
-pin: 2 XP111.59
-net: "CPU_Latch_Reg_IN_PINN"
-pin: 1 R141.1
-pin: 2 XP111.40
-net: "CPU_KZ_Select_PINN"
-pin: 1 R88.1
-pin: 2 XP112.23
-net: "CPU_IN_OR16ch_Out_4"
-pin: 1 D37.15
-pin: 2 XP212.60
-net: "CPU_IN_OR16ch_Out_3"
-pin: 1 D37.16
-pin: 2 XP212.50
-net: "CPU_IN_OR16ch_Out_2"
-pin: 1 D37.17
-pin: 2 XP212.57
-net: "CPU_IN_OR16ch_Out_1"
-pin: 1 D37.18
-pin: 2 XP212.59
-net: "CPU_IN_AND16ch_Out_4"
-pin: 1 D37.19
-pin: 2 XP212.62
-net: "CPU_IN_AND16ch_Out_3"
-pin: 1 D37.20
-pin: 2 XP212.42
-net: "CPU_IN_AND16ch_Out_2"
-pin: 1 D37.21
-pin: 2 XP211.56
-net: "CPU_IN_AND16ch_Out_1"
-pin: 1 D37.22
-pin: 2 XP211.54
-net: "CPU_H_VoltOn_IN_PINN"
-pin: 1 R90.1
-pin: 2 XP112.24
-net: "CPU_fr_POLK_Sh_TrigOut_L"
-pin: 1 D91.6
-pin: 2 R138.2
-pin: 3 XP112.49
-net: "CPU_fr_POLK_Sh_TrigOut_H"
-pin: 1 D90.6
-pin: 2 R137.2
-pin: 3 XP112.56
-net: "CPU_fr_PHIK_Sh_TrigOut"
-pin: 1 D89.6
-pin: 2 R136.2
-pin: 3 XP112.47
-net: "CPU_DATA_ShReg_IN_PINN"
-pin: 1 D34.9
-pin: 2 XP111.55
-net: "CPU_DATA_R_On_Sh_Trig_08"
-pin: 1 D35.10
-pin: 2 XP112.48
-net: "CPU_DATA_R_On_Sh_Trig_07"
-pin: 1 D35.9
-pin: 2 XP112.46
-net: "CPU_DATA_R_On_Sh_Trig_06"
-pin: 1 D35.8
-pin: 2 XP112.41
-net: "CPU_DATA_R_On_Sh_Trig_05"
-pin: 1 D35.7
-pin: 2 XP112.43
-net: "CPU_DATA_R_On_Sh_Trig_04"
-pin: 1 D35.6
-pin: 2 XP112.45
-net: "CPU_DATA_R_On_Sh_Trig_03"
-pin: 1 D35.5
-pin: 2 XP112.65
-net: "CPU_DATA_R_On_Sh_Trig_02"
-pin: 1 D35.4
-pin: 2 XP111.45
-net: "CPU_DATA_R_On_Sh_Trig_01"
-pin: 1 D35.3
-pin: 2 XP111.39
-net: "CPU_CLK_ShReg_IN_PINN"
-pin: 1 D34.10
-pin: 2 XP111.4
-net: "CO_14-"
-pin: 1 D51.5
-pin: 2 K8.1
-pin: 3 K16.1
-net: "CO_14+"
-pin: 1 D51.6
-pin: 2 K7.1
-pin: 3 K15.1
-net: "CO_13-"
-pin: 1 D51.7
-pin: 2 K6.1
-pin: 3 K14.1
-net: "CO_13+"
-pin: 1 D51.8
-pin: 2 K5.1
-pin: 3 K13.1
-net: "CO_12-"
-pin: 1 D50.5
-pin: 2 K4.1
-pin: 3 K12.1
-net: "CO_12+"
-pin: 1 D50.6
-pin: 2 K3.1
-pin: 3 K11.1
-net: "CO_11-"
-pin: 1 D50.7
-pin: 2 K2.1
-pin: 3 K10.1
-net: "CO_11+"
-pin: 1 D50.8
-pin: 2 K1.1
-pin: 3 K9.1
-net: "CLK_ShReg_IN_PINN"
-pin: 1 D34.15
-pin: 2 XP8.35
-pin: 3 XP8.36
-net: "CLK_R_On_Sh_Trig_PNfrCPU"
-pin: 1 D34.4
-pin: 2 D34.3
-pin: 3 XP111.57
-net: "CLK_R_On_Sh_Trig_02"
-pin: 1 D34.21
-pin: 2 XP12.13
-pin: 3 XP12.14
-pin: 4 XP14.13
-pin: 5 XP14.14
-pin: 6 XP16.14
-pin: 7 XP16.13
-pin: 8 XP19.14
-pin: 9 XP19.13
-net: "CLK_R_On_Sh_Trig_01"
-pin: 1 D34.22
-pin: 2 XP11.13
-pin: 3 XP11.14
-pin: 4 XP13.13
-pin: 5 XP13.14
-pin: 6 XP15.14
-pin: 7 XP15.13
-pin: 8 XP18.14
-pin: 9 XP18.13
-net: "CLK_POLK_L_fr_CPU"
-pin: 1 R133.1
-pin: 2 XP112.53
-net: "CLK_POLK_H_fr_CPU"
-pin: 1 R130.1
-pin: 2 XP112.51
-net: "CLK_PHIK_fr_CPU"
-pin: 1 R127.1
-pin: 2 XP112.55
-net: "CLK_L"
-pin: 1 D86.6
-pin: 2 XP7.25
-pin: 3 XP7.26
-net: "CLK_H"
-pin: 1 D83.6
-pin: 2 XP7.4
-pin: 3 XP7.3
-net: "CLK_fr_PI"
-pin: 1 D80.6
-pin: 2 XP5.4
-pin: 3 XP5.3
-net: "CLK_Calibration_OUT_CPU2"
-pin: 1 R144.1
-pin: 2 XP212.3
-net: "CLK_Calibration_OUT_CPU1"
-pin: 1 R140.1
-pin: 2 XP112.3
-net: "CLK_Calibration_EXT_OUT2"
-pin: 1 D10.7
-pin: 2 R143.1
-pin: 3 XT3.12
-net: "CLK_Calibration_EXT_OUT1"
-pin: 1 D10.4
-pin: 2 R139.1
-pin: 3 XT3.10
-net: "C_SYNC_DEVICE"
-pin: 1 R30.1
-pin: 2 XP111.27
-net: "C_MSK_124"
-pin: 1 R234.1
-pin: 2 XP212.2
-net: "C_MSK_123"
-pin: 1 R233.1
-pin: 2 XP212.19
-net: "C_MSK_122"
-pin: 1 R232.1
-pin: 2 XP212.6
-net: "C_MSK_121"
-pin: 1 R231.1
-pin: 2 XP212.34
-net: "C_MSK_120"
-pin: 1 R230.1
-pin: 2 XP211.37
-net: "C_MSK_119"
-pin: 1 R229.1
-pin: 2 XP211.35
-net: "C_MSK_118"
-pin: 1 R228.1
-pin: 2 XP211.36
-net: "C_MSK_117"
-pin: 1 R227.1
-pin: 2 XP211.38
-net: "C_MSK_116"
-pin: 1 R226.1
-pin: 2 XP212.28
-net: "C_MSK_115"
-pin: 1 R225.1
-pin: 2 XP212.30
-net: "C_MSK_114"
-pin: 1 R224.1
-pin: 2 XP212.16
-net: "C_MSK_113"
-pin: 1 R223.1
-pin: 2 XP212.5
-net: "C_MSK_112"
-pin: 1 R222.1
-pin: 2 XP211.21
-net: "C_MSK_111"
-pin: 1 R221.1
-pin: 2 XP212.17
-net: "C_MSK_110"
-pin: 1 R220.1
-pin: 2 XP212.29
-net: "C_MSK_109"
-pin: 1 R219.1
-pin: 2 XP212.27
-net: "C_MSK_108"
-pin: 1 R218.1
-pin: 2 XP212.31
-net: "C_MSK_107"
-pin: 1 R217.1
-pin: 2 XP212.24
-net: "C_MSK_106"
-pin: 1 R216.1
-pin: 2 XP211.17
-net: "C_MSK_105"
-pin: 1 R215.1
-pin: 2 XP212.33
-net: "C_MSK_104"
-pin: 1 R214.1
-pin: 2 XP212.23
-net: "C_MSK_103"
-pin: 1 R213.1
-pin: 2 XP212.15
-net: "C_MSK_102"
-pin: 1 R212.1
-pin: 2 XP212.11
-net: "C_MSK_101"
-pin: 1 R211.1
-pin: 2 XP211.32
-net: "C_ALARM18"
-pin: 1 R126.1
-pin: 2 XP211.52
-net: "C_ALARM17"
-pin: 1 R125.1
-pin: 2 XP211.51
-net: "C_ALARM16"
-pin: 1 R123.1
-pin: 2 XP211.53
-net: "C_ALARM15"
-pin: 1 R122.1
-pin: 2 XP212.53
-net: "C_ALARM14"
-pin: 1 R119.1
-pin: 2 XP212.51
-net: "C_ALARM13"
-pin: 1 R118.1
-pin: 2 XP212.55
-net: "C_ALARM12"
-pin: 1 R115.1
-pin: 2 XP212.49
-net: "C_ALARM11"
-pin: 1 R114.1
-pin: 2 XP212.56
-net: "C_ALARM10"
-pin: 1 R111.1
-pin: 2 XP212.47
-net: "C_ALARM09"
-pin: 1 R110.1
-pin: 2 XP212.52
-net: "C_ALARM08"
-pin: 1 R107.1
-pin: 2 XP211.62
-net: "C_ALARM07"
-pin: 1 R106.1
-pin: 2 XP212.36
-net: "C_ALARM06"
-pin: 1 R103.1
-pin: 2 XP211.48
-net: "C_ALARM05"
-pin: 1 R102.1
-pin: 2 XP211.47
-net: "C_ALARM04"
-pin: 1 R99.1
-pin: 2 XP211.46
-net: "C_ALARM03"
-pin: 1 R98.1
-pin: 2 XP211.27
-net: "C_ALARM02"
-pin: 1 R95.1
-pin: 2 XP211.25
-net: "C_ALARM01"
-pin: 1 R94.1
-pin: 2 XP211.23
-net: "AND_Out_Ch208"
-pin: 1 D43.12
-pin: 2 XP19.38
-pin: 3 XP19.37
-net: "AND_Out_Ch207"
-pin: 1 D43.10
-pin: 2 XP16.38
-pin: 3 XP16.37
-net: "AND_Out_Ch206"
-pin: 1 D43.5
-pin: 2 XP14.37
-pin: 3 XP14.38
-net: "AND_Out_Ch205"
-pin: 1 D43.3
-pin: 2 XP12.37
-pin: 3 XP12.38
-net: "AND_Out_Ch204"
-pin: 1 D42.12
-pin: 2 XP18.38
-pin: 3 XP18.37
-net: "AND_Out_Ch203"
-pin: 1 D42.10
-pin: 2 XP15.38
-pin: 3 XP15.37
-net: "AND_Out_Ch202"
-pin: 1 D42.5
-pin: 2 XP13.37
-pin: 3 XP13.38
-net: "AND_Out_Ch201"
-pin: 1 D42.3
-pin: 2 XP11.37
-pin: 3 XP11.38
-net: "AND_Out_Ch108"
-pin: 1 D43.11
-pin: 2 XP19.33
-pin: 3 XP19.34
-net: "AND_Out_Ch107"
-pin: 1 D43.9
-pin: 2 XP16.33
-pin: 3 XP16.34
-net: "AND_Out_Ch106"
-pin: 1 D43.4
-pin: 2 XP14.34
-pin: 3 XP14.33
-net: "AND_Out_Ch105"
-pin: 1 D43.2
-pin: 2 XP12.34
-pin: 3 XP12.33
-net: "AND_Out_Ch104"
-pin: 1 D42.11
-pin: 2 XP18.33
-pin: 3 XP18.34
-net: "AND_Out_Ch103"
+net: "RST1"
+pin: 0 D7.9
+pin: 1 D7.4
+pin: 2 R30.2
+pin: 3 R641.2
+net: "NetR641_1"
+pin: 0 R641.1
+pin: 1 VT75.B
+net: "NetD7_8"
+pin: 0 D7.8
+pin: 1 D7.13
+pin: 2 D7.11
+net: "NetD1_192"
+pin: 0 D1.192
+pin: 1 R642.2
+net: "NetC34_2"
+pin: 0 R29.1
+pin: 1 D7.3
+pin: 2 C34.2
+pin: 3 VD1.Minus
+net: "GND_ANSW"
+pin: 0 D4.13
+pin: 1 D4.3
+pin: 2 VT75.C
+net: "NetD55_6"
+pin: 0 D55.6
+pin: 1 R488.1
+net: "NetR639_1"
+pin: 0 R640.2
+pin: 1 VT116.B
+pin: 2 R639.1
+net: "NetR616_2"
+pin: 0 R616.2
+pin: 1 R618.2
+pin: 2 VT116.C
+pin: 3 R617.2
+net: "NetR615_2"
+pin: 0 R615.2
+pin: 1 VT65.C
+net: "NetR614_2"
+pin: 0 VT64.C
+pin: 1 R614.2
+net: "NetR613_2"
+pin: 0 R613.2
+pin: 1 VT63.C
+net: "NetR612_2"
+pin: 0 VT62.C
+pin: 1 R612.2
+net: "NetR611_2"
+pin: 0 R611.2
+pin: 1 VT49.C
+net: "NetR610_2"
+pin: 0 R610.2
+pin: 1 VT48.C
+net: "NetR609_2"
+pin: 0 R609.2
+pin: 1 VT47.C
+net: "NetR608_2"
+pin: 0 R608.2
+pin: 1 VT46.C
+net: "NetR441_1"
+pin: 0 R441.1
+pin: 1 VT115.C
+net: "NetR440_1"
+pin: 0 R440.1
+pin: 1 VT114.C
+net: "NetR439_1"
+pin: 0 R439.1
+pin: 1 VT113.C
+net: "NetR438_1"
+pin: 0 R438.1
+pin: 1 VT112.C
+net: "NetR429_2"
+pin: 0 R441.2
+pin: 1 R429.2
+pin: 2 VT65.B
+net: "NetR428_2"
+pin: 0 VT64.B
+pin: 1 R428.2
+pin: 2 R440.2
+net: "NetR427_2"
+pin: 0 R439.2
+pin: 1 R427.2
+pin: 2 VT63.B
+net: "NetR426_2"
+pin: 0 R426.2
+pin: 1 R438.2
+pin: 2 VT62.B
+net: "NetR361_1"
+pin: 0 VT111.C
+pin: 1 R361.1
+net: "NetR360_1"
+pin: 0 VT110.C
+pin: 1 R360.1
+net: "NetR359_1"
+pin: 0 VT109.C
+pin: 1 R359.1
+net: "NetR358_1"
+pin: 0 R358.1
+pin: 1 VT108.C
+net: "NetR349_2"
+pin: 0 R349.2
+pin: 1 VT49.B
+pin: 2 R361.2
+net: "NetR348_2"
+pin: 0 VT48.B
+pin: 1 R360.2
+pin: 2 R348.2
+net: "NetR347_2"
+pin: 0 R347.2
+pin: 1 VT47.B
+pin: 2 R359.2
+net: "NetR346_2"
+pin: 0 R358.2
+pin: 1 VT46.B
+pin: 2 R346.2
+net: "NetR139_2"
+pin: 0 R621.1
+pin: 1 R139.2
+net: "NetR114_2"
+pin: 0 R114.2
+pin: 1 R620.1
+net: "NetD52_9"
+pin: 0 R615.1
+pin: 1 D52.9
+net: "NetD52_2"
+pin: 0 R614.1
+pin: 1 D52.2
+net: "NetD51_9"
+pin: 0 R613.1
+pin: 1 D51.9
+net: "NetD51_2"
+pin: 0 R612.1
+pin: 1 D51.2
+net: "NetD42_9"
+pin: 0 R611.1
 pin: 1 D42.9
-pin: 2 XP15.33
-pin: 3 XP15.34
-net: "AND_Out_Ch102"
-pin: 1 D42.4
-pin: 2 XP13.34
-pin: 3 XP13.33
-net: "AND_Out_Ch101"
-pin: 1 D42.2
-pin: 2 XP11.34
-pin: 3 XP11.33
-net: "AND16ch_Out_4"
-pin: 1 D37.6
-pin: 2 D41.8
-net: "AND16ch_Out_3"
-pin: 1 D37.5
-pin: 2 D41.6
-net: "AND16ch_Out_2"
-pin: 1 D37.4
-pin: 2 D40.8
-net: "AND16ch_Out_1"
-pin: 1 D37.3
-pin: 2 D40.6
-net: "ALARM_0"
-pin: 1 D57.5
-pin: 2 D57.7
-pin: 3 D52.7
-pin: 4 D52.5
-pin: 5 D53.5
-pin: 6 D53.7
-pin: 7 D54.7
-pin: 8 D54.5
-pin: 9 D56.7
-pin: 10 D56.5
-pin: 11 D58.7
-pin: 12 D58.5
-pin: 13 D59.7
-pin: 14 D59.5
-pin: 15 D60.5
-pin: 16 D60.7
-pin: 17 D55.5
-pin: 18 D55.7
-pin: 19 K71.1
-pin: 20 K72.1
-pin: 21 K82.1
-pin: 22 K83.1
-net: "ALARM18"
-pin: 1 D60.6
-pin: 2 K81.1
-net: "ALARM17"
-pin: 1 D60.8
-pin: 2 K70.1
-net: "ALARM16"
-pin: 1 D59.6
-pin: 2 K80.1
-net: "ALARM15"
-pin: 1 D59.8
-pin: 2 K69.1
-net: "ALARM14"
-pin: 1 D58.6
-pin: 2 K79.1
-net: "ALARM13"
-pin: 1 D58.8
-pin: 2 K68.1
-net: "ALARM12"
-pin: 1 D57.6
-pin: 2 K78.1
-net: "ALARM11"
-pin: 1 D57.8
-pin: 2 K67.1
-net: "ALARM10"
-pin: 1 D56.6
-pin: 2 K77.1
-net: "ALARM09"
-pin: 1 D56.8
-pin: 2 K66.1
-net: "ALARM08"
-pin: 1 D55.6
-pin: 2 K76.1
-net: "ALARM07"
-pin: 1 D55.8
-pin: 2 K65.1
-net: "ALARM06"
-pin: 1 D54.6
-pin: 2 K75.1
-net: "ALARM05"
-pin: 1 D54.8
-pin: 2 K64.1
-net: "ALARM04"
-pin: 1 D53.6
-pin: 2 K74.1
-net: "ALARM03"
-pin: 1 D53.8
-pin: 2 K63.1
-net: "ALARM02"
-pin: 1 D52.6
-pin: 2 K73.1
-net: "ALARM01"
-pin: 1 D52.8
-pin: 2 K62.1
-net: "ADJ_Cur_PINN_Out"
-pin: 1 R49.2
-pin: 2 XP111.69
-pin: 3 XP8.49
-pin: 4 XP8.50
-net: "ADC_T_Reset_CPU4"
-pin: 1 C52.1
-pin: 2 R374.2
-pin: 3 R397.2
-pin: 4 XP111.9
-net: "ADC_T_Reset_CPU3"
-pin: 1 C50.1
+net: "NetD42_2"
+pin: 0 D42.2
+pin: 1 R610.1
+net: "NetD41_9"
+pin: 0 R609.1
+pin: 1 D41.9
+net: "NetD41_2"
+pin: 0 D41.2
+pin: 1 R608.1
+net: "NetR607_2"
+pin: 0 R607.2
+pin: 1 VT33.C
+net: "NetR606_2"
+pin: 0 R606.2
+pin: 1 VT32.C
+net: "NetR605_2"
+pin: 0 R605.2
+pin: 1 VT31.C
+net: "NetR604_2"
+pin: 0 R604.2
+pin: 1 VT30.C
+net: "NetR603_2"
+pin: 0 R603.2
+pin: 1 VT17.C
+net: "NetR602_2"
+pin: 0 R602.2
+pin: 1 VT16.C
+net: "NetR601_2"
+pin: 0 R601.2
+pin: 1 VT15.C
+net: "NetR281_1"
+pin: 0 VT107.C
+pin: 1 R281.1
+net: "NetR280_1"
+pin: 0 VT106.C
+pin: 1 R280.1
+net: "NetR279_1"
+pin: 0 VT105.C
+pin: 1 R279.1
+net: "NetR278_1"
+pin: 0 VT104.C
+pin: 1 R278.1
+net: "NetR269_2"
+pin: 0 R269.2
+pin: 1 R281.2
+pin: 2 VT33.B
+net: "NetR268_2"
+pin: 0 R280.2
+pin: 1 VT32.B
+pin: 2 R268.2
+net: "NetR267_2"
+pin: 0 R279.2
+pin: 1 R267.2
+pin: 2 VT31.B
+net: "NetR266_2"
+pin: 0 R266.2
+pin: 1 VT30.B
+pin: 2 R278.2
+net: "NetR201_1"
+pin: 0 VT103.C
+pin: 1 R201.1
+net: "NetR200_1"
+pin: 0 VT102.C
+pin: 1 R200.1
+net: "NetR199_1"
+pin: 0 VT101.C
+pin: 1 R199.1
+net: "NetR189_2"
+pin: 0 VT17.B
+pin: 1 R189.2
+pin: 2 R201.2
+net: "NetR188_2"
+pin: 0 R188.2
+pin: 1 VT16.B
+pin: 2 R200.2
+net: "NetR187_2"
+pin: 0 VT15.B
+pin: 1 R187.2
+pin: 2 R199.2
+net: "NetD32_9"
+pin: 0 D32.9
+pin: 1 R607.1
+net: "NetD32_2"
+pin: 0 D32.2
+pin: 1 R606.1
+net: "NetD31_9"
+pin: 0 D31.9
+pin: 1 R605.1
+net: "NetD31_2"
+pin: 0 D31.2
+pin: 1 R604.1
+net: "NetD22_9"
+pin: 0 D22.9
+pin: 1 R603.1
+net: "NetD22_2"
+pin: 0 D22.2
+pin: 1 R602.1
+net: "NetD21_9"
+pin: 0 D21.9
+pin: 1 R601.1
+net: "NetR600_2"
+pin: 0 VT14.C
+pin: 1 R600.2
+net: "NetR198_1"
+pin: 0 R198.1
+pin: 1 VT100.C
+net: "NetR186_2"
+pin: 0 R186.2
+pin: 1 R198.2
+pin: 2 VT14.B
+net: "NetD21_2"
+pin: 0 R600.1
+pin: 1 D21.2
+net: "NetR547_1"
+pin: 0 VT4.E
+pin: 1 R547.1
+net: "NetC117_2"
+pin: 0 C117.2
+pin: 1 VD29.Minus
+pin: 2 R130.2
+net: "NetC117_1"
+pin: 0 VT1.C
+pin: 1 C117.1
+pin: 2 R125.2
+net: "NetC38_2"
+pin: 0 C50.Plus
+pin: 1 C38.2
+pin: 2 XP15.2
+pin: 3 VT80.E
+pin: 4 R513.2
+net: "RST2#"
+pin: 0 D7.5
+pin: 1 R505.2
+net: "NetR129_1"
+pin: 0 VT79.B
+pin: 1 R496.2
+pin: 2 R129.1
+net: "NetR127_2"
+pin: 0 VT1.B
+pin: 1 R127.2
+pin: 2 R128.2
+net: "NetC116_2"
+pin: 0 D56.3
+pin: 1 C116.2
+pin: 2 R513.1
+pin: 3 R514.2
+net: "NetC116_1"
+pin: 0 D56.1
+pin: 1 R622.2
+pin: 2 R512.1
+pin: 3 VT80.B
+pin: 4 C116.1
+net: "NetD5_12"
+pin: 0 D5.12
+pin: 1 R132.2
+net: "NetD1_10"
+pin: 0 D1.10
+pin: 1 R511.1
+net: "NetD1_9"
+pin: 0 D1.9
+pin: 1 R510.1
+net: "NetD1_8"
+pin: 0 D1.8
+pin: 1 R509.1
+net: "NetD1_7"
+pin: 0 D1.7
+pin: 1 R508.1
+net: "NetC58_Plus"
+pin: 0 R479.2
+pin: 1 R33.1
+pin: 2 C112.plus
+pin: 3 C58.plus
+net: "FO_VccBoost"
+pin: 0 R489.2
+pin: 1 R511.2
+pin: 2 R510.2
+pin: 3 R509.2
+pin: 4 R508.2
+pin: 5 D53.2
+net: "DRV2"
+pin: 0 XT1.110
+pin: 1 XT1.20
+pin: 2 XT1.50
+pin: 3 XT1.80
+pin: 4 R507.2
+pin: 5 R9.1
+net: "DRV1"
+pin: 0 XT1.109
+pin: 1 XT1.19
+pin: 2 XT1.49
+pin: 3 XT1.79
+pin: 4 R506.2
+pin: 5 R7.1
+net: "+15V_Ctrl"
+pin: 0 D5.6
+pin: 1 VT8.E
+pin: 2 R142.2
+pin: 3 R118.2
+pin: 4 R117.2
+net: "+15_SW"
+pin: 0 D8.13
+pin: 1 D8.4
+pin: 2 D53.13
+net: "NetR498_1"
+pin: 0 R500.1
+pin: 1 R501.1
+pin: 2 R502.1
+pin: 3 R504.1
+pin: 4 VT77.B
+pin: 5 R498.1
+net: "NetR488_2"
+pin: 0 VT76.B
+pin: 1 R494.2
+pin: 2 R490.2
+pin: 3 R491.2
+pin: 4 R492.2
+pin: 5 R493.2
+pin: 6 R488.2
+net: "NetR485_2"
+pin: 0 VT78.B
+pin: 1 R485.2
+pin: 2 R486.1
+net: "NetD55_14"
+pin: 0 R500.2
+pin: 1 D55.14
+net: "NetD55_13"
+pin: 0 R501.2
+pin: 1 D55.13
+net: "NetD55_12"
+pin: 0 R502.2
+pin: 1 D55.12
+net: "NetD55_11"
+pin: 0 R640.1
+pin: 1 D55.11
+pin: 2 VT77.C
+net: "NetD55_10"
+pin: 0 D55.10
+pin: 1 R504.2
+net: "NetD55_9"
+pin: 0 R33.2
+pin: 1 D55.9
+net: "NetD55_2"
+pin: 0 D55.2
+pin: 1 R493.1
+net: "NetD55_1"
+pin: 0 D55.1
+pin: 1 R492.1
+net: "NetD5_5"
+pin: 0 VT4.C
+pin: 1 R127.1
+pin: 2 D5.5
+net: "NetD1_232"
+pin: 0 D1.232
+pin: 1 K16.1
+net: "NetD1_231"
+pin: 0 D1.231
+pin: 1 K15.1
+net: "NetD1_230"
+pin: 0 D1.230
+pin: 1 K14.1
+net: "NetD1_229"
+pin: 0 D1.229
+pin: 1 K13.1
+net: "NetD1_227"
+pin: 0 D1.227
+pin: 1 K12.1
+net: "NetD1_226"
+pin: 0 D1.226
+pin: 1 K11.1
+net: "Block_L3"
+pin: 0 D1.199
+pin: 1 D55.5
+net: "Block_L2"
+pin: 0 D1.200
+pin: 1 D55.4
+net: "Block_L1"
+pin: 0 D1.201
+pin: 1 D55.3
+net: "Block_H6"
+pin: 0 D1.202
+pin: 1 D55.15
+net: "Block_H5"
+pin: 0 D1.204
+pin: 1 D55.16
+net: "Block_H4"
+pin: 0 D1.214
+pin: 1 D5.9
+net: "Block_H3"
+pin: 0 D1.215
+pin: 1 D5.10
+net: "Blk_Out_H"
+pin: 0 VT76.C
+pin: 1 R499.2
+pin: 2 R484.1
+pin: 3 D54.3
+net: "NetN1_18"
+pin: 0 R477.2
+pin: 1 N1.18
+pin: 2 R476.2
+net: "NetN1_17"
+pin: 0 N1.17
+pin: 1 N1.19
+net: "NetD1_51"
+pin: 0 XP11.2
+pin: 1 D1.51
+pin: 2 R487.1
+net: "NetD5_8"
+pin: 0 R491.1
+pin: 1 D5.8
+net: "NetD5_7"
+pin: 0 R490.1
+pin: 1 D5.7
+net: "NetR480_1"
+pin: 0 VT74.B
+pin: 1 R480.1
+net: "NetD53_11"
+pin: 0 R496.1
+pin: 1 D53.11
+net: "NetD8_10"
+pin: 0 D8.10
+pin: 1 K8.1
+pin: 2 D53.9
+net: "GND_SW"
+pin: 0 XP12.1
+pin: 1 D36.2
+pin: 2 D36.4
+pin: 3 D16.4
+pin: 4 D16.2
+pin: 5 D25.2
+pin: 6 D25.4
+pin: 7 R616.1
+pin: 8 R618.1
+pin: 9 R617.1
+pin: 10 R521.1
+pin: 11 R519.1
+pin: 12 R520.1
+pin: 13 R535.1
+pin: 14 R528.1
+pin: 15 R529.1
+pin: 16 R530.1
+pin: 17 R505.1
+pin: 18 D45.2
+pin: 19 D45.4
+pin: 20 D35.4
+pin: 21 D35.2
+pin: 22 D46.4
+pin: 23 D46.2
+pin: 24 D15.4
+pin: 25 D15.2
+pin: 26 D26.4
+pin: 27 D26.2
+pin: 28 R533.1
+pin: 29 D43.2
+pin: 30 D43.4
+pin: 31 R541.1
+pin: 32 R515.1
+pin: 33 R542.1
+pin: 34 R545.1
+pin: 35 R546.1
+pin: 36 R539.1
+pin: 37 R540.1
+pin: 38 R544.1
+pin: 39 R543.1
+pin: 40 R534.1
+pin: 41 R538.1
+pin: 42 R537.1
+pin: 43 R536.1
+pin: 44 R532.1
+pin: 45 R526.1
+pin: 46 R523.1
+pin: 47 R525.1
+pin: 48 R517.1
+pin: 49 R518.1
+pin: 50 R527.1
+pin: 51 R524.1
+pin: 52 R522.1
+pin: 53 R516.1
+pin: 54 R531.1
+pin: 55 D54.8
+pin: 56 D54.5
+pin: 57 D33.2
+pin: 58 D33.4
+pin: 59 D34.2
+pin: 60 D34.4
+pin: 61 D44.2
+pin: 62 D44.4
+pin: 63 D24.2
+pin: 64 D24.4
+pin: 65 D23.2
+pin: 66 D23.4
+pin: 67 D14.2
+pin: 68 D14.4
+pin: 69 D13.2
+pin: 70 D13.4
+net: "+28v_NULL"
+pin: 0 R479.1
+pin: 1 D55.7
+pin: 2 R480.2
+pin: 3 D53.4
+net: "+28_OPTO"
+pin: 0 XP3.2
+pin: 1 R105.1
+pin: 2 VD28.plus
+net: "T_Udiag"
+pin: 0 R35.1
+pin: 1 N3.5
+net: "NetR474_2"
+pin: 0 R474.2
+pin: 1 R477.1
+pin: 2 R475.2
+pin: 3 R476.1
+net: "NetC248_2"
+pin: 0 VT61.B
+pin: 1 R638.1
+pin: 2 R453.2
+pin: 3 C248.2
+net: "NetC247_2"
+pin: 0 VT60.B
+pin: 1 R637.1
+pin: 2 R452.2
+pin: 3 C247.2
+net: "NetR447_2"
+pin: 0 R447.2
+pin: 1 VT69.source
+pin: 2 R461.2
+net: "NetR446_2"
+pin: 0 VT67.source
+pin: 1 R459.2
+pin: 2 R446.2
+net: "NetR417_1"
+pin: 0 R417.1
+pin: 1 R638.2
+pin: 2 R429.1
+pin: 3 VT65.E
+pin: 4 VD27.A
+pin: 5 R464.2
+pin: 6 VT72.source
+net: "NetR416_1"
+pin: 0 R637.2
+pin: 1 R416.1
+pin: 2 VT64.E
+pin: 3 R428.1
+pin: 4 VD26.A
+pin: 5 R462.2
+pin: 6 VT70.source
+net: "NetR415_1"
+pin: 0 R427.1
+pin: 1 VT63.E
+pin: 2 R415.1
+pin: 3 R636.2
+pin: 4 VD25.A
+pin: 5 R460.2
+pin: 6 VT68.source
+net: "NetR425_2"
+pin: 0 VT73.gate
+pin: 1 R433.2
+pin: 2 R425.2
+net: "NetR424_2"
+pin: 0 VT71.gate
+pin: 1 R424.2
+pin: 2 R432.2
+net: "NetR423_2"
+pin: 0 VT69.gate
+pin: 1 R423.2
+pin: 2 R431.2
+net: "NetR422_2"
+pin: 0 VT67.gate
+pin: 1 R422.2
+pin: 2 R430.2
+net: "NetC248_1"
+pin: 0 VT61.C
+pin: 1 R417.2
+pin: 2 C248.1
+pin: 3 R408.1
+pin: 4 VD27.C
+pin: 5 VT72.gate
+net: "NetC247_1"
+pin: 0 VT60.C
+pin: 1 R416.2
+pin: 2 VD26.C
+pin: 3 C247.1
+pin: 4 R406.1
+pin: 5 VT70.gate
+net: "NetC246_1"
+pin: 0 R415.2
+pin: 1 C246.1
+pin: 2 VT59.C
+pin: 3 R404.1
+pin: 4 VD25.C
+pin: 5 VT68.gate
+net: "NetC245_1"
+pin: 0 VD24.C
+pin: 1 VT58.C
+pin: 2 R414.2
+pin: 3 C245.1
+pin: 4 R402.1
+pin: 5 VT66.gate
+net: "NetC244_2"
+pin: 0 R373.2
+pin: 1 VT45.B
+pin: 2 R634.1
+pin: 3 C244.2
+net: "NetC243_2"
+pin: 0 R633.1
+pin: 1 VT44.B
 pin: 2 R372.2
-pin: 3 R396.2
-pin: 4 XP112.36
-net: "ADC_T_Reset_CPU2"
-pin: 1 C48.1
+pin: 3 C243.2
+net: "NetC242_2"
+pin: 0 C242.2
+pin: 1 R632.1
+pin: 2 VT43.B
+pin: 3 R371.2
+net: "NetC241_2"
+pin: 0 R631.1
+pin: 1 VT42.B
 pin: 2 R370.2
-pin: 3 R395.2
-pin: 4 XP112.38
-net: "ADC_T_Reset_CPU1"
-pin: 1 C46.1
+pin: 3 C241.2
+net: "NetR369_2"
+pin: 0 R369.2
+pin: 1 VT57.source
+pin: 2 R385.2
+net: "NetR368_2"
+pin: 0 VT55.source
+pin: 1 R383.2
 pin: 2 R368.2
-pin: 3 R394.2
-pin: 4 XP112.58
-net: "ADC_I_Protect_PINN_Out"
-pin: 1 R419.1
-pin: 2 XP8.23
-pin: 3 XP8.24
-net: "ADC_I_Protect_PINN_CPU"
-pin: 1 C49.1
-pin: 2 R155.2
-pin: 3 R328.2
-pin: 4 XP111.11
-net: "ADC_I_LED_CPU"
-pin: 1 R156.2
-pin: 2 C51.1
-pin: 3 R330.2
-pin: 4 XP111.54
-net: "ADC_I_Diagnostic_fr_PHIK"
-pin: 1 R427.1
-pin: 2 XP6.9
-pin: 3 XP6.10
-net: "ADC_I_Diag_CPU"
-pin: 1 R157.2
-pin: 2 C53.1
-pin: 3 R332.2
-pin: 4 XP111.56
-net: "ADC_Calibration_IN_CPU"
-pin: 1 XP112.42
-pin: 2 XT3.22
-net: "AC_PINN_Out"
-pin: 1 R48.2
-pin: 2 XP111.21
-pin: 3 XP8.16
-pin: 4 XP8.15
-net: "A_GND"
-pin: 1 R329.1
+net: "NetR366_2"
+pin: 0 VT51.source
+pin: 1 R379.2
+pin: 2 R366.2
+net: "NetR337_1"
+pin: 0 R337.1
+pin: 1 VD23.A
+pin: 2 R634.2
+pin: 3 R349.1
+pin: 4 VT49.E
+pin: 5 R384.2
+pin: 6 VT56.source
+net: "NetR336_1"
+pin: 0 R633.2
+pin: 1 R336.1
+pin: 2 VT48.E
+pin: 3 VD22.A
+pin: 4 R348.1
+pin: 5 R382.2
+pin: 6 VT54.source
+net: "NetR335_1"
+pin: 0 R347.1
+pin: 1 VT47.E
+pin: 2 R632.2
+pin: 3 VD21.A
+pin: 4 R335.1
+pin: 5 R380.2
+pin: 6 VT52.source
+net: "NetR334_1"
+pin: 0 R631.2
+pin: 1 VT46.E
+pin: 2 VD20.A
+pin: 3 R346.1
+pin: 4 R334.1
+pin: 5 R378.2
+pin: 6 VT50.source
+net: "NetR345_2"
+pin: 0 VT57.gate
+pin: 1 R353.2
+pin: 2 R345.2
+net: "NetR344_2"
+pin: 0 VT55.gate
+pin: 1 R352.2
+pin: 2 R344.2
+net: "NetC244_1"
+pin: 0 VT45.C
+pin: 1 R337.2
+pin: 2 VD23.C
+pin: 3 C244.1
+pin: 4 R328.1
+pin: 5 VT56.gate
+net: "NetC243_1"
+pin: 0 VT44.C
+pin: 1 R336.2
+pin: 2 C243.1
+pin: 3 VD22.C
+pin: 4 R326.1
+pin: 5 VT54.gate
+net: "NetC242_1"
+pin: 0 C242.1
+pin: 1 VT43.C
+pin: 2 VD21.C
+pin: 3 R335.2
+pin: 4 R324.1
+pin: 5 VT52.gate
+net: "NetC241_1"
+pin: 0 VT42.C
+pin: 1 VD20.C
+pin: 2 C241.1
+pin: 3 R334.2
+pin: 4 R322.1
+pin: 5 VT50.gate
+net: "NetC240_2"
+pin: 0 R293.2
+pin: 1 VT29.B
+pin: 2 C240.2
+pin: 3 R630.1
+net: "NetC239_2"
+pin: 0 R629.1
+pin: 1 VT28.B
+pin: 2 R292.2
+pin: 3 C239.2
+net: "NetC238_2"
+pin: 0 C238.2
+pin: 1 R628.1
+pin: 2 VT27.B
+pin: 3 R291.2
+net: "NetC237_2"
+pin: 0 R627.1
+pin: 1 VT26.B
+pin: 2 R290.2
+pin: 3 C237.2
+net: "NetR257_1"
+pin: 0 R269.1
+pin: 1 VT33.E
+pin: 2 R630.2
+pin: 3 R257.1
+pin: 4 VD19.A
+pin: 5 R304.2
+pin: 6 VT40.source
+net: "NetR256_1"
+pin: 0 R629.2
+pin: 1 R256.1
+pin: 2 VD18.A
+pin: 3 VT32.E
+pin: 4 R268.1
+pin: 5 R302.2
+pin: 6 VT38.source
+net: "NetR255_1"
+pin: 0 R267.1
+pin: 1 VT31.E
+pin: 2 R628.2
+pin: 3 R255.1
+pin: 4 VD17.A
+pin: 5 R300.2
+pin: 6 VT36.source
+net: "NetR254_1"
+pin: 0 R254.1
+pin: 1 R627.2
+pin: 2 VD16.A
+pin: 3 R266.1
+pin: 4 VT30.E
+pin: 5 R298.2
+pin: 6 VT34.source
+net: "NetR265_2"
+pin: 0 VT41.gate
+pin: 1 R265.2
+pin: 2 R273.2
+net: "NetR264_2"
+pin: 0 R272.2
+pin: 1 R264.2
+pin: 2 VT39.gate
+net: "NetR263_2"
+pin: 0 R271.2
+pin: 1 R263.2
+pin: 2 VT37.gate
+net: "NetR262_2"
+pin: 0 VT35.gate
+pin: 1 R270.2
+pin: 2 R262.2
+net: "NetC240_1"
+pin: 0 VT29.C
+pin: 1 C240.1
+pin: 2 R257.2
+pin: 3 R248.1
+pin: 4 VD19.C
+pin: 5 VT40.gate
+net: "NetC239_1"
+pin: 0 VT28.C
+pin: 1 R256.2
+pin: 2 VD18.C
+pin: 3 C239.1
+pin: 4 R246.1
+pin: 5 VT38.gate
+net: "NetC236_2"
+pin: 0 R626.1
+pin: 1 R213.2
+pin: 2 VT13.B
+pin: 3 C236.2
+net: "NetC235_2"
+pin: 0 R625.1
+pin: 1 VT12.B
+pin: 2 R212.2
+pin: 3 C235.2
+net: "NetC234_2"
+pin: 0 R624.1
+pin: 1 VT11.B
+pin: 2 R211.2
+pin: 3 C234.2
+net: "NetR209_2"
+pin: 0 R209.2
+pin: 1 VT25.source
+pin: 2 R225.2
+net: "NetR208_2"
+pin: 0 VT23.source
+pin: 1 R223.2
+pin: 2 R208.2
+net: "NetR207_2"
+pin: 0 R207.2
+pin: 1 VT21.source
+pin: 2 R221.2
+net: "NetR175_1"
+pin: 0 R175.1
+pin: 1 R624.2
+pin: 2 VD13.A
+pin: 3 VT15.E
+pin: 4 R187.1
+pin: 5 VT20.source
+pin: 6 R220.2
+net: "NetR185_2"
+pin: 0 VT25.gate
+pin: 1 R185.2
+pin: 2 R193.2
+net: "NetR184_2"
+pin: 0 VT23.gate
+pin: 1 R192.2
+pin: 2 R184.2
+net: "NetR183_2"
+pin: 0 R191.2
+pin: 1 VT21.gate
+pin: 2 R183.2
+net: "NetC236_1"
+pin: 0 VD15.C
+pin: 1 VT13.C
+pin: 2 R177.2
+pin: 3 C236.1
+pin: 4 R168.1
+pin: 5 VT24.gate
+net: "NetC235_1"
+pin: 0 R176.2
+pin: 1 VT12.C
+pin: 2 C235.1
+pin: 3 VD14.C
+pin: 4 R166.1
+pin: 5 VT22.gate
+net: "NetC234_1"
+pin: 0 R175.2
+pin: 1 VT11.C
+pin: 2 VD13.C
+pin: 3 C234.1
+pin: 4 R164.1
+pin: 5 VT20.gate
+net: "NetR413_2"
+pin: 0 R413.2
+pin: 1 VT115.B
+pin: 2 R421.2
+pin: 3 R425.1
+net: "NetR412_2"
+pin: 0 R412.2
+pin: 1 VT114.B
+pin: 2 R420.2
+pin: 3 R424.1
+net: "NetR411_2"
+pin: 0 R419.2
+pin: 1 VT113.B
+pin: 2 R411.2
+pin: 3 R423.1
+net: "NetR410_2"
+pin: 0 R410.2
+pin: 1 R418.2
+pin: 2 VT112.B
+pin: 3 R422.1
+net: "NetD46_7"
+pin: 0 D46.7
+pin: 1 R412.1
+pin: 2 R400.1
+net: "NetD46_5"
+pin: 0 R401.1
+pin: 1 D46.5
+pin: 2 R413.1
+net: "NetD45_7"
+pin: 0 D45.7
+pin: 1 R410.1
+pin: 2 R398.1
+net: "NetD45_5"
+pin: 0 R399.1
+pin: 1 D45.5
+pin: 2 R411.1
+net: "NetD44_7"
+pin: 0 R406.2
+pin: 1 R396.2
+pin: 2 D44.7
+net: "NetD44_5"
+pin: 0 R397.2
+pin: 1 R408.2
+pin: 2 D44.5
+net: "NetD43_7"
+pin: 0 D43.7
+pin: 1 R394.2
+pin: 2 R402.2
+net: "NetD43_5"
+pin: 0 D43.5
+pin: 1 R395.2
+pin: 2 R404.2
+net: "NetR333_2"
+pin: 0 R333.2
+pin: 1 VT111.B
+pin: 2 R345.1
+pin: 3 R341.2
+net: "NetR332_2"
+pin: 0 R332.2
+pin: 1 VT110.B
+pin: 2 R344.1
+pin: 3 R340.2
+net: "NetR331_2"
+pin: 0 R331.2
+pin: 1 VT109.B
+pin: 2 R339.2
+pin: 3 R343.1
+net: "NetR330_2"
+pin: 0 VT108.B
+pin: 1 R330.2
+pin: 2 R338.2
+pin: 3 R342.1
+net: "NetD36_7"
+pin: 0 D36.7
+pin: 1 R332.1
+pin: 2 R320.1
+net: "NetD36_5"
+pin: 0 D36.5
+pin: 1 R321.1
+pin: 2 R333.1
+net: "NetD35_7"
+pin: 0 D35.7
+pin: 1 R330.1
+pin: 2 R318.1
+net: "NetD35_5"
+pin: 0 R319.1
+pin: 1 D35.5
 pin: 2 R331.1
-pin: 3 R333.1
-pin: 4 R361.1
-pin: 5 R363.1
-pin: 6 R365.1
-pin: 7 R367.1
-pin: 8 R369.1
-pin: 9 R371.1
-pin: 10 R373.1
-pin: 11 R375.1
-pin: 12 R377.1
-pin: 13 R379.1
-pin: 14 R381.1
-pin: 15 R383.1
-pin: 16 R415.1
-pin: 17 R429.1
-pin: 18 R431.1
-pin: 19 R433.1
-pin: 20 X4.2
-pin: 21 R435.1
-pin: 22 XP112.32
-pin: 23 XP212.32
-net: "-27V"
-pin: 1 XP5.17
-pin: 2 XP5.18
-pin: 3 K173.1
-net: "-5V_OY"
-pin: 1 D100.6
-pin: 2 D101.6
-pin: 3 D102.6
-pin: 4 D103.6
-pin: 5 D104.6
-pin: 6 D105.6
-pin: 7 D107.6
-pin: 8 D108.6
-pin: 9 D109.6
-pin: 10 D106.6
-pin: 11 C10.1
-pin: 12 C17.1
-pin: 13 C18.1
-pin: 14 C19.1
-pin: 15 C20.1
-pin: 16 C21.1
-pin: 17 C22.1
-pin: 18 C23.1
-pin: 19 C24.1
-pin: 20 C25.1
-pin: 21 C82.minus
-pin: 22 XP4.16
-pin: 23 XP4.15
-pin: 24 XP4.17
-pin: 25 XP4.18
-net: "+27V"
-pin: 1 XP6.1
-pin: 2 XP6.2
+net: "NetD34_7"
+pin: 0 R316.2
+pin: 1 R326.2
+pin: 2 D34.7
+net: "NetD34_5"
+pin: 0 R317.2
+pin: 1 R328.2
+pin: 2 D34.5
+net: "NetD33_7"
+pin: 0 R314.2
+pin: 1 R322.2
+pin: 2 D33.7
+net: "NetD33_5"
+pin: 0 R315.2
+pin: 1 R324.2
+pin: 2 D33.5
+net: "NetD26_7"
+pin: 0 R252.1
+pin: 1 D26.7
+pin: 2 R240.1
+net: "NetD26_5"
+pin: 0 R241.1
+pin: 1 R253.1
+pin: 2 D26.5
+net: "NetD23_7"
+pin: 0 R234.2
+pin: 1 R242.2
+pin: 2 D23.7
+net: "NetD23_5"
+pin: 0 R235.2
+pin: 1 R244.2
+pin: 2 D23.5
+net: "NetR173_2"
+pin: 0 R173.2
+pin: 1 VT103.B
+pin: 2 R181.2
+pin: 3 R185.1
+net: "NetR172_2"
+pin: 0 R172.2
+pin: 1 VT102.B
+pin: 2 R180.2
+pin: 3 R184.1
+net: "NetR171_2"
+pin: 0 R171.2
+pin: 1 R179.2
+pin: 2 R183.1
+pin: 3 VT101.B
+net: "NetD15_7"
+pin: 0 R158.1
+pin: 1 R170.1
+pin: 2 D15.7
+net: "NetD15_5"
+pin: 0 R159.1
+pin: 1 R171.1
+pin: 2 D15.5
+net: "NetD14_7"
+pin: 0 R156.2
+pin: 1 R166.2
+pin: 2 D14.7
+net: "NetD14_5"
+pin: 0 R157.2
+pin: 1 R168.2
+pin: 2 D14.5
+net: "NetD13_7"
+pin: 0 R162.2
+pin: 1 R154.2
+pin: 2 D13.7
+net: "NetD13_5"
+pin: 0 R155.2
+pin: 1 R164.2
+pin: 2 D13.5
+net: "NetC111_1"
+pin: 0 R469.2
+pin: 1 C215.2
+pin: 2 C111.1
+net: "NetC110_1"
+pin: 0 R468.2
+pin: 1 C214.2
+pin: 2 C110.1
+net: "NetC109_1"
+pin: 0 R467.2
+pin: 1 C213.2
+pin: 2 C109.1
+net: "NetC108_1"
+pin: 0 R466.2
+pin: 1 C212.2
+pin: 2 C108.1
+net: "NetC232_1"
+pin: 0 VT115.E
+pin: 1 C232.1
+pin: 2 R421.1
+pin: 3 D50.1
+net: "NetC232_2"
+pin: 0 C232.2
+pin: 1 D50.3
+pin: 2 R449.1
+pin: 3 R445.2
+net: "NetC231_1"
+pin: 0 C231.1
+pin: 1 D49.1
+pin: 2 VT114.E
+pin: 3 R420.1
+net: "NetC231_2"
+pin: 0 R444.2
+pin: 1 R448.1
+pin: 2 C231.2
+pin: 3 D49.3
+net: "NetC230_1"
+pin: 0 R419.1
+pin: 1 VT113.E
+pin: 2 C230.1
+pin: 3 D48.1
+net: "NetC230_2"
+pin: 0 C230.2
+pin: 1 D48.3
+pin: 2 R447.1
+pin: 3 R443.2
+net: "NetC229_1"
+pin: 0 R418.1
+pin: 1 VT112.E
+pin: 2 C229.1
+pin: 3 D47.1
+net: "NetC229_2"
+pin: 0 C229.2
+pin: 1 R442.2
+pin: 2 D47.3
+pin: 3 R446.1
+net: "NetC99_1"
+pin: 0 C211.2
+pin: 1 R389.2
+pin: 2 C99.1
+net: "NetC98_1"
+pin: 0 R388.2
+pin: 1 C210.2
+pin: 2 C98.1
+net: "NetC97_1"
+pin: 0 R387.2
+pin: 1 C209.2
+pin: 2 C97.1
+net: "NetC96_1"
+pin: 0 R386.2
+pin: 1 C208.2
+pin: 2 C96.1
+net: "NetC228_1"
+pin: 0 D40.1
+pin: 1 C228.1
+pin: 2 VT111.E
+pin: 3 R341.1
+net: "NetC228_2"
+pin: 0 D40.3
+pin: 1 C228.2
+pin: 2 R365.2
+pin: 3 R369.1
+net: "NetC227_1"
+pin: 0 VT110.E
+pin: 1 C227.1
+pin: 2 R340.1
+pin: 3 D39.1
+net: "NetC227_2"
+pin: 0 C227.2
+pin: 1 R364.2
+pin: 2 R368.1
+pin: 3 D39.3
+net: "NetC226_1"
+pin: 0 C226.1
+pin: 1 D38.1
+pin: 2 VT109.E
+pin: 3 R339.1
+net: "NetC226_2"
+pin: 0 C226.2
+pin: 1 R363.2
+pin: 2 R367.1
+pin: 3 D38.3
+net: "NetC225_1"
+pin: 0 VT108.E
+pin: 1 C225.1
+pin: 2 R338.1
+pin: 3 D37.1
+net: "NetC225_2"
+pin: 0 C225.2
+pin: 1 R362.2
+pin: 2 R366.1
+pin: 3 D37.3
+net: "NetC87_1"
+pin: 0 R309.2
+pin: 1 C207.2
+pin: 2 C87.1
+net: "NetC86_1"
+pin: 0 R308.2
+pin: 1 C206.2
+pin: 2 C86.1
+net: "NetC85_1"
+pin: 0 C205.2
+pin: 1 R307.2
+pin: 2 C85.1
+net: "NetC84_1"
+pin: 0 C204.2
+pin: 1 R306.2
+pin: 2 C84.1
+net: "NetC224_1"
+pin: 0 VT107.E
+pin: 1 C224.1
+pin: 2 D30.1
+pin: 3 R261.1
+net: "NetC223_2"
+pin: 0 C223.2
+pin: 1 R284.2
+pin: 2 R288.1
+pin: 3 D29.3
+net: "NetC222_2"
+pin: 0 R287.1
+pin: 1 R283.2
+pin: 2 C222.2
+pin: 3 D28.3
+net: "NetC221_2"
+pin: 0 C221.2
+pin: 1 D27.3
+pin: 2 R286.1
+pin: 3 R282.2
+net: "NetC75_1"
+pin: 0 R229.2
+pin: 1 C203.2
+pin: 2 C75.1
+net: "NetC74_1"
+pin: 0 C202.2
+pin: 1 R228.2
+pin: 2 C74.1
+net: "NetC73_1"
+pin: 0 R227.2
+pin: 1 C201.2
+pin: 2 C73.1
+net: "NetC220_1"
+pin: 0 C220.1
+pin: 1 D20.1
+pin: 2 VT103.E
+pin: 3 R181.1
+net: "NetC220_2"
+pin: 0 C220.2
+pin: 1 R209.1
+pin: 2 R205.2
+pin: 3 D20.3
+net: "NetC219_1"
+pin: 0 VT102.E
+pin: 1 C219.1
+pin: 2 R180.1
+pin: 3 D19.1
+net: "NetC219_2"
+pin: 0 C219.2
+pin: 1 R204.2
+pin: 2 R208.1
+pin: 3 D19.3
+net: "NetC218_1"
+pin: 0 C218.1
+pin: 1 D18.1
+pin: 2 R179.1
+pin: 3 VT101.E
+net: "NetC218_2"
+pin: 0 C218.2
+pin: 1 R207.1
+pin: 2 D18.3
+pin: 3 R203.2
+net: "NetR289_2"
+pin: 0 VT41.source
+pin: 1 R305.2
+pin: 2 R289.2
+net: "NetR288_2"
+pin: 0 VT39.source
+pin: 1 R303.2
+pin: 2 R288.2
+net: "NetR287_2"
+pin: 0 R287.2
+pin: 1 VT37.source
+pin: 2 R301.2
+net: "NetR286_2"
+pin: 0 VT35.source
+pin: 1 R299.2
+pin: 2 R286.2
+net: "NetC238_1"
+pin: 0 C238.1
+pin: 1 R255.2
+pin: 2 VT27.C
+pin: 3 R244.1
+pin: 4 VD17.C
+pin: 5 VT36.gate
+net: "NetC237_1"
+pin: 0 R254.2
+pin: 1 VT26.C
+pin: 2 VD16.C
+pin: 3 C237.1
+pin: 4 R242.1
+pin: 5 VT34.gate
+net: "NetR177_1"
+pin: 0 R626.2
+pin: 1 VD15.A
+pin: 2 R177.1
+pin: 3 VT17.E
+pin: 4 R189.1
+pin: 5 R224.2
+pin: 6 VT24.source
+net: "NetR176_1"
+pin: 0 R625.2
+pin: 1 R176.1
+pin: 2 R188.1
+pin: 3 VT16.E
+pin: 4 VD14.A
+pin: 5 R222.2
+pin: 6 VT22.source
+net: "NetR174_1"
+pin: 0 R623.2
+pin: 1 R186.1
+pin: 2 VT14.E
+pin: 3 VD12.A
+pin: 4 R174.1
+pin: 5 VT18.source
+pin: 6 R218.2
+net: "NetC233_1"
+pin: 0 VT10.C
+pin: 1 C233.1
+pin: 2 VD12.C
+pin: 3 R174.2
+pin: 4 VT18.gate
+pin: 5 R162.1
+net: "NetR150_2"
+pin: 0 R152.1
+pin: 1 R150.2
+pin: 2 R153.1
+pin: 3 R151.2
+net: "NetR134_1"
+pin: 0 VT5.B
+pin: 1 R134.1
+pin: 2 R135.2
+net: "NetR133_1"
+pin: 0 R134.2
+pin: 1 R133.1
+net: "RST_blk#"
+pin: 0 XP13.1
+pin: 1 VT3.B
+pin: 2 R112.2
+pin: 3 R116.2
+pin: 4 VT74.C
+net: "NetR107_1"
+pin: 0 VT2.B
+pin: 1 R108.2
+pin: 2 R107.1
+net: "NetN2_21"
+pin: 0 R152.2
+pin: 1 R153.2
+pin: 2 N2.22
+pin: 3 N2.21
+pin: 4 N2.23
+net: "NetR253_2"
+pin: 0 VT107.B
+pin: 1 R253.2
+pin: 2 R265.1
+pin: 3 R261.2
+net: "NetR252_2"
+pin: 0 R264.1
+pin: 1 R260.2
+pin: 2 VT106.B
+pin: 3 R252.2
+net: "NetR251_2"
+pin: 0 R263.1
+pin: 1 R259.2
+pin: 2 VT105.B
+pin: 3 R251.2
+net: "NetR250_2"
+pin: 0 R250.2
+pin: 1 R262.1
+pin: 2 VT104.B
+pin: 3 R258.2
+net: "NetR170_2"
+pin: 0 R170.2
+pin: 1 VT100.B
+pin: 2 R178.2
+pin: 3 R182.1
+net: "NetD25_7"
+pin: 0 D25.7
+pin: 1 R250.1
+pin: 2 R238.1
+net: "NetD25_5"
+pin: 0 D25.5
+pin: 1 R239.1
+pin: 2 R251.1
+net: "NetD24_7"
+pin: 0 R246.2
+pin: 1 R236.2
+pin: 2 D24.7
+net: "NetD24_5"
+pin: 0 R237.2
+pin: 1 R248.2
+pin: 2 D24.5
+net: "NetD16_7"
+pin: 0 D16.7
+pin: 1 R172.1
+pin: 2 R160.1
+net: "NetD16_5"
+pin: 0 D16.5
+pin: 1 R161.1
+pin: 2 R173.1
+net: "NetD10_4"
+pin: 0 D10.4
+pin: 1 R137.1
+pin: 2 VT5.C
+net: "NetD10_2"
+pin: 0 D10.2
+pin: 1 R113.1
+pin: 2 VT2.C
+net: "NetD1_74"
+pin: 0 D1.74
+pin: 1 R104.1
+net: "NetD1_73"
+pin: 0 D1.73
+pin: 1 R103.1
+net: "NetD1_76"
+pin: 0 D1.76
+pin: 1 R102.1
+net: "NetD1_77"
+pin: 0 D1.77
+pin: 1 R101.1
+net: "NetD1_93"
+pin: 0 D1.93
+pin: 1 R100.1
+net: "NetD1_98"
+pin: 0 D1.98
+pin: 1 R99.1
+net: "NetD1_101"
+pin: 0 D1.101
+pin: 1 R98.1
+net: "NetD1_105"
+pin: 0 D1.105
+pin: 1 R97.1
+net: "NetD1_116"
+pin: 0 D1.116
+pin: 1 R96.1
+net: "NetD1_115"
+pin: 0 D1.115
+pin: 1 R94.1
+net: "NetD1_114"
+pin: 0 D1.114
+pin: 1 R93.1
+net: "NetD1_136"
+pin: 0 D1.136
+pin: 1 R92.1
+net: "NetD1_137"
+pin: 0 D1.137
+pin: 1 R91.1
+net: "NetD1_121"
+pin: 0 D1.121
+pin: 1 R90.1
+net: "NetD1_122"
+pin: 0 D1.122
+pin: 1 R89.1
+net: "NetD1_152"
+pin: 0 D1.152
+pin: 1 R88.1
+net: "NetD1_153"
+pin: 0 R87.1
+pin: 1 D1.153
+net: "NetD1_143"
+pin: 0 D1.143
+pin: 1 R86.1
+net: "NetD1_142"
+pin: 0 D1.142
+pin: 1 R85.1
+net: "NetD1_169"
+pin: 0 D1.169
+pin: 1 R84.1
+net: "NetD1_168"
+pin: 0 D1.168
+pin: 1 R83.1
+net: "NetD1_167"
+pin: 0 D1.167
+pin: 1 R82.1
+net: "NetD1_166"
+pin: 0 D1.166
+pin: 1 R81.1
+net: "NetD1_177"
+pin: 0 D1.177
+pin: 1 R80.1
+net: "NetD1_179"
+pin: 0 D1.179
+pin: 1 R79.1
+net: "NetD1_173"
+pin: 0 D1.173
+pin: 1 R78.1
+net: "NetD1_62"
+pin: 0 R72.1
+pin: 1 D1.62
+net: "NetD1_63"
+pin: 0 R71.1
+pin: 1 D1.63
+net: "NetD1_69"
+pin: 0 D1.69
+pin: 1 R70.1
+net: "NetD1_71"
+pin: 0 D1.71
+pin: 1 R69.1
+net: "NetD1_89"
+pin: 0 D1.89
+pin: 1 R68.1
+net: "NetD1_85"
+pin: 0 D1.85
+pin: 1 R67.1
+net: "NetD1_79"
+pin: 0 D1.79
+pin: 1 R66.1
+net: "NetD1_80"
+pin: 0 D1.80
+pin: 1 R65.1
+net: "NetD1_111"
+pin: 0 D1.111
+pin: 1 R64.1
+net: "NetD1_112"
+pin: 0 D1.112
+pin: 1 R63.1
+net: "NetD1_110"
+pin: 0 R62.1
+pin: 1 D1.110
+net: "NetD1_109"
+pin: 0 D1.109
+pin: 1 R61.1
+net: "NetD1_131"
+pin: 0 D1.131
+pin: 1 R60.1
+net: "NetD1_130"
+pin: 0 D1.130
+pin: 1 R59.1
+net: "NetD1_133"
+pin: 0 D1.133
+pin: 1 R58.1
+net: "NetD1_132"
+pin: 0 D1.132
+pin: 1 R57.1
+net: "NetD1_139"
+pin: 0 D1.139
+pin: 1 R56.1
+net: "NetD1_138"
+pin: 0 D1.138
+pin: 1 R55.1
+net: "NetD1_134"
+pin: 0 D1.134
+pin: 1 R54.1
+net: "NetD1_135"
+pin: 0 D1.135
+pin: 1 R53.1
+net: "NetD1_148"
+pin: 0 D1.148
+pin: 1 R52.1
+net: "NetD1_147"
+pin: 0 D1.147
+pin: 1 R51.1
+net: "NetD1_145"
+pin: 0 D1.145
+pin: 1 R50.1
+net: "NetD1_144"
+pin: 0 D1.144
+pin: 1 R49.1
+net: "NetD1_154"
+pin: 0 D1.154
+pin: 1 R48.1
+net: "NetD1_155"
+pin: 0 D1.155
+pin: 1 R47.1
+net: "NetD1_149"
+pin: 0 D1.149
+pin: 1 R46.1
+net: "NetD1_150"
+pin: 0 D1.150
+pin: 1 R45.1
+net: "NetD1_185"
+pin: 0 D1.185
+pin: 1 R44.1
+net: "NetD1_183"
+pin: 0 D1.183
+pin: 1 R43.1
+net: "NetD1_175"
+pin: 0 D1.175
+pin: 1 R42.1
+net: "NetD1_178"
+pin: 0 D1.178
+pin: 1 R41.1
+net: "NetD1_220"
+pin: 0 D1.220
+pin: 1 K5.1
+net: "NetD1_219"
+pin: 0 D1.219
+pin: 1 K4.1
+net: "NetD1_211"
+pin: 0 D1.211
+pin: 1 K3.1
+net: "NetD1_206"
+pin: 0 D1.206
+pin: 1 K2.1
+net: "NetD1_205"
+pin: 0 D1.205
+pin: 1 K1.1
+net: "NetD1_61"
+pin: 0 R36.1
+pin: 1 D1.61
+net: "NetD1_39"
+pin: 0 D1.39
+pin: 1 D5.3
+pin: 2 D5.13
+pin: 3 R34.1
+net: "NetD1_38"
+pin: 0 D1.38
+pin: 1 R40.1
+net: "NetD1_28"
+pin: 0 D1.28
+pin: 1 R39.1
+net: "NetD1_27"
+pin: 0 D1.27
+pin: 1 R38.1
+net: "NetD1_26"
+pin: 0 D1.26
+pin: 1 R37.1
+net: "NetC47_2"
+pin: 0 VT6.B
+pin: 1 VD30.Minus
+pin: 2 D4.7
+pin: 3 R132.1
+pin: 4 C47.2
+pin: 5 R136.2
+net: "NetC217_1"
+pin: 0 C217.1
+pin: 1 VT100.E
+pin: 2 R178.1
+pin: 3 D17.1
+net: "NetC224_2"
+pin: 0 C224.2
+pin: 1 D30.3
+pin: 2 R289.1
+pin: 3 R285.2
+net: "NetC223_1"
+pin: 0 R260.1
+pin: 1 VT106.E
+pin: 2 C223.1
+pin: 3 D29.1
+net: "NetC222_1"
+pin: 0 R259.1
+pin: 1 VT105.E
+pin: 2 C222.1
+pin: 3 D28.1
+net: "NetC221_1"
+pin: 0 VT104.E
+pin: 1 C221.1
+pin: 2 D27.1
+pin: 3 R258.1
+net: "Vcc_Sens_ch2"
+pin: 0 D10.6
+pin: 1 D1.190
+pin: 2 R146.1
+net: "Vcc_Sens_ch1"
+pin: 0 D10.8
+pin: 1 D1.189
+pin: 2 R126.1
+net: "TL2_ResOut"
+pin: 0 D7.6
+pin: 1 R22.2
+net: "T_Tx"
+pin: 0 D4.11
+pin: 1 N3.6
+net: "T_Reset"
+pin: 0 R23.2
+pin: 1 N3.7
+net: "T_CLK"
+pin: 0 N3.4
+pin: 1 R34.2
+net: "RST1#"
+pin: 0 D7.12
+pin: 1 D1.29
+net: "Out_16L"
+pin: 0 C215.1
+pin: 1 VT73.drain
+pin: 2 N2.36
+pin: 3 R457.2
+net: "Out_16H"
+pin: 0 VT61.E
+pin: 1 R409.2
+pin: 2 C111.2
+pin: 3 D52.10
+pin: 4 R453.1
+pin: 5 N2.35
+pin: 6 R457.1
+pin: 7 R464.1
+net: "Out_15L"
+pin: 0 C214.1
+pin: 1 VT71.drain
+pin: 2 N2.34
+pin: 3 R456.2
+net: "Out_15H"
+pin: 0 VT60.E
+pin: 1 R452.1
+pin: 2 C110.2
+pin: 3 D52.3
+pin: 4 N2.33
+pin: 5 R407.2
+pin: 6 R456.1
+pin: 7 R462.1
+net: "Out_14L"
+pin: 0 C213.1
+pin: 1 VT69.drain
+pin: 2 N2.32
+pin: 3 R455.2
+net: "Out_14H"
+pin: 0 C109.2
+pin: 1 D51.10
+pin: 2 N2.31
+pin: 3 VT59.E
+pin: 4 R405.2
+pin: 5 R451.1
+pin: 6 R455.1
+pin: 7 R460.1
+net: "Out_13L"
+pin: 0 C212.1
+pin: 1 VT67.drain
+pin: 2 N2.30
+pin: 3 R454.2
+net: "Out_13H"
+pin: 0 VT58.E
+pin: 1 R403.2
+pin: 2 C108.2
+pin: 3 R450.1
+pin: 4 D51.3
+pin: 5 N2.29
+pin: 6 R458.1
+pin: 7 R454.1
+net: "Out_12L"
+pin: 0 C211.1
+pin: 1 VT57.drain
+pin: 2 N2.28
+pin: 3 R377.2
+net: "Out_12H"
+pin: 0 R329.2
+pin: 1 R373.1
+pin: 2 VT45.E
+pin: 3 D42.10
+pin: 4 C99.2
+pin: 5 N2.27
+pin: 6 R377.1
+pin: 7 R384.1
+net: "Out_11L"
+pin: 0 C210.1
+pin: 1 VT55.drain
+pin: 2 N2.26
+pin: 3 R376.2
+net: "Out_11H"
+pin: 0 R327.2
+pin: 1 D42.3
+pin: 2 VT44.E
+pin: 3 C98.2
+pin: 4 R372.1
+pin: 5 N2.25
+pin: 6 R376.1
+pin: 7 R382.1
+net: "Out_10L"
+pin: 0 C209.1
+pin: 1 VT53.drain
+pin: 2 N2.20
+pin: 3 R375.2
+net: "Out_10H"
+pin: 0 D41.10
+pin: 1 C97.2
+pin: 2 N2.19
+pin: 3 R325.2
+pin: 4 VT43.E
+pin: 5 R371.1
+pin: 6 R375.1
+pin: 7 R380.1
+net: "Out_09L"
+pin: 0 C208.1
+pin: 1 VT51.drain
+pin: 2 N2.18
+pin: 3 R374.2
+net: "Out_09H"
+pin: 0 D41.3
+pin: 1 VT42.E
+pin: 2 R323.2
+pin: 3 C96.2
+pin: 4 R370.1
+pin: 5 N2.17
+pin: 6 R374.1
+pin: 7 R378.1
+net: "Out_08L"
+pin: 0 C207.1
+pin: 1 VT41.drain
+pin: 2 N2.16
+pin: 3 R297.2
+net: "Out_08H"
+pin: 0 D32.10
+pin: 1 R293.1
+pin: 2 R249.2
+pin: 3 VT29.E
+pin: 4 C87.2
+pin: 5 N2.15
+pin: 6 R297.1
+pin: 7 R304.1
+net: "Out_07L"
+pin: 0 C206.1
+pin: 1 VT39.drain
+pin: 2 N2.14
+pin: 3 R296.2
+net: "Out_07H"
+pin: 0 D32.3
+pin: 1 VT28.E
+pin: 2 R247.2
+pin: 3 C86.2
+pin: 4 R292.1
+pin: 5 N2.13
+pin: 6 R296.1
+pin: 7 R302.1
+net: "Out_06L"
+pin: 0 C205.1
+pin: 1 VT37.drain
+pin: 2 N2.12
+pin: 3 R295.2
+net: "Out_06H"
+pin: 0 D31.10
+pin: 1 C85.2
+pin: 2 N2.11
+pin: 3 VT27.E
+pin: 4 R291.1
+pin: 5 R245.2
+pin: 6 R295.1
+pin: 7 R300.1
+net: "Out_05L"
+pin: 0 C204.1
+pin: 1 VT35.drain
+pin: 2 N2.10
+pin: 3 R294.2
+net: "Out_05H"
+pin: 0 D31.3
+pin: 1 VT26.E
+pin: 2 R243.2
+pin: 3 C84.2
+pin: 4 R290.1
+pin: 5 N2.9
+pin: 6 R294.1
+pin: 7 R298.1
+net: "Out_04L"
+pin: 0 C203.1
+pin: 1 VT25.drain
+pin: 2 N2.8
+pin: 3 R217.2
+net: "Out_04H"
+pin: 0 R169.2
+pin: 1 R213.1
+pin: 2 VT13.E
+pin: 3 D22.10
+pin: 4 C75.2
+pin: 5 N2.7
+pin: 6 R217.1
+pin: 7 R224.1
+net: "Out_03L"
+pin: 0 C202.1
+pin: 1 VT23.drain
+pin: 2 N2.6
+pin: 3 R216.2
+net: "Out_03H"
+pin: 0 VT12.E
+pin: 1 D22.3
+pin: 2 R167.2
+pin: 3 C74.2
+pin: 4 R212.1
+pin: 5 N2.5
+pin: 6 R216.1
+pin: 7 R222.1
+net: "Out_02L"
+pin: 0 C201.1
+pin: 1 VT21.drain
+pin: 2 N2.4
+pin: 3 R215.2
+net: "Out_02H"
+pin: 0 VT11.E
+pin: 1 R211.1
+pin: 2 R165.2
+pin: 3 C73.2
+pin: 4 N2.3
+pin: 5 D21.10
+pin: 6 R215.1
+pin: 7 R220.1
+net: "Out_01L"
+pin: 0 C200.1
+pin: 1 VT19.drain
+pin: 2 N2.2
+pin: 3 R214.2
+net: "Out_01H"
+pin: 0 VT10.E
+pin: 1 R163.2
+pin: 2 C72.2
+pin: 3 R210.1
+pin: 4 D21.3
+pin: 5 N2.1
+pin: 6 R218.1
+pin: 7 R214.1
+net: "OFF2-7"
+pin: 0 XT1.102
+pin: 1 XT1.72
+pin: 2 XP2.8
+net: "OFF2-6"
+pin: 0 XT1.103
+pin: 1 XT1.73
+pin: 2 XP2.7
+net: "OFF2-5"
+pin: 0 XT1.104
+pin: 1 XT1.74
+pin: 2 XP2.6
+net: "OFF2-4"
+pin: 0 XT1.105
+pin: 1 XT1.75
+pin: 2 XP2.5
+net: "OFF2-3"
+pin: 0 XT1.106
+pin: 1 XT1.76
+pin: 2 XP2.4
+net: "OFF2-2"
+pin: 0 XT1.107
+pin: 1 XT1.77
+pin: 2 XP2.3
+net: "OFF2-1"
+pin: 0 XP2.2
+pin: 1 XT1.108
+pin: 2 XT1.78
+net: "OFF1-7"
+pin: 0 XT1.18
+pin: 1 XT1.48
+pin: 2 XP1.8
+net: "OFF1-6"
+pin: 0 XT1.17
+pin: 1 XT1.47
+pin: 2 XP1.7
+net: "OFF1-5"
+pin: 0 XT1.16
+pin: 1 XT1.46
+pin: 2 XP1.6
+net: "OFF1-4"
+pin: 0 XT1.15
+pin: 1 XT1.45
+pin: 2 XP1.5
+net: "OFF1-3"
+pin: 0 XT1.14
+pin: 1 XT1.44
+pin: 2 XP1.4
+net: "OFF1-2"
+pin: 0 XT1.13
+pin: 1 XT1.43
+pin: 2 XP1.3
+net: "OFF1-1"
+pin: 0 XP1.2
+pin: 1 XT1.12
+pin: 2 XT1.42
+net: "OE"
+pin: 0 XP6.7
+pin: 1 D1.127
+pin: 2 D2.39
+pin: 3 R6.2
+net: "NetVD9_3"
+pin: 0 VD9.4
+pin: 1 VD9.3
+net: "NetVD8_3"
+pin: 0 VD8.4
+pin: 1 VD8.3
+net: "NetVD10_3"
+pin: 0 VD10.4
+pin: 1 VD10.3
+net: "NetVD7_3"
+pin: 0 VD7.4
+pin: 1 VD7.3
+net: "NetVD5_3"
+pin: 0 VD5.4
+pin: 1 VD5.3
+net: "NetVD3_3"
+pin: 0 VD3.3
+pin: 1 VD3.4
+net: "NetVD2_3"
+pin: 0 VD2.4
+pin: 1 VD2.3
+net: "NetVD4_3"
+pin: 0 VD4.3
+pin: 1 VD4.4
+net: "NetC246_2"
+pin: 0 C246.2
+pin: 1 R636.1
+pin: 2 VT59.B
+pin: 3 R451.2
+net: "NetC245_2"
+pin: 0 R635.1
+pin: 1 VT58.B
+pin: 2 R450.2
+pin: 3 C245.2
+net: "NetR449_2"
+pin: 0 VT73.source
+pin: 1 R465.2
+pin: 2 R449.2
+net: "NetR448_2"
+pin: 0 R448.2
+pin: 1 VT71.source
+pin: 2 R463.2
+net: "NetR414_1"
+pin: 0 R426.1
+pin: 1 R635.2
+pin: 2 VD24.A
+pin: 3 VT62.E
+pin: 4 R414.1
+pin: 5 R458.2
+pin: 6 VT66.source
+net: "NetR367_2"
+pin: 0 R367.2
+pin: 1 VT53.source
+pin: 2 R381.2
+net: "NetR343_2"
+pin: 0 VT53.gate
+pin: 1 R351.2
+pin: 2 R343.2
+net: "NetR342_2"
+pin: 0 VT51.gate
+pin: 1 R350.2
+pin: 2 R342.2
+net: "NetC233_2"
+pin: 0 R623.1
+pin: 1 VT10.B
+pin: 2 R210.2
+pin: 3 C233.2
+net: "NetR206_2"
+pin: 0 VT19.source
+pin: 1 R206.2
+pin: 2 R219.2
+net: "NetR182_2"
+pin: 0 VT19.gate
+pin: 1 R190.2
+pin: 2 R182.2
+net: "NetR148_2"
+pin: 0 R148.2
+pin: 1 VT9.B
+pin: 2 R149.1
+net: "NetR143_2"
+pin: 0 R147.1
+pin: 1 VT7.B
+pin: 2 R143.2
+net: "NetR123_1"
+pin: 0 VT4.B
+pin: 1 R123.1
+pin: 2 R124.2
+net: "NetR110_2"
+pin: 0 R110.2
+pin: 1 R111.2
+pin: 2 R118.1
+pin: 3 R117.1
+net: "NetR110_1"
+pin: 0 VD2.1
+pin: 1 R110.1
+pin: 2 VD5.1
+pin: 3 VD3.1
+pin: 4 R111.1
+pin: 5 VD4.1
+net: "NetR35_2"
+pin: 0 R35.2
+pin: 1 VD7.2
+pin: 2 VD9.2
+pin: 3 VD8.2
+pin: 4 VD10.2
+pin: 5 R133.2
+pin: 6 R106.2
+net: "NetR106_1"
+pin: 0 R107.2
+pin: 1 R106.1
+net: "NetR105_2"
+pin: 0 R105.2
+pin: 1 R109.1
+net: "NetD12_5"
+pin: 0 D12.5
+pin: 1 VT9.C
+net: "NetD11_5"
+pin: 0 R147.2
+pin: 1 R148.1
+pin: 2 D11.8
+pin: 3 D11.5
+pin: 4 R485.1
+net: "NetD11_4"
+pin: 0 XP2.1
+pin: 1 D11.4
+net: "NetD11_3"
+pin: 0 R140.2
+pin: 1 D11.3
+net: "NetD11_2"
+pin: 0 XP1.1
+pin: 1 D11.2
+net: "NetD11_1"
+pin: 0 R141.2
+pin: 1 D11.1
+net: "NetD9_5"
+pin: 0 D9.5
+pin: 1 VT7.C
+net: "NetD10_3"
+pin: 0 D10.3
+pin: 1 R137.2
+pin: 2 R139.1
+net: "NetD10_1"
+pin: 0 D10.1
+pin: 1 R114.1
+pin: 2 R113.2
+net: "NetR138_1"
+pin: 0 VD11.C
+pin: 1 VT8.B
+pin: 2 R138.1
+net: "NetD8_11"
+pin: 0 R124.1
+pin: 1 D8.11
+net: "Inhibit_OFF"
+pin: 0 D8.9
+pin: 1 VT78.C
+pin: 2 K9.1
+pin: 3 R478.2
+pin: 4 VD6.Minus
+pin: 5 R109.2
+net: "Reset_SW"
+pin: 0 XP14.1
+pin: 1 VT3.C
+pin: 2 R115.1
+pin: 3 D8.3
+pin: 4 R489.1
+pin: 5 D53.3
+net: "NetD7_2"
+pin: 0 R29.2
+pin: 1 D7.2
+net: "NetD5_2"
+pin: 0 R22.1
+pin: 1 R23.1
+pin: 2 R30.1
+pin: 3 D5.16
+pin: 4 D5.2
+net: "NetD4_12"
+pin: 0 R20.2
+pin: 1 R28.1
+pin: 2 D4.12
+net: "NetD4_9"
+pin: 0 D4.9
+pin: 1 R131.2
+pin: 2 R130.1
+net: "NetD4_5"
+pin: 0 R36.2
+pin: 1 R32.1
+pin: 2 D4.5
+net: "NetD4_2"
+pin: 0 D4.2
+pin: 1 R24.1
+pin: 2 R21.2
+net: "NetD3_9"
+pin: 0 D3.9
+pin: 1 R17.1
+pin: 2 R13.2
+net: "NetD3_5"
+pin: 0 D3.5
+pin: 1 R16.1
+pin: 2 R12.2
+net: "NetD1_248"
+pin: 0 D1.248
+pin: 1 R1.2
+net: "NetD1_117"
+pin: 0 D1.117
+pin: 1 R95.1
+net: "NetD1_194"
+pin: 0 D1.194
+pin: 1 R3.2
+net: "NetD1_191"
+pin: 0 D1.191
+pin: 1 R2.2
+net: "NetD1_174"
+pin: 0 D1.174
+pin: 1 R77.1
+net: "NetD1_188"
+pin: 0 D1.188
+pin: 1 R76.1
+net: "NetD1_187"
+pin: 0 D1.187
+pin: 1 R75.1
+net: "NetD1_182"
+pin: 0 D1.182
+pin: 1 R74.1
+net: "NetD1_186"
+pin: 0 D1.186
+pin: 1 R73.1
+net: "NetD1_128"
+pin: 0 D1.128
+pin: 1 R4.2
+net: "NetC72_1"
+pin: 0 R226.2
+pin: 1 C200.2
+pin: 2 C72.1
+net: "NetC217_2"
+pin: 0 C217.2
+pin: 1 D17.3
+pin: 2 R202.2
+pin: 3 R206.1
+net: "NetC61_Plus"
+pin: 0 D12.1
+pin: 1 C61.Plus
+pin: 2 XP10.1
+pin: 3 C63.2
+net: "NetC60_2"
+pin: 0 C62.1
+pin: 1 C60.2
+net: "NetC53_Plus"
+pin: 0 D9.1
+pin: 1 C53.Plus
+pin: 2 XP8.1
+pin: 3 C56.2
+net: "NetC53_Minus"
+pin: 0 D9.2
+pin: 1 C54.Plus
+pin: 2 C53.Minus
 pin: 3 XP9.1
-pin: 4 XP9.2
-net: "+27V_I_Protect"
-pin: 1 XP6.5
-pin: 2 XP6.6
-pin: 3 K172.1
-net: "+5V_OY"
-pin: 1 D100.14
-pin: 2 D101.14
-pin: 3 D102.14
-pin: 4 D103.14
-pin: 5 D104.14
-pin: 6 D105.14
-pin: 7 D107.14
-pin: 8 D108.14
-pin: 9 D109.14
-pin: 10 X11.1
-pin: 11 D106.14
-pin: 12 C10.2
-pin: 13 C17.2
-pin: 14 C18.2
-pin: 15 C19.2
-pin: 16 C20.2
-pin: 17 C21.2
-pin: 18 C22.2
-pin: 19 C23.2
-pin: 20 C24.2
-pin: 21 C25.2
-net: "+5V_OPTO2"
-pin: 1 XP4.48
-pin: 2 XP4.47
-pin: 3 XP4.46
-pin: 4 XP4.45
-pin: 5 XP4.44
-pin: 6 XP4.43
-pin: 7 XP4.49
-pin: 8 XP4.50
-pin: 9 XP10.20
-pin: 10 XP10.19
-pin: 11 XP10.18
-pin: 12 XP10.17
-pin: 13 XP12.18
-pin: 14 XP12.17
-pin: 15 XP12.15
-pin: 16 XP12.16
-pin: 17 XP14.18
-pin: 18 XP14.17
-pin: 19 XP14.15
-pin: 20 XP14.16
-pin: 21 XP16.16
-pin: 22 XP16.15
-pin: 23 XP16.17
-pin: 24 XP16.18
-pin: 25 XP19.16
-pin: 26 XP19.15
-pin: 27 XP19.17
-pin: 28 XP19.18
-net: "+5V_OPTO1"
-pin: 1 D92.1
-pin: 2 D57.3
-pin: 3 D57.1
-pin: 4 D50.3
-pin: 5 D50.1
-pin: 6 D51.3
-pin: 7 D51.1
-pin: 8 D52.1
-pin: 9 D52.3
-pin: 10 D53.3
-pin: 11 D53.1
-pin: 12 D54.1
-pin: 13 D54.3
-pin: 14 D56.1
-pin: 15 D56.3
-pin: 16 D58.1
-pin: 17 D58.3
-pin: 18 D59.1
-pin: 19 D59.3
-pin: 20 D60.3
-pin: 21 D60.1
-pin: 22 D80.1
-pin: 23 D81.1
-pin: 24 D82.1
-pin: 25 D83.1
-pin: 26 D84.1
-pin: 27 D85.1
-pin: 28 D86.1
-pin: 29 D87.1
-pin: 30 D88.1
-pin: 31 R139.2
-pin: 32 R143.2
-pin: 33 R145.2
-pin: 34 R148.1
-pin: 35 R182.2
-pin: 36 R183.2
-pin: 37 R184.2
-pin: 38 R185.2
-pin: 39 R186.2
-pin: 40 R187.2
-pin: 41 R188.2
-pin: 42 R189.2
-pin: 43 R190.2
-pin: 44 R191.2
-pin: 45 R192.2
-pin: 46 R194.2
-pin: 47 R195.2
-pin: 48 R196.2
-pin: 49 R197.2
-pin: 50 R280.1
-pin: 51 R281.1
-pin: 52 R282.1
-pin: 53 R283.1
-pin: 54 R284.1
-pin: 55 R285.1
-pin: 56 R286.1
-pin: 57 R287.1
-pin: 58 R288.1
-pin: 59 R289.1
-pin: 60 D55.3
-pin: 61 D55.1
-pin: 62 R193.2
-pin: 63 XP4.19
-pin: 64 XP4.20
-pin: 65 XP4.21
-pin: 66 XP4.22
-pin: 67 XP4.23
-pin: 68 XP4.24
-pin: 69 XP4.25
-pin: 70 XP4.26
-pin: 71 XP6.18
-pin: 72 XP6.17
-pin: 73 XP6.15
-pin: 74 XP6.16
-pin: 75 XP11.18
-pin: 76 XP11.17
-pin: 77 XP11.15
-pin: 78 XP11.16
-pin: 79 XP13.18
-pin: 80 XP13.17
-pin: 81 XP13.15
-pin: 82 XP13.16
-pin: 83 XP15.16
-pin: 84 XP15.15
-pin: 85 XP15.17
-pin: 86 XP15.18
-pin: 87 XP18.16
-pin: 88 XP18.15
-pin: 89 XP18.17
-pin: 90 XP18.18
-net: "+5V_H"
-pin: 1 D89.1
-pin: 2 R290.1
-pin: 3 XP5.2
-pin: 4 XP5.1
-net: "+3.3V_CPU1"
-pin: 1 D36.23
-pin: 2 D37.23
-pin: 3 D34.2
-pin: 4 D30.10
-pin: 5 D30.11
-pin: 6 D30.16
-pin: 7 D30.3
-pin: 8 D30.2
-pin: 9 D35.2
-pin: 10 D33.14
-pin: 11 R15.2
-pin: 12 R16.2
-pin: 13 R150.2
-pin: 14 R151.2
-pin: 15 R152.2
-pin: 16 R153.2
-pin: 17 R208.2
-pin: 18 R461.1
-pin: 19 X9.1
-pin: 20 R275.2
-pin: 21 R276.2
-pin: 22 R277.2
-pin: 23 C1.2
-pin: 24 C4.2
-pin: 25 C6.2
-pin: 26 C9.2
-pin: 27 C16.2
-pin: 28 R45.1
-pin: 29 R46.1
-pin: 30 R47.1
-pin: 31 R48.1
-pin: 32 R49.1
-pin: 33 R136.1
-pin: 34 R137.1
-pin: 35 R138.1
-pin: 36 R209.2
-pin: 37 R274.2
-pin: 38 C28.2
-pin: 39 XT2.8
-net: "+3.3MSK1"
-pin: 1 R461.2
-pin: 2 K46.1
-pin: 3 K47.1
-pin: 4 K60.1
-pin: 5 K61.1
+pin: 4 C56.1
+pin: 5 C57.2
+net: "NetC52_2"
+pin: 0 C55.1
+pin: 1 C52.2
+net: "NetC35_Plus"
+pin: 0 D6.1
+pin: 1 XP7.1
+pin: 2 R31.1
+pin: 3 C35.plus
+net: "nCS"
+pin: 0 XP6.5
+pin: 1 D7.1
+pin: 2 D1.66
+pin: 3 D2.57
+pin: 4 R5.2
+net: "nCONF"
+pin: 0 XP6.9
+pin: 1 D1.193
+pin: 2 D2.37
+net: "GND"
+pin: 0 XP16.1
+pin: 1 XP17.1
+pin: 2 XP6.8
+pin: 3 XP6.10
+pin: 4 D12.2
+pin: 5 XP14.2
+pin: 6 XP13.2
+pin: 7 XP12.2
+pin: 8 XP11.1
+pin: 9 XP5.3
+pin: 10 XP5.1
+pin: 11 XP5.5
+pin: 12 XT1.111
+pin: 13 XT1.21
+pin: 14 XT1.51
+pin: 15 XT1.117
+pin: 16 XT1.27
+pin: 17 XT1.57
+pin: 18 XT1.81
+pin: 19 XT1.87
+pin: 20 D31.6
+pin: 21 D31.13
+pin: 22 D32.13
+pin: 23 D32.6
+pin: 24 R32.2
+pin: 25 D7.7
+pin: 26 D10.5
+pin: 27 D10.7
+pin: 28 D42.13
+pin: 29 D42.6
+pin: 30 D41.13
+pin: 31 D41.6
+pin: 32 VT3.E
+pin: 33 D22.13
+pin: 34 D22.6
+pin: 35 D3.6
+pin: 36 D3.3
+pin: 37 D3.10
+pin: 38 D3.13
+pin: 39 R116.1
+pin: 40 D1.64
+pin: 41 D1.45
+pin: 42 D1.35
+pin: 43 D1.36
+pin: 44 D1.15
+pin: 45 D1.256
+pin: 46 D1.253
+pin: 47 D1.249
+pin: 48 D1.238
+pin: 49 D1.228
+pin: 50 D1.222
+pin: 51 D1.218
+pin: 52 D1.208
+pin: 53 D1.195
+pin: 54 D1.198
+pin: 55 D1.129
+pin: 56 D1.146
+pin: 57 D1.157
+pin: 58 D1.162
+pin: 59 D1.164
+pin: 60 D1.176
+pin: 61 D1.65
+pin: 62 D1.75
+pin: 63 D1.87
+pin: 64 D1.108
+pin: 65 D1.119
+pin: 66 D1.126
+pin: 67 D1.96
+pin: 68 D1.97
+pin: 69 R28.2
+pin: 70 R17.2
+pin: 71 C25.1
+pin: 72 D5.1
+pin: 73 D5.4
+pin: 74 D6.3
+pin: 75 G1.2
+pin: 76 D51.6
+pin: 77 D51.13
+pin: 78 D52.6
+pin: 79 D52.13
+pin: 80 D21.6
+pin: 81 D21.13
+pin: 82 D4.10
+pin: 83 N3.1
+pin: 84 C37.1
+pin: 85 C33.1
+pin: 86 VT75.E
+pin: 87 C112.minus
+pin: 88 VT77.E
+pin: 89 VT74.E
+pin: 90 R16.2
+pin: 91 C61.Minus
+pin: 92 R499.1
+pin: 93 C58.minus
+pin: 94 D2.7
+pin: 95 D2.6
+pin: 96 D2.5
+pin: 97 D2.2
+pin: 98 D2.1
+pin: 99 D2.60
+pin: 100 D2.36
+pin: 101 D2.35
+pin: 102 D2.33
+pin: 103 D2.32
+pin: 104 D2.28
+pin: 105 D2.27
+pin: 106 D54.7
+pin: 107 D54.6
+pin: 108 R498.2
+pin: 109 D53.6
+pin: 110 VD1.Plus
+pin: 111 C26.minus
+pin: 112 C36.1
+pin: 113 C35.minus
+pin: 114 C31.1
+pin: 115 C32.minus
+pin: 116 C1.1
+pin: 117 C2.1
+pin: 118 C3.1
+pin: 119 C4.1
+pin: 120 C5.1
+pin: 121 C6.1
+pin: 122 C7.1
+pin: 123 C8.1
+pin: 124 C9.1
+pin: 125 C10.1
+pin: 126 C11.1
+pin: 127 C12.1
+pin: 128 C13.1
+pin: 129 C14.1
+pin: 130 C15.1
+pin: 131 C16.1
+pin: 132 C17.1
+pin: 133 C18.1
+pin: 134 C19.1
+pin: 135 C20.1
+pin: 136 C21.1
+pin: 137 C22.1
+pin: 138 C23.1
+pin: 139 C24.1
+pin: 140 C27.1
+pin: 141 C28.1
+pin: 142 C30.1
+pin: 143 R24.2
+pin: 144 R15.2
+pin: 145 R18.2
+pin: 146 C29.minus
+pin: 147 C62.2
+pin: 148 C63.1
+net: "GND_PP"
+pin: 0 D9.3
+pin: 1 R272.1
+pin: 2 R271.1
+pin: 3 R283.1
+pin: 4 R329.1
+pin: 5 D40.2
+pin: 6 R444.1
+pin: 7 R327.1
+pin: 8 D48.2
+pin: 9 D56.2
+pin: 10 R191.1
+pin: 11 R409.1
+pin: 12 R466.1
+pin: 13 R467.1
+pin: 14 R389.1
+pin: 15 R249.1
+pin: 16 R386.1
+pin: 17 R309.1
+pin: 18 R469.1
+pin: 19 R468.1
+pin: 20 R308.1
+pin: 21 R169.1
+pin: 22 R306.1
+pin: 23 R388.1
+pin: 24 R307.1
+pin: 25 R387.1
+pin: 26 R229.1
+pin: 27 R228.1
+pin: 28 R226.1
+pin: 29 R227.1
+pin: 30 VT1.E
+pin: 31 R403.1
+pin: 32 R323.1
+pin: 33 R247.1
+pin: 34 R243.1
+pin: 35 R167.1
+pin: 36 R165.1
+pin: 37 R163.1
+pin: 38 R401.2
+pin: 39 R321.2
+pin: 40 R399.2
+pin: 41 R319.2
+pin: 42 R241.2
+pin: 43 R161.2
+pin: 44 R159.2
+pin: 45 R239.2
+pin: 46 C50.Minus
+pin: 47 R128.1
+pin: 48 C38.1
+pin: 49 R205.1
+pin: 50 R363.1
+pin: 51 R365.1
+pin: 52 VD11.A
+pin: 53 D49.2
+pin: 54 D28.2
+pin: 55 R474.1
+pin: 56 C46.1
+pin: 57 C45.1
+pin: 58 C44.1
+pin: 59 C43.1
+pin: 60 R158.2
+pin: 61 R443.1
+pin: 62 R318.2
+pin: 63 R398.2
+pin: 64 D38.2
+pin: 65 R320.2
+pin: 66 R400.2
+pin: 67 R238.2
+pin: 68 D18.2
+pin: 69 R160.2
+pin: 70 R240.2
+pin: 71 D20.2
+pin: 72 D30.2
+pin: 73 R150.1
+pin: 74 R151.1
+pin: 75 D4.6
+pin: 76 N1.22
+pin: 77 N1.24
+pin: 78 N1.26
+pin: 79 N1.28
+pin: 80 N1.30
+pin: 81 N1.32
+pin: 82 N1.34
+pin: 83 N1.36
+pin: 84 N1.23
+pin: 85 N1.27
+pin: 86 N1.29
+pin: 87 N1.33
+pin: 88 N1.35
+pin: 89 N1.25
+pin: 90 N1.31
+pin: 91 N1.37
+pin: 92 N3.10
+pin: 93 R270.1
+pin: 94 R407.1
+pin: 95 R131.1
+pin: 96 R433.1
+pin: 97 R430.1
+pin: 98 R325.1
+pin: 99 R463.1
+pin: 100 R465.1
+pin: 101 R459.1
+pin: 102 R461.1
+pin: 103 R385.1
+pin: 104 R383.1
+pin: 105 R381.1
+pin: 106 R379.1
+pin: 107 R305.1
+pin: 108 R303.1
+pin: 109 R301.1
+pin: 110 R299.1
+pin: 111 R225.1
+pin: 112 R223.1
+pin: 113 R622.1
+pin: 114 VT5.E
+pin: 115 VT2.E
+pin: 116 R405.1
+pin: 117 C54.Minus
+pin: 118 R204.1
+pin: 119 R155.1
+pin: 120 R245.1
+pin: 121 R395.1
+pin: 122 R397.1
+pin: 123 R203.1
+pin: 124 R317.1
+pin: 125 R315.1
+pin: 126 R235.1
+pin: 127 R157.1
+pin: 128 R237.1
+pin: 129 R548.1
+pin: 130 VD29.Plus
+pin: 131 C49.1
+pin: 132 C47.1
+pin: 133 R514.1
+pin: 134 R284.1
+pin: 135 R364.1
+pin: 136 C42.1
+pin: 137 C41.1
+pin: 138 C40.1
+pin: 139 C39.1
+pin: 140 R136.1
+pin: 141 C55.2
+pin: 142 R142.1
+pin: 143 R442.1
+pin: 144 R353.1
+pin: 145 R316.1
+pin: 146 R362.1
+pin: 147 R351.1
+pin: 148 R314.1
+pin: 149 D50.2
+pin: 150 D47.2
+pin: 151 R285.1
+pin: 152 D27.2
+pin: 153 R234.1
+pin: 154 R475.1
+pin: 155 R221.1
+pin: 156 R282.1
+pin: 157 R236.1
+pin: 158 R431.1
+pin: 159 R350.1
+pin: 160 R273.1
+pin: 161 R193.1
+pin: 162 R192.1
+pin: 163 R352.1
+pin: 164 R394.1
+pin: 165 D29.2
+pin: 166 D37.2
+pin: 167 D39.2
+pin: 168 R445.1
+pin: 169 R432.1
+pin: 170 R396.1
+pin: 171 R156.1
+pin: 172 D19.2
+pin: 173 R154.1
+pin: 174 D17.2
+pin: 175 R202.1
+pin: 176 R190.1
+pin: 177 R135.1
+pin: 178 R108.1
+pin: 179 C57.1
+pin: 180 R122.1
+pin: 181 R121.1
+pin: 182 R120.1
+pin: 183 R119.1
+pin: 184 R219.1
+net: "FO_VccOn"
+pin: 0 R115.2
+pin: 1 D8.2
+pin: 2 R37.2
+pin: 3 R38.2
+pin: 4 R40.2
+pin: 5 R39.2
+net: "F16M"
+pin: 0 D1.33
+pin: 1 G1.3
+net: "NetD3_12"
+pin: 0 D3.12
+pin: 1 R15.1
+pin: 2 R9.2
+net: "DRV2#"
+pin: 0 D3.4
+pin: 1 R8.2
+pin: 2 D1.57
+net: "NetD3_2"
+pin: 0 D3.2
+pin: 1 R18.1
+pin: 2 R7.2
+net: "DRV1#"
+pin: 0 D3.14
+pin: 1 D1.59
+pin: 2 R10.2
+net: "DCLK"
+pin: 0 XP6.3
+pin: 1 D1.254
+pin: 2 D2.59
+net: "DATA"
+pin: 0 XP6.1
+pin: 1 D1.255
+pin: 2 D2.62
+net: "Cur_Sens_ch16"
+pin: 0 R437.2
+pin: 1 D1.78
+pin: 2 D52.4
+net: "Cur_Sens_ch15"
+pin: 0 R436.2
+pin: 1 D1.72
+pin: 2 D52.11
+net: "Cur_Sens_ch14"
+pin: 0 D1.91
+pin: 1 D51.4
+pin: 2 R435.2
+net: "Cur_Sens_ch13"
+pin: 0 D1.90
+pin: 1 D51.11
+pin: 2 R434.2
+net: "Cur_Sens_ch12"
+pin: 0 R357.2
+pin: 1 D42.4
+pin: 2 D1.107
+net: "Cur_Sens_ch11"
+pin: 0 R356.2
+pin: 1 D42.11
+pin: 2 D1.106
+net: "Cur_Sens_ch10"
+pin: 0 D41.4
+pin: 1 D1.120
+pin: 2 R355.2
+net: "Cur_Sens_ch9"
+pin: 0 R354.2
+pin: 1 D41.11
+pin: 2 D1.118
+net: "Cur_Sens_ch8"
+pin: 0 D32.4
+pin: 1 D1.141
+pin: 2 R277.2
+net: "Cur_Sens_ch7"
+pin: 0 D32.11
+pin: 1 D1.140
+pin: 2 R276.2
+net: "Cur_Sens_ch6"
+pin: 0 D31.4
+pin: 1 D1.170
+pin: 2 R275.2
+net: "Cur_Sens_ch5"
+pin: 0 D31.11
+pin: 1 D1.156
+pin: 2 R274.2
+net: "Cur_Sens_ch4"
+pin: 0 D22.4
+pin: 1 D1.172
+pin: 2 R197.2
+net: "Cur_Sens_ch3"
+pin: 0 D22.11
+pin: 1 D1.171
+pin: 2 R196.2
+net: "Cur_Sens_ch2"
+pin: 0 D1.181
+pin: 1 D21.4
+pin: 2 R195.2
+net: "Cur_Sens_ch1"
+pin: 0 D1.180
+pin: 1 D21.11
+pin: 2 R194.2
+net: "CTRL2"
+pin: 0 XT1.119
+pin: 1 XT1.29
+pin: 2 XT1.59
+pin: 3 XT1.89
+pin: 4 R13.1
+net: "CTRL2#"
+pin: 0 D3.7
+pin: 1 R14.2
+pin: 2 D1.56
+net: "CTRL1"
+pin: 0 XT1.100
+pin: 1 XT1.10
+pin: 2 XT1.40
+pin: 3 XT1.70
+pin: 4 R12.1
+net: "CTRL1#"
+pin: 0 D3.11
+pin: 1 D1.58
+pin: 2 R11.2
+net: "CASE"
+pin: 0 VIA11.1
+pin: 1 VIA12.1
+pin: 2 VIA13.1
+pin: 3 VIA14.1
+pin: 4 VIA15.1
+pin: 5 VIA16.1
+pin: 6 D9.8
+pin: 7 D12.8
+pin: 8 XT1.120
+pin: 9 XT1.30
+pin: 10 XT1.60
+pin: 11 XT1.90
+pin: 12 K7.1
+pin: 13 K6.1
+pin: 14 N1.20
+pin: 15 N1.21
+pin: 16 N2.24
+pin: 17 N2.37
+pin: 18 C60.1
+pin: 19 C52.1
+net: "ANSW2"
+pin: 0 XT1.118
+pin: 1 XT1.28
+pin: 2 XT1.58
+pin: 3 XT1.88
+pin: 4 D4.4
+net: "ANSW2#"
+pin: 0 D1.55
+pin: 1 R20.1
+net: "ANSW1"
+pin: 0 XT1.99
+pin: 1 XT1.9
+pin: 2 XT1.39
+pin: 3 XT1.69
+pin: 4 D4.14
+net: "ANSW1#"
+pin: 0 D1.60
+pin: 1 R21.1
+net: "ADDR3"
+pin: 0 XP5.6
+pin: 1 D1.20
+pin: 2 R25.2
+net: "ADDR2"
+pin: 0 XP5.4
+pin: 1 D1.19
+pin: 2 R26.2
+net: "ADDR1"
+pin: 0 XP5.2
+pin: 1 D1.18
+pin: 2 R27.2
+net: "-F16"
+pin: 0 R103.2
+pin: 1 D46.3
+pin: 2 R104.2
+pin: 3 R546.2
+net: "-F15"
+pin: 0 R102.2
+pin: 1 D46.1
+pin: 2 R101.2
+pin: 3 R545.2
+net: "-F14"
+pin: 0 R100.2
+pin: 1 D45.3
+pin: 2 R99.2
+pin: 3 R544.2
+net: "-F13"
+pin: 0 R97.2
+pin: 1 D45.1
+pin: 2 R98.2
+pin: 3 R543.2
+net: "-F12"
+pin: 0 D36.3
+pin: 1 R95.2
+pin: 2 R96.2
+pin: 3 R538.2
+net: "-F11"
+pin: 0 D36.1
+pin: 1 R93.2
+pin: 2 R94.2
+pin: 3 R537.2
+net: "-F10"
+pin: 0 R91.2
+pin: 1 D35.3
+pin: 2 R92.2
+pin: 3 R536.2
+net: "-F09"
+pin: 0 R535.2
+pin: 1 R89.2
+pin: 2 D35.1
+pin: 3 R90.2
+net: "-F08"
+pin: 0 R530.2
+pin: 1 R87.2
+pin: 2 D26.3
+pin: 3 R88.2
+net: "-F07"
+pin: 0 R529.2
+pin: 1 R85.2
+pin: 2 D26.1
+pin: 3 R86.2
+net: "-F06"
+pin: 0 D25.3
+pin: 1 R528.2
+pin: 2 R83.2
+pin: 3 R84.2
+net: "-F05"
+pin: 0 D25.1
+pin: 1 R81.2
+pin: 2 R82.2
+pin: 3 R527.2
+net: "-F04"
+pin: 0 D16.3
+pin: 1 R79.2
+pin: 2 R80.2
+pin: 3 R522.2
+net: "-F03"
+pin: 0 D16.1
+pin: 1 R521.2
+pin: 2 R77.2
+pin: 3 R78.2
+net: "-F02"
+pin: 0 R520.2
+pin: 1 R75.2
+pin: 2 D15.3
+pin: 3 R76.2
+net: "-F01"
+pin: 0 R519.2
+pin: 1 R74.2
+pin: 2 D15.1
+pin: 3 R73.2
+net: "-28V2"
+pin: 0 XP4.3
+pin: 1 XT1.97
+pin: 2 XT1.7
+pin: 3 XT1.37
+pin: 4 XT1.67
+net: "-28V1"
+pin: 0 XP4.1
+pin: 1 XT1.95
+pin: 2 XT1.5
+pin: 3 XT1.35
+pin: 4 XT1.65
+net: "-28_EMI"
+pin: 0 D9.7
+pin: 1 D12.7
+pin: 2 XP4.2
+pin: 3 K17.1
+pin: 4 C113.minus
+pin: 5 VT78.E
+pin: 6 VT9.E
+pin: 7 VT7.E
+pin: 8 R486.2
+pin: 9 D53.10
+pin: 10 R478.1
+pin: 11 VD6.Plus
+pin: 12 R143.1
+pin: 13 C48.Minus
+pin: 14 R149.2
+pin: 15 C59.1
+pin: 16 C51.1
+net: "+U2"
+pin: 0 XT1.115
+pin: 1 XT1.25
+pin: 2 XT1.55
+pin: 3 XT1.85
+pin: 4 R140.1
+net: "+U1"
+pin: 0 XT1.113
+pin: 1 XT1.23
+pin: 2 XT1.53
+pin: 3 XT1.83
+pin: 4 R141.1
+net: "+F16"
+pin: 0 R71.2
+pin: 1 R72.2
+pin: 2 R542.2
+pin: 3 D44.3
+net: "+F15"
+pin: 0 R70.2
+pin: 1 R69.2
+pin: 2 R541.2
+pin: 3 D44.1
+net: "+F14"
+pin: 0 R68.2
+pin: 1 R67.2
+pin: 2 D43.3
+pin: 3 R540.2
+net: "+F13"
+pin: 0 R66.2
+pin: 1 R65.2
+pin: 2 D43.1
+pin: 3 R539.2
+net: "+F12"
+pin: 0 R64.2
+pin: 1 R63.2
+pin: 2 R534.2
+pin: 3 D34.3
+net: "+F11"
+pin: 0 R62.2
+pin: 1 R61.2
+pin: 2 R533.2
+pin: 3 D34.1
+net: "+F10"
+pin: 0 R532.2
+pin: 1 R59.2
+pin: 2 D33.3
+pin: 3 R60.2
+net: "+F09"
+pin: 0 R58.2
+pin: 1 R531.2
+pin: 2 R57.2
+pin: 3 D33.1
+net: "+F08"
+pin: 0 R56.2
+pin: 1 R55.2
+pin: 2 R526.2
+pin: 3 D24.3
+net: "+F07"
+pin: 0 R525.2
+pin: 1 R54.2
+pin: 2 R53.2
+pin: 3 D24.1
+net: "+F06"
+pin: 0 R52.2
+pin: 1 R51.2
+pin: 2 R524.2
+pin: 3 D23.3
+net: "+F05"
+pin: 0 R523.2
+pin: 1 R49.2
+pin: 2 D23.1
+pin: 3 R50.2
+net: "+F04"
+pin: 0 R47.2
+pin: 1 R517.2
+pin: 2 D14.3
+pin: 3 R48.2
+net: "+F03"
+pin: 0 R45.2
+pin: 1 R518.2
+pin: 2 D14.1
+pin: 3 R46.2
+net: "+F02"
+pin: 0 R516.2
+pin: 1 R43.2
+pin: 2 D13.3
+pin: 3 R44.2
+net: "+F01"
+pin: 0 R515.2
+pin: 1 R42.2
+pin: 2 R41.2
+pin: 3 D13.1
+net: "+30V"
+pin: 0 VT6.C
+pin: 1 R547.2
+pin: 2 R123.2
+pin: 3 R620.2
+pin: 4 R621.2
+pin: 5 R512.2
+pin: 6 VT80.C
+pin: 7 VT79.E
+pin: 8 VT8.C
+pin: 9 R125.1
+pin: 10 XP8.2
+pin: 11 R129.2
+net: "+30V_Ctrl"
+pin: 0 VT6.E
+pin: 1 VD30.Plus
+pin: 2 R144.2
+pin: 3 D43.8
+pin: 4 D43.6
+pin: 5 VT79.C
+pin: 6 R548.2
+pin: 7 C49.2
+pin: 8 R138.2
+pin: 9 D33.8
+pin: 10 D33.6
+pin: 11 D34.8
+pin: 12 D34.6
+pin: 13 D44.8
+pin: 14 D44.6
+pin: 15 D24.8
+pin: 16 D24.6
+pin: 17 D23.8
+pin: 18 D23.6
+pin: 19 D14.8
+pin: 20 D14.6
+pin: 21 D13.8
+pin: 22 D13.6
+net: "+30T"
+pin: 0 R144.1
+pin: 1 N3.9
+net: "+28V2"
+pin: 0 XP3.3
+pin: 1 XT1.93
+pin: 2 XT1.33
+pin: 3 XT1.3
+pin: 4 XT1.63
+net: "+28V1"
+pin: 0 XP3.1
+pin: 1 XT1.91
+pin: 2 XT1.31
+pin: 3 XT1.1
+pin: 4 XT1.61
+net: "+28P4"
+pin: 0 C46.2
+pin: 1 VD5.2
+pin: 2 N1.14
+pin: 3 N1.16
+pin: 4 N1.15
+pin: 5 N1.13
+pin: 6 C42.2
+pin: 7 VD7.1
+pin: 8 VT72.drain
+pin: 9 VT70.drain
+pin: 10 VT68.drain
+pin: 11 VT66.drain
+pin: 12 R122.2
+net: "+28P3"
+pin: 0 C45.2
+pin: 1 N1.10
+pin: 2 N1.9
+pin: 3 N1.11
+pin: 4 N1.12
+pin: 5 VD4.2
+pin: 6 C41.2
+pin: 7 VD9.1
+pin: 8 VT56.drain
+pin: 9 VT54.drain
+pin: 10 VT52.drain
+pin: 11 VT50.drain
+pin: 12 R121.2
+net: "+28P2"
+pin: 0 C44.2
+pin: 1 VD3.2
+pin: 2 N1.8
+pin: 3 N1.5
+pin: 4 N1.6
+pin: 5 N1.7
+pin: 6 C40.2
+pin: 7 VD8.1
+pin: 8 VT40.drain
+pin: 9 VT38.drain
+pin: 10 VT36.drain
+pin: 11 VT34.drain
+pin: 12 R120.2
+net: "+28P1"
+pin: 0 VD2.2
+pin: 1 C43.2
+pin: 2 N1.2
+pin: 3 N1.4
+pin: 4 N1.3
+pin: 5 N1.1
+pin: 6 VT18.drain
+pin: 7 C39.2
+pin: 8 VD10.1
+pin: 9 VT24.drain
+pin: 10 VT22.drain
+pin: 11 VT20.drain
+pin: 12 R119.2
+net: "+28_EMI"
+pin: 0 D9.6
+pin: 1 D12.6
+pin: 2 C113.plus
+pin: 3 D11.7
+pin: 4 D11.6
+pin: 5 VD28.minus
+pin: 6 C48.Plus
+pin: 7 C59.2
+pin: 8 C51.2
+net: "+15V"
+pin: 0 D8.6
+pin: 1 XP9.2
+net: "+Vcc_L"
+pin: 0 D36.8
+pin: 1 D36.6
+pin: 2 D16.6
+pin: 3 D16.8
+pin: 4 D25.8
+pin: 5 D25.6
+pin: 6 D5.11
+pin: 7 D45.8
+pin: 8 D45.6
+pin: 9 D35.6
+pin: 10 D35.8
+pin: 11 D46.6
+pin: 12 D46.8
+pin: 13 D15.6
+pin: 14 D15.8
+pin: 15 D26.6
+pin: 16 D26.8
+pin: 17 XP15.1
+pin: 18 R145.2
+net: "+15T"
+pin: 0 N3.8
+pin: 1 R145.1
+net: "+3V3"
+pin: 0 XP6.4
+pin: 1 R354.1
+pin: 2 R437.1
+pin: 3 R644.2
+pin: 4 D7.14
+pin: 5 R357.1
+pin: 6 R356.1
+pin: 7 VT116.E
+pin: 8 R639.2
+pin: 9 VT76.E
+pin: 10 R14.1
+pin: 11 R8.1
+pin: 12 R436.1
+pin: 13 D1.53
+pin: 14 D1.31
+pin: 15 D1.25
+pin: 16 D1.4
+pin: 17 D1.252
+pin: 18 D1.233
+pin: 19 D1.213
+pin: 20 D1.196
+pin: 21 D1.158
+pin: 22 D1.184
+pin: 23 D1.99
+pin: 24 D1.103
+pin: 25 D1.124
+pin: 26 D1.125
+pin: 27 D1.151
+pin: 28 D1.225
+pin: 29 D1.81
+pin: 30 R494.1
+pin: 31 D55.8
+pin: 32 R274.1
+pin: 33 R10.1
+pin: 34 C25.2
+pin: 35 D5.14
+pin: 36 D5.15
+pin: 37 R26.1
+pin: 38 D6.2
+pin: 39 G1.4
+pin: 40 R146.2
+pin: 41 R126.2
+pin: 42 R27.1
+pin: 43 R25.1
+pin: 44 C37.2
+pin: 45 C34.1
+pin: 46 R487.2
+pin: 47 R643.2
+pin: 48 C33.2
+pin: 49 R642.1
+pin: 50 R19.1
+pin: 51 R276.1
+pin: 52 R275.1
+pin: 53 R434.1
+pin: 54 R11.1
+pin: 55 R506.1
+pin: 56 R507.1
+pin: 57 D2.3
+pin: 58 D2.64
+pin: 59 D2.58
+pin: 60 D2.34
+pin: 61 D2.31
+pin: 62 D2.29
+pin: 63 R484.2
+pin: 64 D54.2
+pin: 65 C26.plus
+pin: 66 C36.2
+pin: 67 C31.2
+pin: 68 C32.plus
+pin: 69 R355.1
+pin: 70 R277.1
+pin: 71 R197.1
+pin: 72 R196.1
+pin: 73 R435.1
+pin: 74 XP10.2
+pin: 75 R195.1
+pin: 76 C6.2
+pin: 77 C7.2
+pin: 78 C8.2
+pin: 79 C9.2
+pin: 80 C10.2
+pin: 81 C11.2
+pin: 82 C12.2
+pin: 83 C18.2
+pin: 84 C19.2
+pin: 85 C20.2
+pin: 86 C21.2
+pin: 87 C22.2
+pin: 88 C23.2
+pin: 89 C24.2
+pin: 90 C27.2
+pin: 91 C28.2
+pin: 92 C30.2
+pin: 93 R194.1
+pin: 94 R6.1
+pin: 95 R5.1
+pin: 96 R3.1
+pin: 97 R4.1
+pin: 98 R1.1
+pin: 99 R2.1
+pin: 100 C29.plus
+net: "+3T3"
+pin: 0 N3.3
+pin: 1 R19.2
+net: "+1V8"
+pin: 0 D1.30
+pin: 1 D1.243
+pin: 2 D1.223
+pin: 3 D1.203
+pin: 4 D1.163
+pin: 5 D1.70
+pin: 6 D1.92
+pin: 7 D1.113
+pin: 8 D1.123
+pin: 9 D1.165
+pin: 10 XP7.2
+pin: 11 C1.2
+pin: 12 C2.2
+pin: 13 C3.2
+pin: 14 C4.2
+pin: 15 C5.2
+pin: 16 C13.2
+pin: 17 C14.2
+pin: 18 C15.2
+pin: 19 C16.2
+pin: 20 C17.2
+net: "+1T8"
+pin: 0 N3.2
+pin: 1 R31.2
 end

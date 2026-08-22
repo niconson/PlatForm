@@ -1,0 +1,481 @@
+[options]
+
+app_folder: "D:\Works\ѕлат‘орм на русском\bin"
+version: 2.429
+file_version: 2.429
+project_name: "MyProj-01"
+library_folder: "d:\works\платформ на русском\fp_lib"
+CAM_folder: "D:\Works\Projects\duxahtech\Led\version-01\CAM(Driver-01)(11-9-2025)"
+ses_file_path: ""
+netlist_completed: "0"
+part_search: ""
+png_settings: "800 0.05"
+netlist_file_path: "D:\Works\Example\related_files\CDS_netlist\MyProj-01.fpc.net"
+SMT_connect_copper: "1"
+default_glue_width: "635000"
+dsn_flags: "3"
+dsn_bounds_poly: "0"
+dsn_signals_poly: "0"
+autosave_interval: 60
+auto_ratline_disable: "1"
+auto_ratline_disable_min_pins: "100"
+netlist_import_flags: 3015
+m_client_rect_left: 110
+m_client_rect_right: 1532
+m_client_rect_bottom: 726
+m_client_rect_top: 0
+m_org_x: -7887
+m_org_y: 74
+m_scale_factor: 26493
+part_line_visible: 1
+merge_shown: 1
+pdf_pin1: -0.700000
+pdf_use_font: -635000 635000 -635000
+units: MM
+
+m_sel_mask: 2147483645
+m_visible_layers: -1
+m_top_layer: 13
+m_grid_style: 0
+visible_grid_spacing: 20000000.000000
+  visible_grid_item: 100mil
+  visible_grid_item: 125mil
+  visible_grid_item: 200mil
+  visible_grid_item: 250mil
+  visible_grid_item: 400mil
+  visible_grid_item: 500mil
+  visible_grid_item: 1000mil
+  visible_grid_item: 1mm
+  visible_grid_item: 2mm
+  visible_grid_item: 2.5mm
+  visible_grid_item: 4mm
+  visible_grid_item: 5mm
+  visible_grid_item: 10mm
+  visible_grid_item: 20mm
+  visible_grid_item: 25mm
+  visible_grid_item: 40mm
+  visible_grid_item: 50mm
+  visible_grid_item: 100mm
+
+placement_grid_spacing: 1000000.000000
+  placement_grid_item: 10mil
+  placement_grid_item: 20mil
+  placement_grid_item: 25mil
+  placement_grid_item: 40mil
+  placement_grid_item: 50mil
+  placement_grid_item: 100mil
+  placement_grid_item: 200mil
+  placement_grid_item: 250mil
+  placement_grid_item: 400mil
+  placement_grid_item: 500mil
+  placement_grid_item: 1000mil
+  placement_grid_item: 0mm
+  placement_grid_item: 0.1mm
+  placement_grid_item: 0.2mm
+  placement_grid_item: 0.25mm
+  placement_grid_item: 0.4mm
+  placement_grid_item: 0.5mm
+  placement_grid_item: 1mm
+  placement_grid_item: 2mm
+  placement_grid_item: 2.5mm
+  placement_grid_item: 4mm
+  placement_grid_item: 5mm
+  placement_grid_item: 10mm
+
+routing_grid_spacing: 0.000000
+  routing_grid_item: 1mil
+  routing_grid_item: 2mil
+  routing_grid_item: 2.5mil
+  routing_grid_item: 3.33330709mil
+  routing_grid_item: 4mil
+  routing_grid_item: 5mil
+  routing_grid_item: 6.665mil
+  routing_grid_item: 10mil
+  routing_grid_item: 12.5mil
+  routing_grid_item: 16.665mil
+  routing_grid_item: 20mil
+  routing_grid_item: 25mil
+  routing_grid_item: 40mil
+  routing_grid_item: 50mil
+  routing_grid_item: 0mm
+  routing_grid_item: 0.01mm
+  routing_grid_item: 0.02mm
+  routing_grid_item: 0.04mm
+  routing_grid_item: 0.05mm
+  routing_grid_item: 0.1mm
+  routing_grid_item: 0.2mm
+  routing_grid_item: 0.25mm
+  routing_grid_item: 0.4mm
+  routing_grid_item: 0.5mm
+  routing_grid_item: 1mm
+  routing_grid_item: 2mm
+  routing_grid_item: 2.5mm
+  routing_grid_item: 4mm
+  routing_grid_item: 5mm
+  routing_grid_item: 10mm
+
+snap_angle: 45
+
+fp_visible_grid_spacing: 1000000.000000
+  fp_visible_grid_item: 100mil
+  fp_visible_grid_item: 125mil
+  fp_visible_grid_item: 200mil
+  fp_visible_grid_item: 250mil
+  fp_visible_grid_item: 400mil
+  fp_visible_grid_item: 500mil
+  fp_visible_grid_item: 1000mil
+  fp_visible_grid_item: 1mm
+  fp_visible_grid_item: 2mm
+  fp_visible_grid_item: 2.5mm
+  fp_visible_grid_item: 4mm
+  fp_visible_grid_item: 5mm
+  fp_visible_grid_item: 10mm
+  fp_visible_grid_item: 20mm
+  fp_visible_grid_item: 25mm
+  fp_visible_grid_item: 40mm
+  fp_visible_grid_item: 50mm
+  fp_visible_grid_item: 100mm
+
+fp_placement_grid_spacing: 250000.000000
+  fp_placement_grid_item: 10mil
+  fp_placement_grid_item: 20mil
+  fp_placement_grid_item: 25mil
+  fp_placement_grid_item: 40mil
+  fp_placement_grid_item: 50mil
+  fp_placement_grid_item: 100mil
+  fp_placement_grid_item: 200mil
+  fp_placement_grid_item: 250mil
+  fp_placement_grid_item: 400mil
+  fp_placement_grid_item: 500mil
+  fp_placement_grid_item: 1000mil
+  fp_placement_grid_item: 0.02mm
+  fp_placement_grid_item: 0.05mm
+  fp_placement_grid_item: 0.1mm
+  fp_placement_grid_item: 0.2mm
+  fp_placement_grid_item: 0.5mm
+  fp_placement_grid_item: 1mm
+  fp_placement_grid_item: 2mm
+  fp_placement_grid_item: 2.5mm
+  fp_placement_grid_item: 4mm
+  fp_placement_grid_item: 5mm
+  fp_placement_grid_item: 10mm
+
+fp_snap_angle: 45
+
+m_seg_clearance: 204080
+fill_clearance: 300000
+panel_fields: 8000000 8000000
+panel_holes: 3000000 4
+panel_ref_count: 0
+panel_reference: "RectType1"
+panel_scribing: 3
+panel_text: "OnTopSilk" "OnBotSilk" "OnTopCopper" "OnBotCopper"
+panel_frame_for_paste: 0 0 0 0
+mask_clearance: 0
+thermal_width: 400000
+thermal_clearance: 200000
+min_silkscreen_width: 150000
+highlight_width: 127000
+hole_clearance: 400000
+pilot_diameter: 200000
+annular_ring_for_pins: 200000
+annular_ring_for_vias: 200000
+shrink_paste_mask: 0
+cam_flags: 96
+crop_flags: 11871
+cam_layers: 9437247
+cam_drill_file: 1
+cam_units: 1
+cam_n_x: 3
+cam_n_y: 7
+cam_space_x: 0
+cam_space_y: 0
+symmetrization_x: 0
+symmetrization_y: 0
+
+report_options: 4123
+drc_check_unrouted: 0
+drc_trace_width: 170000
+drc_pad_pad: 199000
+drc_pad_trace: 199000
+drc_trace_trace: 199000
+drc_hole_copper: 200000
+drc_annular_ring_pins: 199000
+drc_annular_ring_vias: 199000
+drc_board_edge_copper: 200000
+drc_board_edge_hole: 0
+drc_hole_hole: 600000
+drc_copper_copper: 200000
+
+default_trace_width:0.4mm
+default_via_pad_width:1mm
+default_via_hole_width:0.5mm
+n_width_menu: 4
+  width_menu_item: 1 0.4mm 0mil 0mil
+  width_menu_item: 2 0.5mm 0mil 0mil
+  width_menu_item: 3 0.7mm 0mil 0mil
+  width_menu_item: 4 1mm 1.5mm 1mm
+
+n_copper_layers: 2
+  layer_info: "движение" 0 128 255 255 1 127 127 127 0
+  layer_info: "фон доски" 1 239 239 239 1 255 255 255 0
+  layer_info: "подсветка" 2 255 255 0 1 0 0 0 0
+  layer_info: "линии сетки" 3 192 192 192 1 255 255 0 1
+  layer_info: "тестирование" 4 255 0 0 1 128 64 0 0
+  layer_info: "контур платы" 5 0 115 60 1 0 185 120 1
+  layer_info: "скрайбинг (V)" 6 255 0 128 1 127 127 127 0
+  layer_info: "заметки верх" 7 128 64 0 1 255 0 0 0
+  layer_info: "заметки низ" 8 128 64 0 1 128 128 128 0
+  layer_info: "эл. св€зи" 9 0 0 128 1 0 0 160 1
+  layer_info: "шЄлк верх" 10 178 178 178 1 255 255 255 1
+  layer_info: "шЄлк низ" 11 255 170 170 1 255 255 255 0
+  layer_info: "отверсти€" 12 235 235 235 1 255 255 255 1
+  layer_info: "вид верх" 13 77 77 122 1 230 230 230 1
+  layer_info: "вид низ" 14 222 111 111 1 127 127 127 0
+  layer_info: "медь верх" 15 40 165 90 1 47 255 182 1
+  layer_info: "медь низ" 16 30 90 50 1 10 100 20 0
+
+[footprints]
+
+name: "R0805"
+author: "Ivex"
+package: "R0805"
+  units: NM
+  sel_rect: -1153200 -1203200 3053200 1203200
+  ref_text: 1270000 950000 2000000 0 177800
+  value_text: 1270000 950000 -540000 0 177800
+  centroid: 0 950000 0 0
+  outline_polyline: 177800 -950000 1000000 1 0 4
+    next_corner: 2850000 1000000 0
+    next_corner: 2850000 -1000000 0
+    next_corner: -950000 -1000000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 0 0 0 ""
+      top_pad: 3 1400000 650000 650000 0
+    pin: "2" 0 1900000 0 0 ""
+      top_pad: 3 1400000 650000 650000 0
+
+[board]
+
+outline: 4 0 254000 1 -1 -1
+  corner: 1 10000000 0 0 0
+  corner: 2 0 0 0 0
+  corner: 3 0 15000000 0 0
+  corner: 4 10000000 15000000 0 0
+
+
+[solder_mask_cutouts]
+
+
+[graphics]
+
+
+[parts]
+
+part: R1
+  ref_text: 1270000 177800 90 238937 2726190 1
+  shape: "R0805"
+  value: "10k" 1270000 177800 0 950000 -540000 0
+  pos: 4000000 10533201 0 270 0
+
+part: R2
+  ref_text: 1270000 177800 90 3387438 821450 1
+  shape: "R0805"
+  value: "10k" 1270000 177800 0 950000 -540000 0
+  pos: 7000000 8083201 0 270 0
+
+part: R3
+  ref_text: 1270000 177800 90 239279 2948440 1
+  shape: "R0805"
+  value: "10k" 1270000 177800 0 950000 -540000 0
+  pos: 4000000 5633201 0 270 0
+
+[nets]
+
+net: "NET00002" 2 1 0 0 0 0 1
+  pin: 1 R1.2
+  pin: 2 R2.2
+  connect: 1 1 0 3 0 -1
+    vtx: 1 7000000 9983201 15 0 0 0 0
+    seg: 1 15 1299210 0 0
+    vtx: 2 6998970 11508740 0 0 0 0 0
+    seg: 2 15 1299210 0 0
+    vtx: 3 6075680 12432030 0 0 0 0 0
+    seg: 3 15 1299210 0 0
+    vtx: 4 4000000 12433201 15 0 0 0 0
+
+net: "NET00003" 2 1 0 0 0 0 1
+  pin: 1 R1.1
+  pin: 2 R3.2
+  connect: 1 1 0 1 0 -1
+    vtx: 1 4000000 7533201 15 0 0 0 0
+    seg: 1 15 1299210 0 0
+    vtx: 2 4000000 10533201 15 0 0 0 0
+
+net: "NET00001" 2 1 0 0 0 0 1
+  pin: 1 R2.1
+  pin: 2 R3.1
+  connect: 1 1 0 3 0 -1
+    vtx: 1 4000000 5633201 15 0 0 0 0
+    seg: 1 15 1300480 0 0
+    vtx: 2 6011968 5633201 0 0 0 0 0
+    seg: 2 15 1300480 0 0
+    vtx: 3 7000000 6621233 0 0 0 0 0
+    seg: 3 15 1300480 0 0
+    vtx: 4 7000000 8083201 15 0 0 0 0
+
+[texts]
+
+text: "MyProj-01" 98000000 1600000 11 0 1 2540000 254000 0 -1 -1
+text_line: 97999550 1598930 97999550 4084320
+text_line: 97999550 4084320 97282000 2924810
+text_line: 97282000 2924810 96563180 4084320
+text_line: 96563180 4084320 96563180 1598930
+text_line: 95945960 3256280 95449390 1598930
+text_line: 95449390 1598930 94951550 3256280
+text_line: 95449390 1598930 95559880 1212850
+text_line: 95559880 1212850 95670370 1047750
+text_line: 95670370 1047750 95780860 991870
+text_line: 95780860 991870 95945960 991870
+text_line: 94334330 1598930 94334330 4084320
+text_line: 94334330 4084320 93560900 4084320
+text_line: 93560900 4084320 93395800 4028440
+text_line: 93395800 4028440 93285310 3917950
+text_line: 93285310 3917950 93230700 3752850
+text_line: 93230700 3752850 93230700 3145790
+text_line: 93230700 3145790 93285310 2979420
+text_line: 93285310 2979420 93395800 2868930
+text_line: 93395800 2868930 93560900 2814320
+text_line: 93560900 2814320 94334330 2814320
+text_line: 92612210 1598930 92612210 3256280
+text_line: 92612210 3256280 92005150 3256280
+text_line: 92005150 3256280 91838780 3200400
+text_line: 91838780 3200400 91729560 3089910
+text_line: 91729560 3089910 91673680 2979420
+text_line: 91673680 2979420 91673680 2868930
+text_line: 91056460 1930400 91000580 1765300
+text_line: 91000580 1765300 90890090 1654810
+text_line: 90890090 1654810 90724990 1598930
+text_line: 90724990 1598930 90393520 1598930
+text_line: 90393520 1598930 90227150 1654810
+text_line: 90227150 1654810 90117930 1765300
+text_line: 90117930 1765300 90062050 1930400
+text_line: 90062050 1930400 90062050 2924810
+text_line: 90062050 2924810 90117930 3089910
+text_line: 90117930 3089910 90227150 3200400
+text_line: 90227150 3200400 90393520 3256280
+text_line: 90393520 3256280 90724990 3256280
+text_line: 90724990 3256280 90890090 3200400
+text_line: 90890090 3200400 91000580 3089910
+text_line: 91000580 3089910 91056460 2924810
+text_line: 91056460 2924810 91056460 1930400
+text_line: 88892380 3256280 88892380 1212850
+text_line: 88892380 1212850 88946990 1047750
+text_line: 88946990 1047750 89057480 937260
+text_line: 89057480 937260 89223850 881380
+text_line: 89223850 881380 89444830 881380
+text_line: 88892380 3973830 88946990 3917950
+text_line: 88946990 3917950 88892380 3863340
+text_line: 88892380 3863340 88836500 3917950
+text_line: 88836500 3917950 88892380 3973830
+text_line: 88219280 2703830 87224870 2703830
+text_line: 86055200 4084320 86276180 4084320
+text_line: 86276180 4084320 86442550 4028440
+text_line: 86442550 4028440 86553040 3917950
+text_line: 86553040 3917950 86607650 3752850
+text_line: 86607650 3752850 86607650 1930400
+text_line: 86607650 1930400 86553040 1765300
+text_line: 86553040 1765300 86442550 1654810
+text_line: 86442550 1654810 86276180 1598930
+text_line: 86276180 1598930 85834220 1598930
+text_line: 85834220 1598930 85669120 1654810
+text_line: 85669120 1654810 85558630 1765300
+text_line: 85558630 1765300 85504020 1930400
+text_line: 85504020 1930400 85504020 3752850
+text_line: 85504020 3752850 85558630 3917950
+text_line: 85558630 3917950 85669120 4028440
+text_line: 85669120 4028440 85834220 4084320
+text_line: 85834220 4084320 86055200 4084320
+text_line: 84885530 3531870 84333080 4084320
+text_line: 84333080 4084320 84333080 1598930
+selection: 98126550 754380 98126550 4211320 84206080 4211320 84206080 754380
+
+text: "MyProj-01" 2000000 1600000 10 0 0 1000000 150000 0 -1 -1
+text_line: 1998980 1598930 1998980 2578100
+text_line: 1998980 2578100 2282190 2120900
+text_line: 2282190 2120900 2564130 2578100
+text_line: 2564130 2578100 2564130 1598930
+text_line: 2857500 2251710 3053080 1598930
+text_line: 3053080 1598930 3248660 2251710
+text_line: 3053080 1598930 3009900 1447800
+text_line: 3009900 1447800 2966720 1381760
+text_line: 2966720 1381760 2923540 1360170
+text_line: 2923540 1360170 2857500 1360170
+text_line: 3542030 1598930 3542030 2578100
+text_line: 3542030 2578100 3846830 2578100
+text_line: 3846830 2578100 3911600 2556510
+text_line: 3911600 2556510 3954780 2512060
+text_line: 3954780 2512060 3977640 2447290
+text_line: 3977640 2447290 3977640 2208530
+text_line: 3977640 2208530 3954780 2142490
+text_line: 3954780 2142490 3911600 2099310
+text_line: 3911600 2099310 3846830 2077720
+text_line: 3846830 2077720 3542030 2077720
+text_line: 4269740 1598930 4269740 2251710
+text_line: 4269740 2251710 4509770 2251710
+text_line: 4509770 2251710 4574540 2230120
+text_line: 4574540 2230120 4617720 2186940
+text_line: 4617720 2186940 4639310 2142490
+text_line: 4639310 2142490 4639310 2099310
+text_line: 4932680 1729740 4954270 1664970
+text_line: 4954270 1664970 4998720 1620520
+text_line: 4998720 1620520 5063490 1598930
+text_line: 5063490 1598930 5194300 1598930
+text_line: 5194300 1598930 5259070 1620520
+text_line: 5259070 1620520 5302250 1664970
+text_line: 5302250 1664970 5323840 1729740
+text_line: 5323840 1729740 5323840 2120900
+text_line: 5323840 2120900 5302250 2186940
+text_line: 5302250 2186940 5259070 2230120
+text_line: 5259070 2230120 5194300 2251710
+text_line: 5194300 2251710 5063490 2251710
+text_line: 5063490 2251710 4998720 2230120
+text_line: 4998720 2230120 4954270 2186940
+text_line: 4954270 2186940 4932680 2120900
+text_line: 4932680 2120900 4932680 1729740
+text_line: 5834380 2251710 5834380 1447800
+text_line: 5834380 1447800 5812790 1381760
+text_line: 5812790 1381760 5769610 1338580
+text_line: 5769610 1338580 5704840 1316990
+text_line: 5704840 1316990 5617210 1316990
+text_line: 5834380 2533650 5812790 2512060
+text_line: 5812790 2512060 5834380 2490470
+text_line: 5834380 2490470 5855970 2512060
+text_line: 5855970 2512060 5834380 2533650
+text_line: 6149340 2034540 6540500 2034540
+text_line: 7051040 2578100 6964680 2578100
+text_line: 6964680 2578100 6899910 2556510
+text_line: 6899910 2556510 6855460 2512060
+text_line: 6855460 2512060 6833870 2447290
+text_line: 6833870 2447290 6833870 1729740
+text_line: 6833870 1729740 6855460 1664970
+text_line: 6855460 1664970 6899910 1620520
+text_line: 6899910 1620520 6964680 1598930
+text_line: 6964680 1598930 7138670 1598930
+text_line: 7138670 1598930 7203440 1620520
+text_line: 7203440 1620520 7247890 1664970
+text_line: 7247890 1664970 7269480 1729740
+text_line: 7269480 1729740 7269480 2447290
+text_line: 7269480 2447290 7247890 2512060
+text_line: 7247890 2512060 7203440 2556510
+text_line: 7203440 2556510 7138670 2578100
+text_line: 7138670 2578100 7051040 2578100
+text_line: 7561580 2359660 7780020 2578100
+text_line: 7780020 2578100 7780020 1598930
+selection: 7854950 1242060 7854950 2653030 1924050 2653030 1924050 1242060
+
+[merges]
+
+
+[end]

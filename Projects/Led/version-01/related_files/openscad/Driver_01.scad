@@ -7,12 +7,12 @@ include <Driver_01.lib>
 include <Package.lib>
 
 // display parameter
-Convexity = 2;
+Convexity = 3;
 
 // pcb thickness
 board_h = 1.500;
 
-//// Drawing mode
+// drawing mode
 MODE = 1;  // 1: full 3D view
            // 2: projection of top copper
            // 3: projection of bottom copper
@@ -33,8 +33,8 @@ MODE = 1;  // 1: full 3D view
            //     using 3d-models of pcb parts).
 
 
-// double-sided section for modes 4,5,11...14
-sector = 0;
+// double-sided section for modes 4,5,11...13
+sector = 0.01;
 
 // distance between projections for mode 10
 pdist = 20;
@@ -43,18 +43,37 @@ pdist = 20;
 // use negative values to disable a custom object
 object = 0;
 
-// view direction for modes 6...14
-dir= false;
+// cube size for 4,5,11-13 modes
+cube_scale = 2;
+
+// total offset
+offset = 0.01;
+
+// rotate around the X axis
+rotate_x = 0;
+
+// rotate around the Y axis
+rotate_y = 0;
+
+// make projection for modes 1, 11...14
+projection_true = false;
+
+// projection via origin for modes 1, 11...14
+via_origin = false;
+
+// view direction for modes 6...13
+view_dir= false;
 
 // enable PCB section for modes 11...12
 pcb_section = true;
-           
-//// Drawing control
+
+// drawing control
 E = true;
-drw_board_outline      = (MODE!=4&&MODE!=5&&MODE!=14)?1:0;
-drw_copper             = (MODE<4||MODE>10)?1:0;
-drw_holes              = (MODE<4||MODE>10)?1:0;
-drw_pads               = (MODE<4||MODE>10)?1:0;
+
+drw_board_outline      = true;
+drw_copper             = true;
+drw_holes              = true;
+drw_pads               = true;
 drw_Driver_01_C0402    = true; // controls Draw_Driver_01_C0402();
 drw_Driver_01_RTLECS   = true; // controls Draw_Driver_01_RTLECS();
 drw_Driver_01_CD54     = true; // controls Draw_Driver_01_CD54();
@@ -63,20 +82,14 @@ drw_Driver_01_SMTDIODE = true; // controls Draw_Driver_01_SMTDIODE();
 drw_Driver_01_CC0805   = true; // controls Draw_Driver_01_CC0805();
 
 //// 3d cube for boolean operations:
-
-// (cube sizeX for 4,5,11-14 modes)
-cube_scaleX = 2.0;
-
-// (cube sizeY for 4,5,11-14 modes)
-cube_scaleY = 1.0;
-
-// (cube sizeZ for 4,5,11-14 modes)
-cube_scaleZ = 1.0;
+cube_scaleX = cube_scale;
+cube_scaleY = cube_scale;
+cube_scaleZ = cube_scale;
 
 
 
 //// Drawing modules
-//// Frozen position
+// frozen position
 frozen = false; /* coordinates: Wherever you move
 the PCB in the PCB editor, the position of the 3D
 model will remain the same. Make true if you want
@@ -89,6 +102,8 @@ module Main (custom=true)
   if(custom) Custom(object);
 }
 
+//==================================================
+//================  CUSTOM ZONE  ===================
 //==================================================
 module Custom (obj=0)
 {
@@ -109,6 +124,8 @@ module Custom (obj=0)
       rotate([0,0,0])
       cube(10);
       */
+      translate([-6,-3.5,-9.000])
+        Pcb_Package (true);
     }
     if(hide == 2){} else if (item == 2 || item == 0)
     {
@@ -120,8 +137,6 @@ module Custom (obj=0)
       translate([0,0,50.000])
       Pcb_Driver_01 (true);
       */
-      translate([-6,-3.5,-9.000])
-        Pcb_Package (true);
     }
     if(hide == 3){} else if (item == 3 || item == 0)
     {
@@ -138,22 +153,24 @@ module Custom (obj=0)
   }
 }
 //==================================================
+//==============  END OF CUSTOM ZONE  ==============
+//==================================================
 
-module CubeX (d=dir)
+module CubeX (d=view_dir)
 {
     color("white")
     translate([0, frozen?-originY_Driver_01:0, frozen?(d?-max_height_Driver_01/2:max_height_Driver_01/2):0])
     rotate([d?90:-90, 0, 0])
     Draw_Driver_01_CUBE(0, frozen, sector);
 }
-module CubeY (d=dir)
+module CubeY (d=view_dir)
 {
     color("white")
     translate([frozen?-originX_Driver_01:0, 0, frozen?(d?max_height_Driver_01/2:-max_height_Driver_01/2):0])
     rotate([0, d?90:-90, 0])
     Draw_Driver_01_CUBE(0, frozen, sector);
 }
-module CubeZ (d=dir)
+module CubeZ (d=view_dir)
 {
     color("white")
     translate([0,0,0])
@@ -162,7 +179,7 @@ module CubeZ (d=dir)
 
 
 
-//// Drawing
+module Drawing()
 if (MODE == 1)
  Main();
 else if (MODE == 2)
@@ -185,21 +202,21 @@ else if (MODE == 5)
    CubeZ(1);}
 else if (MODE == 6)
  projection()
-  rotate([0, dir?-90:90, 0])
+  rotate([0, view_dir?-90:90, 0])
    Main(0);
 else if (MODE == 7)
  projection()
-  rotate([dir?90:-90, 0, 0])
+  rotate([view_dir?90:-90, 0, 0])
    Main(0);
 else if (MODE == 8)
  projection(true)
-  translate([0, 0, frozen?(dir?originX_Driver_01:-originX_Driver_01):0])
-   rotate([0, dir?-90:90, 0])
+  translate([0, 0, frozen?(view_dir?originX_Driver_01:-originX_Driver_01):0])
+   rotate([0, view_dir?-90:90, 0])
     Main();
 else if (MODE == 9)
  projection(true)
-  translate([0, 0, frozen?(dir?originY_Driver_01:-originY_Driver_01):0])
-   rotate([dir?90:-90, 0, 0])
+  translate([0, 0, frozen?(view_dir?originY_Driver_01:-originY_Driver_01):0])
+   rotate([view_dir?90:-90, 0, 0])
     Main();
 else if (MODE == 10)
 {
@@ -207,21 +224,21 @@ else if (MODE == 10)
   rotate(90)
   {
     projection(true)
-    translate([0, 0, frozen?(dir?originX_Driver_01:-originX_Driver_01):0])
-    rotate([0, dir?-90:90, 0])
+    translate([0, 0, frozen?(view_dir?originX_Driver_01:-originX_Driver_01):0])
+    rotate([0, view_dir?-90:90, 0])
     Custom(object); 
     projection()
-    rotate([0, dir?-90:90, 0])
+    rotate([0, view_dir?-90:90, 0])
     Main(0); 
   }
   render()// (combines intersecting projections)
   {
     projection(true)
-    translate([0, 0, frozen?(dir?originY_Driver_01:-originY_Driver_01):0])
-    rotate([dir?90:-90, 0, 0])
+    translate([0, 0, frozen?(view_dir?originY_Driver_01:-originY_Driver_01):0])
+    rotate([view_dir?90:-90, 0, 0])
     Custom(object); 
     projection()
-    rotate([dir?90:-90, 0, 0])
+    rotate([view_dir?90:-90, 0, 0])
     Main(0);
   }
   projection(true)
@@ -274,3 +291,17 @@ else if (MODE == 14)
 }
 
 
+
+
+
+if (projection_true && (MODE > 10 || MODE == 1))
+{
+  projection(via_origin)
+    translate([0,0,offset])
+      rotate([rotate_x,rotate_y,0])
+        Drawing();
+}
+else
+  translate([0,0,offset])
+    rotate([rotate_x,rotate_y,0])
+      Drawing();

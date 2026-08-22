@@ -170,8 +170,8 @@ module FDriver_01_CD54 ()
                 // end of pins
             }
             
-            translate([0,0,0]) // (automatic adjustment when moving the footprint origin)
-            scale([1,1,1])     // (automatic adjustment when changing the project units)
+            translate([0.000,0.000,0.000]) // (automatic adjustment when moving the footprint origin)
+            scale([1.000,1.000,1.000]) // (automatic adjustment when changing the project units)
             {
                 //-------------------
                 // add your code here, for example:

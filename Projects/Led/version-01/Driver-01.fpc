@@ -1,8 +1,8 @@
 [options]
 
-app_folder: "D:\FreePCBDev\FreePCB-2\.\Debug"
-version: 2.427
-file_version: 2.427
+app_folder: "D:\Works\bin"
+version: 2.429
+file_version: 2.429
 project_name: "Driver-01"
 library_folder: "d:\works\fp_lib"
 CAM_folder: "D:\Works\Projects\duxahtech\Led\version-01\CAM(Driver-01)(11-9-2025)"
@@ -21,8 +21,8 @@ auto_ratline_disable: "1"
 auto_ratline_disable_min_pins: "100"
 netlist_import_flags: 19399
 m_client_rect_left: 110
-m_client_rect_right: 1487
-m_client_rect_bottom: 593
+m_client_rect_right: 1477
+m_client_rect_bottom: 717
 m_client_rect_top: 0
 m_org_x: -11528
 m_org_y: -4624
@@ -217,20 +217,20 @@ n_width_menu: 4
   width_menu_item: 4 1mm 1.5mm 1mm
 
 n_copper_layers: 2
-  layer_info: "движение" 0 255 255 0 1 127 127 127 0
-  layer_info: "фон доски" 1 239 239 239 1 255 255 255 0
+  layer_info: "движение" 0 128 255 255 1 127 127 127 0
+  layer_info: "фон доски" 1 238 238 238 1 255 255 255 0
   layer_info: "подсветка" 2 255 255 0 1 0 0 0 0
-  layer_info: "линии сетки" 3 255 255 255 1 255 255 0 1
-  layer_info: "тестирование" 4 255 255 0 1 128 64 0 0
-  layer_info: "контур платы" 5 0 115 60 1 0 185 120 1
+  layer_info: "линии сетки" 3 192 192 192 1 255 255 0 0
+  layer_info: "тестирование" 4 255 0 0 1 128 64 0 0
+  layer_info: "контур платы" 5 0 115 60 1 0 0 0 1
   layer_info: "скрайбинг (V)" 6 255 0 128 1 127 127 127 0
   layer_info: "заметки верх" 7 128 64 0 1 255 0 0 0
   layer_info: "заметки низ" 8 128 64 0 0 128 128 128 0
-  layer_info: "эл. связи" 9 0 0 128 0 0 0 160 1
+  layer_info: "эл. связи" 9 0 0 128 0 0 0 160 0
   layer_info: "шёлк верх" 10 178 178 178 1 255 255 255 1
   layer_info: "шёлк низ" 11 255 170 170 0 255 255 255 0
-  layer_info: "отверстия" 12 235 235 235 1 255 255 255 1
-  layer_info: "вид верх" 13 77 77 122 1 230 230 230 1
+  layer_info: "отверстия" 12 235 235 235 1 255 255 255 0
+  layer_info: "вид верх" 13 77 77 122 1 230 230 230 0
   layer_info: "вид низ" 14 222 111 111 0 127 127 127 0
   layer_info: "медь верх" 15 40 165 90 1 47 255 182 1
   layer_info: "медь низ" 16 30 90 50 0 10 100 20 0
@@ -262,8 +262,8 @@ package: "CD54"
   ref_text: 1270000 0 -4000000 0 177800
   value_text: 1270000 0 -6540000 0 177800
   centroid: 0 0 0 0
-  openscad_code: "translate([0,0,0]) // (automatic adjustment when moving the footprint origin)"
-  openscad_code: "scale([1,1,1])     // (automatic adjustment when changing the project units)"
+  openscad_code: "translate([0.000,0.000,0.000]) // (automatic adjustment when moving the footprint origin)"
+  openscad_code: "scale([1.000,1.000,1.000]) // (automatic adjustment when changing the project units)"
   openscad_code: "{"
   openscad_code: "    //-------------------"
   openscad_code: "    // add your code here, for example:"

@@ -47,7 +47,7 @@ module Pcb_Driver_01 (frozen)
       Draw_Driver_01_CC0805();
     if( is_undef(drw_board_outline) )
       Draw_BO_Driver_01();
-    else if( drw_board_outline != 0 )
+    else if( drw_board_outline )
       Draw_BO_Driver_01();
   }
 }
@@ -71,7 +71,7 @@ module Draw_BO_Driver_01 ()
             if( is_undef(drw_copper) )
             {
             }
-            else if( drw_copper != 0 )
+            else if( drw_copper )
             {
 
               // connect
@@ -1157,7 +1157,7 @@ module Draw_BO_Driver_01 ()
           if( is_undef(drw_holes) )
           {
           }
-          else if( drw_holes != 0 )
+          else if( drw_holes )
           {
             color([0.0,0.8,0.5])
              translate([ -7.892, -3.990, 0.0 ])

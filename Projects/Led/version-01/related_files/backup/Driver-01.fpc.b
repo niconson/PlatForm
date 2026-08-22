@@ -1,12 +1,11 @@
 [options]
 
 app_folder: "D:\FreePCBDev\FreePCB-2\.\Debug"
-version: 2.427
-file_version: 2.427
+version: 2.429
+file_version: 2.429
 project_name: "Driver-01"
-library_folder: "d:\works\fp_lib"
-full_library_folder: "d:\works\fp_lib\lib"
-CAM_folder: "D:\Works\ѕлат‘орм на русском\Projects\Led\version-01\CAM(Driver-01)(11-20-2025)"
+library_folder: "d:\freepcbdev\freepcb-2\.\fp_lib"
+CAM_folder: "D:\Works\Projects\duxahtech\Led\version-01\CAM(Driver-01)(11-9-2025)"
 ses_file_path: ""
 netlist_completed: "1"
 part_search: ""
@@ -22,17 +21,17 @@ auto_ratline_disable: "1"
 auto_ratline_disable_min_pins: "100"
 netlist_import_flags: 19399
 m_client_rect_left: 110
-m_client_rect_right: 1487
-m_client_rect_bottom: 594
+m_client_rect_right: 1477
+m_client_rect_bottom: 717
 m_client_rect_top: 0
-m_org_x: -24544
-m_org_y: -10049
-m_scale_factor: 46749
+m_org_x: -11528
+m_org_y: -4624
+m_scale_factor: 21282
 part_line_visible: 1
 merge_shown: 1
 pdf_pin1: -0.700000
 pdf_use_font: -635000 635000 -635000
-units: MM
+units: MIL
 
 m_sel_mask: 2147483645
 m_visible_layers: -84737
@@ -166,8 +165,8 @@ fp_snap_angle: 45
 m_seg_clearance: 204080
 fill_clearance: 300000
 panel_fields: 8000000 8000000
-panel_holes: 2000000 4
-panel_ref_count: 2
+panel_holes: 3000000 4
+panel_ref_count: 0
 panel_reference: "RectType1"
 panel_scribing: 3
 panel_text: "OnTopSilk" "OnBotSilk" "OnTopCopper" "OnBotCopper"
@@ -218,11 +217,11 @@ n_width_menu: 4
   width_menu_item: 4 1mm 1.5mm 1mm
 
 n_copper_layers: 2
-  layer_info: "движение" 0 255 255 0 1 127 127 127 0
+  layer_info: "движение" 0 128 255 255 1 127 127 127 0
   layer_info: "фон доски" 1 239 239 239 1 255 255 255 0
   layer_info: "подсветка" 2 255 255 0 1 0 0 0 0
-  layer_info: "линии сетки" 3 255 255 255 1 255 255 0 1
-  layer_info: "тестирование" 4 255 255 0 1 128 64 0 0
+  layer_info: "линии сетки" 3 192 192 192 1 255 255 0 1
+  layer_info: "тестирование" 4 255 0 0 1 128 64 0 0
   layer_info: "контур платы" 5 0 115 60 1 0 185 120 1
   layer_info: "скрайбинг (V)" 6 255 0 128 1 127 127 127 0
   layer_info: "заметки верх" 7 128 64 0 1 255 0 0 0
@@ -263,8 +262,19 @@ package: "CD54"
   ref_text: 1270000 0 -4000000 0 177800
   value_text: 1270000 0 -6540000 0 177800
   centroid: 0 0 0 0
-  openscad_hole: "translate([-1.950,0.000,0.000]) // (automatic adjustment when moving the footprint origin)"
-  openscad_hole: "scale([1.000,1.000,1.000]) // (automatic adjustment when changing the project units)"
+  openscad_code: "translate([0.000,0.000,0.000]) // (automatic adjustment when moving the footprint origin)"
+  openscad_code: "scale([39.370,39.370,39.370]) // (automatic adjustment when changing the project units)"
+  openscad_code: "{"
+  openscad_code: "    //-------------------"
+  openscad_code: "    // add your code here, for example:"
+  openscad_code: "    //color(`Aqua`)"
+  openscad_code: "    //translate([0,0,0])"
+  openscad_code: "    //rotate([0,0,0])"
+  openscad_code: "    //import(`knob.stl`);"
+  openscad_code: "    //-------------------"
+  openscad_code: "}"
+  openscad_hole: "translate([-76.772,0.000,0.000]) // (automatic adjustment when moving the footprint origin)"
+  openscad_hole: "scale([39.370,39.370,39.370]) // (automatic adjustment when changing the project units)"
   openscad_hole: "{"
   openscad_hole: "    //-------------------"
   openscad_hole: "    // add your code here, for example:"
@@ -275,6 +285,8 @@ package: "CD54"
   openscad_hole: "    text(`22uH`,1);"
   openscad_hole: "    //-------------------"
   openscad_hole: "}"
+  openscad_module: "// include <Driver_01_CD54.lib>"
+  openscad_module: "// include <Package.lib>"
   outline_polyline: 177800 -3450000 -2300000 1 0 4
     next_corner: 3450000 -2300000 0
     next_corner: 3450000 2300000 0

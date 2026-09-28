@@ -62,8 +62,7 @@
             "drw_board_outline": "true",
             "drw_copper": "false",
             "drw_holes": "false",
-            "drw_pads": "false",
-            "frozen": "false"
+            "drw_pads": "false"
         },
         "10: custom combo projection": {
             "MODE": "10",
@@ -77,26 +76,21 @@
             "drw_board_outline": "true",
             "drw_copper": "true",
             "drw_holes": "true",
-            "drw_pads": "true",
-            "pcb_section": "false"
+            "drw_pads": "true"
         },
         "12: lateral 3D section": {
             "MODE": "12",
             "drw_board_outline": "true",
             "drw_copper": "true",
             "drw_holes": "true",
-            "drw_pads": "true",
-            "pcb_section": "true",
-            "projection_true": "false",
-            "view_dir": "false"
+            "drw_pads": "true"
         },
         "13: top 3D section": {
             "MODE": "13",
             "drw_board_outline": "true",
             "drw_copper": "true",
             "drw_holes": "true",
-            "drw_pads": "true",
-            "view_dir": "true"
+            "drw_pads": "true"
         },
         "14: boolean difference": {
             "MODE": "14",

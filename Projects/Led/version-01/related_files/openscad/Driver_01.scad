@@ -3,11 +3,17 @@
   |  repositories https://github.com/niconson      |
   |  Niconson(R), All rights reserved              |
   \-----------------------------------------------*/
-include <Driver_01.lib>
-include <Package.lib>
+
+include <Driver_01/Driver_01.lib>
+include <Package/Package.lib>
+
+board_color = "green";
 
 // display parameter
 Convexity = 3;
+
+// color option for import
+transparent = 0.5;
 
 // pcb thickness
 board_h = 1.500;
@@ -55,6 +61,9 @@ rotate_x = 0;
 // rotate around the Y axis
 rotate_y = 0;
 
+// rotate around the Z axis
+rotate_z = 0;
+
 // make projection for modes 1, 11...14
 projection_true = false;
 
@@ -98,7 +107,7 @@ to use this option */
 module Main (custom=true)
 {
   // (this module cannot be modified by the user)
-  if(E) Pcb_Driver_01(frozen);
+  if(E) render(Convexity) Pcb_Driver_01(frozen);
   if(custom) Custom(object);
 }
 
@@ -124,8 +133,9 @@ module Custom (obj=0)
       rotate([0,0,0])
       cube(10);
       */
-      translate([-6,-3.5,-9.000])
-        Pcb_Package (true);
+      color("LightGrey", alpha = transparent)
+        translate([-6,-3.5,-9.000])
+          Pcb_Package (true);
     }
     if(hide == 2){} else if (item == 2 || item == 0)
     {
@@ -140,15 +150,35 @@ module Custom (obj=0)
     }
     if(hide == 3){} else if (item == 3 || item == 0)
     {
-      // add your object 3
-
+      // add your object 3, for example, import STL
+      // Import a file from the OpenScad folder, 
+      // located relative to the PCB file: 
+      // <FPC_FILE>\related_files\openscad\<STL_FILE>
+      // Use PrusaSlicer to repair STL models and 
+      // simplify polygonal meshes.
+      /*
+      color("LightGrey", alpha = transparent)
+      translate([0.0,0.0,0.0])
+      rotate([0,0,0])
+      import("Driver_01/mainBody.stl", center = true, convexity = Convexity);
+      */
     }
     if(hide == 4){} else if (item == 4 || item == 0)
     {
       // add your object 4
-
+      /*
+      color("MediumTurquoise", alpha = transparent)
+      translate([0.0, 0.0, 0.0])
+      rotate([0, 0, 0])
+      import("Driver_01/Part1.stl", center = true, convexity = Convexity);
+      */
     }
     // object 5, etc.
+    // if(hide == 5){} else if (item == 5 || item == 0)
+    // if(hide == 6){} else if (item == 6 || item == 0)
+    // if(hide == 7){} else if (item == 7 || item == 0)
+    // if(hide == 8){} else if (item == 8 || item == 0)
+    // if(hide == 9){} else if (item == 9 || item == 0)
     // end of custom field
   }
 }
@@ -250,7 +280,7 @@ else if (MODE == 11)
   //projection() rotate([-90,0,0])
   {
     if(!pcb_section) Main(0);
-    render(Convexity) difference(){
+    difference(){
     if(!pcb_section) Custom(object);
     else Main();
     CubeX();}
@@ -261,7 +291,7 @@ else if (MODE == 12)
   //projection() rotate([0,90,0])
   {
     if(!pcb_section) Main(0);
-    render(Convexity) difference(){
+    difference(){
     if(!pcb_section) Custom(object);
     else Main();
     CubeY();}
@@ -272,7 +302,7 @@ else if (MODE == 13)
   //projection()
   {
     Main(0);
-    render(Convexity) difference(){
+    difference(){
     Custom(object);
     CubeZ();}
   }
@@ -280,7 +310,7 @@ else if (MODE == 13)
 else if (MODE == 14)
 {
   //projection() translate([0,0,0]) rotate([0,0,0])
-  render(Convexity) difference()
+  difference()
   {
     Custom(object);
     //CubeX();
@@ -298,10 +328,10 @@ if (projection_true && (MODE > 10 || MODE == 1))
 {
   projection(via_origin)
     translate([0,0,offset])
-      rotate([rotate_x,rotate_y,0])
+      rotate([rotate_x,rotate_y,rotate_z])
         Drawing();
 }
 else
   translate([0,0,offset])
-    rotate([rotate_x,rotate_y,0])
+    rotate([rotate_x,rotate_y,rotate_z])
       Drawing();

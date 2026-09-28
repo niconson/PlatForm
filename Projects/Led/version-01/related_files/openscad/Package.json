@@ -1,0 +1,103 @@
+{
+    "fileFormatVersion": "1", 
+    "parameterSets" : {
+        "1: full 3D view": {
+            "MODE" : "1", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "true", 
+            "drw_holes" : "true", 
+            "drw_pads" : "true" 
+        },
+        "2: projection of top copper": {
+            "MODE" : "2", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "true", 
+            "drw_holes" : "true", 
+            "drw_pads" : "true" 
+        },
+        "3: projection of bottom copper": {
+            "MODE" : "3", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "true", 
+            "drw_holes" : "true", 
+            "drw_pads" : "true" 
+        },
+        "4: projection of top packages": {
+            "MODE" : "4", 
+            "drw_board_outline" : "false", 
+            "drw_copper" : "false", 
+            "drw_holes" : "false", 
+            "drw_pads" : "false" 
+        },
+        "5: projection of bottom packages": {
+            "MODE" : "5", 
+            "drw_board_outline" : "false", 
+            "drw_copper" : "false", 
+            "drw_holes" : "false", 
+            "drw_pads" : "false" 
+        },
+        "6: lateral pcb projection": {
+            "MODE" : "6", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "false", 
+            "drw_holes" : "false", 
+            "drw_pads" : "false" 
+        },
+        "7: frontal pcb projection": {
+            "MODE" : "7", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "false", 
+            "drw_holes" : "false", 
+            "drw_pads" : "false" 
+        },
+        "8: custom lateral projection": {
+            "MODE" : "8", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "false", 
+            "drw_holes" : "false", 
+            "drw_pads" : "false" 
+        },
+        "9: custom frontal projection": {
+            "MODE" : "9", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "false", 
+            "drw_holes" : "false", 
+            "drw_pads" : "false" 
+        },
+        "10: custom combo projection": {
+            "MODE" : "10", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "false", 
+            "drw_holes" : "false", 
+            "drw_pads" : "false" 
+        },
+        "11: frontal 3D section": {
+            "MODE" : "11", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "true", 
+            "drw_holes" : "true", 
+            "drw_pads" : "true" 
+        },
+        "12: lateral 3D section": {
+            "MODE" : "12", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "true", 
+            "drw_holes" : "true", 
+            "drw_pads" : "true" 
+        },
+        "13: top 3D section": {
+            "MODE" : "13", 
+            "drw_board_outline" : "true", 
+            "drw_copper" : "true", 
+            "drw_holes" : "true", 
+            "drw_pads" : "true" 
+        },
+        "14: boolean difference": {
+            "MODE" : "14", 
+            "drw_board_outline" : "false", 
+            "drw_copper" : "true", 
+            "drw_holes" : "true", 
+            "drw_pads" : "true" 
+        }
+    }
+}

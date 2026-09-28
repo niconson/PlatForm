@@ -3,13 +3,21 @@
   |  repositories https://github.com/niconson      |
   |  Niconson(R), All rights reserved              |
   \-----------------------------------------------*/
-include <Package.lib>
-Convexity = 2;
+
+include <Package/Package.lib>
+
+board_color = "green";
+
+// display parameter
+Convexity = 3;
+
+// color option for import
+transparent = 0.5;
+
+// pcb thickness
 board_h = 1.500;
 
-
-
-//// Drawing mode
+// drawing mode
 MODE = 1;  // 1: full 3D view
            // 2: projection of top copper
            // 3: projection of bottom copper
@@ -22,72 +30,177 @@ MODE = 1;  // 1: full 3D view
            // 8: custom lateral projection
            // 9: custom frontal projection
            // 10: custom combo projection
-           // 11: frontal 3D section for Custom
-           // 12: lateral 3D section for Custom
-           // 13: top 3D section for Custom
+           // 11: frontal 3D section 
+           // 12: lateral 3D section 
+           // 13: top 3D section 
            // 14: boolean difference (makes
            //     holes in the Custom objects
            //     using 3d-models of pcb parts).
 
-dir = 0;   // view direction for 6...13 modes
-pdist = 20;// distance between projections for mode 10
 
+// double-sided section for modes 4,5,11...13
+sector = 0.01;
 
+// distance between projections for mode 10
+pdist = 20;
 
-//// Drawing control
+// use positive values to isolate a custom object
+// use negative values to disable a custom object
+object = 0;
+
+// cube size for 4,5,11-13 modes
+cube_scale = 2;
+
+// total offset
+offset = 0.01;
+
+// rotate around the X axis
+rotate_x = 0;
+
+// rotate around the Y axis
+rotate_y = 0;
+
+// rotate around the Z axis
+rotate_z = 0;
+
+// make projection for modes 1, 11...14
+projection_true = false;
+
+// projection via origin for modes 1, 11...14
+via_origin = false;
+
+// view direction for modes 6...13
+view_dir= false;
+
+// enable PCB section for modes 11...12
+pcb_section = true;
+
+// drawing control
 E = true;
-drw_board_outline   = (MODE!=4&&MODE!=5&&MODE!=14)?1:0;
-drw_copper          = (MODE<4||MODE>10)?1:0;
-drw_holes           = (MODE<4||MODE>10)?1:0;
-drw_pads            = (MODE<4||MODE>10)?1:0;
-drw_Package_Package = E;
+
+drw_board_outline   = true;
+drw_copper          = true;
+drw_holes           = true;
+drw_pads            = true;
+drw_Package_Package = true; // controls Draw_Package_Package();
+
+//// 3d cube for boolean operations:
+cube_scaleX = cube_scale;
+cube_scaleY = cube_scale;
+cube_scaleZ = cube_scale;
 
 
 
 //// Drawing modules
-/*
-coordinates:*/frozen = false;/* Wherever you move
+// frozen position
+frozen = false; /* coordinates: Wherever you move
 the PCB in the PCB editor, the position of the 3D
 model will remain the same. Make true if you want
-to use this option*/
+to use this option */
 
 module Main (custom=true)
 {
-  Pcb_Package(frozen);
-  if(custom) Custom();
+  // (this module cannot be modified by the user)
+  if(E) render(Convexity) Pcb_Package(frozen);
+  if(custom) Custom(object);
 }
 
-module Custom ()
+//==================================================
+//================  CUSTOM ZONE  ===================
+//==================================================
+module Custom (obj=0)
 {
   translate([frozen?0:originX_Package, frozen?0:originY_Package, 0])
   {
-    // user field
+    // custom field
     // add external objects here (optional)
-    // for example, uncomment the following:
-    /*
-    color("aqua", 0.5)
-    translate([0,0,0])
-    rotate([0,0,0])
-    cube(10);
-    */
-    /*
-    // add  any  PCB  from  the  project  folder,
-    // any pcb in the project folder will require
-    // the <.lib> header (See top) to be included:
-    render(Convexity)
-    translate([0,0,50.000])
-    Pcb_Package (true);
-    */
-    // end of user field
+    hide = (obj<0?-obj:0);
+    item = (obj<0?0:obj);
+
+    if(hide == 1){} else if (item == 1 || item == 0)
+    {
+      // add your object 1
+      // for example, uncomment the following:
+      /*
+      color("aqua", 0.5)
+      translate([0,0,0])
+      rotate([0,0,0])
+      cube(10);
+      */
+    }
+    if(hide == 2){} else if (item == 2 || item == 0)
+    {
+      // add your object 2, for example, another PCB
+      // from the project folder. For any PCB, you will
+      // need to include the <.lib> header file(see above):
+      /*
+      render(Convexity)
+      translate([0,0,50.000])
+      Pcb_Package (true);
+      */
+    }
+    if(hide == 3){} else if (item == 3 || item == 0)
+    {
+      // add your object 3, for example, import STL
+      // Import a file from the OpenScad folder, 
+      // located relative to the PCB file: 
+      // <FPC_FILE>\related_files\openscad\<STL_FILE>
+      // Use PrusaSlicer to repair STL models and 
+      // simplify polygonal meshes.
+      /*
+      color("LightGrey", alpha = transparent)
+      translate([0.0,0.0,0.0])
+      rotate([0,0,0])
+      import("Package/mainBody.stl", center = true, convexity = Convexity);
+      */
+    }
+    if(hide == 4){} else if (item == 4 || item == 0)
+    {
+      // add your object 4
+      /*
+      color("MediumTurquoise", alpha = transparent)
+      translate([0.0, 0.0, 0.0])
+      rotate([0, 0, 0])
+      import("Package/Part1.stl", center = true, convexity = Convexity);
+      */
+    }
+    // object 5, etc.
+    // if(hide == 5){} else if (item == 5 || item == 0)
+    // if(hide == 6){} else if (item == 6 || item == 0)
+    // if(hide == 7){} else if (item == 7 || item == 0)
+    // if(hide == 8){} else if (item == 8 || item == 0)
+    // if(hide == 9){} else if (item == 9 || item == 0)
+    // end of custom field
   }
+}
+//==================================================
+//==============  END OF CUSTOM ZONE  ==============
+//==================================================
+
+module CubeX (d=view_dir)
+{
+    color("white")
+    translate([0, frozen?-originY_Package:0, frozen?(d?-max_height_Package/2:max_height_Package/2):0])
+    rotate([d?90:-90, 0, 0])
+    Draw_Package_CUBE(0, frozen, sector);
+}
+module CubeY (d=view_dir)
+{
+    color("white")
+    translate([frozen?-originX_Package:0, 0, frozen?(d?max_height_Package/2:-max_height_Package/2):0])
+    rotate([0, d?90:-90, 0])
+    Draw_Package_CUBE(0, frozen, sector);
+}
+module CubeZ (d=view_dir)
+{
+    color("white")
+    translate([0,0,0])
+    Draw_Package_CUBE(d?1:0, frozen, sector);
 }
 
 
 
-//// Drawing
-cube_scaleX = 1.0;// (cube sizeX for 4,5,11,12,13 modes)
-cube_scaleY = 1.0;// (cube sizeY for 4,5,11,12,13 modes)
-cube_scaleZ = 1.0;// (cube sizeZ for 4,5,11,12,13 modes)
+module Drawing()
 if (MODE == 1)
  Main();
 else if (MODE == 2)
@@ -102,29 +215,29 @@ else if (MODE == 3)
 else if (MODE == 4)
  projection()difference(){
   Main(0);
-  Draw_Package_CUBE(0, frozen);}
+  CubeZ(0);}
 else if (MODE == 5)
  //mirror([1, 0, 0])
   projection()difference(){
    Main(0);
-   Draw_Package_CUBE(1, frozen);}
+   CubeZ(1);}
 else if (MODE == 6)
  projection()
-  rotate([0, dir?-90:90, 0])
+  rotate([0, view_dir?-90:90, 0])
    Main(0);
 else if (MODE == 7)
  projection()
-  rotate([dir?90:-90, 0, 0])
+  rotate([view_dir?90:-90, 0, 0])
    Main(0);
 else if (MODE == 8)
  projection(true)
-  translate([0, 0, frozen?(dir?originX_Package:-originX_Package):0])
-   rotate([0, dir?-90:90, 0])
+  translate([0, 0, frozen?(view_dir?originX_Package:-originX_Package):0])
+   rotate([0, view_dir?-90:90, 0])
     Main();
 else if (MODE == 9)
  projection(true)
-  translate([0, 0, frozen?(dir?originY_Package:-originY_Package):0])
-   rotate([dir?90:-90, 0, 0])
+  translate([0, 0, frozen?(view_dir?originY_Package:-originY_Package):0])
+   rotate([view_dir?90:-90, 0, 0])
     Main();
 else if (MODE == 10)
 {
@@ -132,21 +245,21 @@ else if (MODE == 10)
   rotate(90)
   {
     projection(true)
-     translate([0, 0, frozen?(dir?originX_Package:-originX_Package):0])
-      rotate([0, dir?-90:90, 0])
-       Custom(); 
+    translate([0, 0, frozen?(view_dir?originX_Package:-originX_Package):0])
+    rotate([0, view_dir?-90:90, 0])
+    Custom(object); 
     projection()
-     rotate([0, dir?-90:90, 0])
-      Main(0); 
+    rotate([0, view_dir?-90:90, 0])
+    Main(0); 
   }
-  render()// combines intersecting projections
+  render()// (combines intersecting projections)
   {
-  projection(true)
-   translate([0, 0, frozen?(dir?originY_Package:-originY_Package):0])
-    rotate([dir?90:-90, 0, 0])
-     Custom(); 
-  projection()
-   rotate([dir?90:-90, 0, 0])
+    projection(true)
+    translate([0, 0, frozen?(view_dir?originY_Package:-originY_Package):0])
+    rotate([view_dir?90:-90, 0, 0])
+    Custom(object); 
+    projection()
+    rotate([view_dir?90:-90, 0, 0])
     Main(0);
   }
   projection(true)
@@ -155,37 +268,62 @@ else if (MODE == 10)
 }
 else if (MODE == 11)
 {
- PcbFull = 0; // make 1 for full pcb view
- difference(){
-  if(PcbFull) Custom();
-  else Main();
-  color("white")
-  translate([0, frozen?-originY_Package:0, frozen?(dir?-max_height_Package/2:max_height_Package/2):0])
-  rotate([dir?90:-90, 0, 0])
-  Draw_Package_CUBE(0, frozen);}
-  if(PcbFull) Main(0);
+  //projection() rotate([-90,0,0])
+  {
+    if(!pcb_section) Main(0);
+    difference(){
+    if(!pcb_section) Custom(object);
+    else Main();
+    CubeX();}
+  }
 }
 else if (MODE == 12)
 {
- PcbFull = 0; // make 1 for full pcb view
- difference(){
-  if(PcbFull) Custom();
-  else Main();
-  color("white")
-  translate([frozen?-originX_Package:0, 0, frozen?(dir?max_height_Package/2:-max_height_Package/2):0])
-  rotate([0, dir?90:-90, 0])
-  Draw_Package_CUBE(0, frozen);}
-  if(PcbFull) Main(0);
+  //projection() rotate([0,90,0])
+  {
+    if(!pcb_section) Main(0);
+    difference(){
+    if(!pcb_section) Custom(object);
+    else Main();
+    CubeY();}
+  }
 }
 else if (MODE == 13)
 {
- difference(){
-  Custom();
-  translate([0,0,0])
-  Draw_Package_CUBE(dir?1:0, frozen);}
- Main(0);
+  //projection()
+  {
+    Main(0);
+    difference(){
+    Custom(object);
+    CubeZ();}
+  }
 }
 else if (MODE == 14)
- difference(){
-  Custom();
-  Main(0);}
+{
+  //projection() translate([0,0,0]) rotate([0,0,0])
+  difference()
+  {
+    Custom(object);
+    //CubeX();
+    //CubeY();
+    //CubeZ();
+    Main(0);
+  }
+}
+
+
+
+
+
+if (projection_true && (MODE > 10 || MODE == 1))
+{
+  projection(via_origin)
+    translate([0,0,offset])
+      rotate([rotate_x,rotate_y,rotate_z])
+        Drawing();
+}
+else
+  translate([0,0,offset])
+    rotate([rotate_x,rotate_y,rotate_z])
+      Drawing();
+ 

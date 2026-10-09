@@ -1,0 +1,13 @@
+module verticalText (t = "txt", h=0)
+{
+    color("black")
+    translate([0,0,h])
+    rotate([0,-90,0])
+    linear_extrude(0.5, center=true)text(t,size=10,font="Liberation Sans:style=Regular",direction="ltr",language="ru",script="cyrillic",halign="left",valign="center",spacing=1.0);
+}
+module verticalLine (len=10, dia=1)
+{
+	$fn = 50;
+	color("red")
+    cylinder(h=len, d1=dia, d2=dia, center = false);
+}
